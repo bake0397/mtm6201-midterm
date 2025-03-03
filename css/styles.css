@@ -1,0 +1,100 @@
+html{
+    font-family: "Be Vietnam Pro", sans-serif;
+    font-size: 16px;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: #F7F7F8;
+}
+
+*,
+*:after,
+*:before{
+    box-sizing: inherit;
+}
+
+.alert {
+    background-color: #FF9500;
+    color: white;
+}
+
+/* .logobox {
+    background-color: #FF9500;
+    width: fit-content;
+    padding: 0.22rem;
+    border-radius: 5px;
+    margin-top: 2rem;
+} */
+
+.fa-arrow-right {
+    color: #FF9500;
+    font-size: 3rem;
+    margin: 0 auto;
+    width: 100%;
+}
+
+/* Toggle Button Styles */
+
+.switch-wrapper {
+    position: relative;
+    display: inline-flex;
+    padding: 4px;
+    /* border: 1px solid lightgrey; */
+    margin-bottom: 40px;
+    border-radius: 10px;
+    background: #ffff;
+  }
+  
+  .switch-wrapper [type="radio"] {
+    position: absolute;
+    left: -9999px;
+  }
+  
+  .switch-wrapper [type="radio"]:checked#monthly ~ label[for="monthly"],
+  .switch-wrapper [type="radio"]:checked#yearly ~ label[for="yearly"] {
+    color: #ffff;
+  }
+  
+  /* .switch-wrapper [type="radio"]:checked#monthly ~ label[for="monthly"]:hover,
+  .switch-wrapper [type="radio"]:checked#yearly ~ label[for="yearly"]:hover {
+    background: transparent;
+  } */
+  
+  .switch-wrapper
+    [type="radio"]:checked#monthly
+    + label[for="yearly"]
+    ~ .highlighter {
+    transform: none;
+  }
+  
+  .switch-wrapper
+    [type="radio"]:checked#yearly
+    + label[for="monthly"]
+    ~ .highlighter {
+    transform: translateX(100%);
+  }
+  
+  .switch-wrapper label {
+    z-index: 1;
+    width: 7rem;
+    line-height: 32px;
+    display: flex;
+    justify-content: space-around;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: color 0.25s ease-in-out;
+  }
+  
+  /* .switch-wrapper label:hover {
+    background: var(--lightgray);
+  } */
+  
+  .switch-wrapper .highlighter {
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    width: calc(50% - 4px);
+    height: calc(100% - 8px);
+    border-radius: 10px;
+    background: #FF9500;
+    transition: transform 0.25s ease-in-out;
+  }
