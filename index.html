@@ -16,62 +16,75 @@
 <body>
     <header>
         <div class="alert">
-            <p>Free Courses🌟Sale Ends Soon, Get It Now<i class="fa-solid fa-arrow-right"></i></p>
+            <span class="advertise">Free Courses🌟Sale Ends Soon, Get It Now<i class="fa-solid fa-arrow-right"></i></span>
         </div>
-       <div class="roq">
-        <div class="logobox">
+       <div class="row">
             <img id='logo' src="./images/logo.svg" alt="logo">
+            <nav id="nav">
+                <a href="index.html">Home</a>
+                <a href="courses.html">Courses</a>
+                <a href="#about">About Us</a>
+                <a href="#pricing">Pricing</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+    
+            <div class="user">
+                <a class="signup" href="#">Sign Up</a>
+                <a class="login" href="#">Login</a>
+            </div>
         </div>
-        <nav id="nav">
-            <a href="index.html">Home</a>
-            <a href="courses.html">Courses</a>
-            <a href="#about">About Us</a>
-            <a href="#pricing">Pricing</a>
-            <a href="contact.html">Contact</a>
-        </nav>
-
-        <div class="login">
-            <a class="signup" href="#">Sign Up</a>
-            <a class="login" href="#">Login</a>
-        </div>
+        
     </header>
     
     <main>
-        <div class="banner">
-            <h1>Unlock Your Creative Potential</h1>
-            <h2>with Online Design and Developmental Courses</h2>
-            <p>Learn from Industry Experts and Enhance Your Skills.</p>
-            
-            <button type="button">Explore Courses</button>
-            <button type="button">View Pricing</button>
-        </div>
-       </div>
-
-        <div class="brand-items">
-            <div class="item">
-                <img src="./images/zapier.svg" alt="zapier logo">
+        <section id="start">
+            <div class="start-main">
+                <div class="banner">
+                    <div class="bannersub">
+                        <img src="./images/lightning.svg" alt="">
+                        <h1>
+                        <span class="unlock">Unlock</span> Your Creative Potential</h1>
+                        <img id="line" src="./images/lines.svg" alt="">
+                    </div>
+                    <h3>with Online Design and Developmental Courses</h3>
+                    <p>Learn from Industry Experts and Enhance Your Skills.</p>
+                    
+                    <div class="bannerlink">
+                        <a class="explore" href="#">Explore Courses</a>
+                        <a class="pricing" href="#">View Pricing</a>
+                    </div>
+                </div>
             </div>
-            <div class="item">
-                <img src="./images/spotify.svg" alt="spotify logo">
+        </section>
+        
+        <section class="filler">
+            <div class="brand-items">
+                <div class="item">
+                    <img src="./images/zapier.svg" alt="zapier logo">
+                </div>
+                <div class="item">
+                    <img src="./images/spotify.svg" alt="spotify logo">
+                </div>
+                <div class="item">
+                    <img src="./images/zoom.svg" alt="zoom logo">
+                </div>
+                <div class="item">
+                    <img src="./images/amazon.svg" alt="amazon logo">
+                </div>
+                <div class="item">
+                    <img src="./images/adobe.svg" alt="adobe logo">
+                </div>
+                <div class="item">
+                    <img src="./images/notion.svg" alt="notion logo">
+                </div>
+                <div class="item">
+                    <img src="./images/netflix.svg" alt="netflix logo">
+                </div>    
             </div>
-            <div class="item">
-                <img src="./images/zoom.svg" alt="zoom logo">
-            </div>
-            <div class="item">
-                <img src="./images/amazon.svg" alt="amazon logo">
-            </div>
-            <div class="item">
-                <img src="./images/adobe.svg" alt="adobe logo">
-            </div>
-            <div class="item">
-                <img src="./images/notion.svg" alt="notion logo">
-            </div>
-            <div class="item">
-                <img src="./images/netflix.svg" alt="netflix logo">
-            </div>    
-        </div>
-
-        <img src="./images/main.png" alt="">
+    
+            <img id="mainimage" src="./images/main.png" alt="">
+        </section>
+        
 
         <!-- Benefits Section -->
          <section id="benefits">
@@ -134,64 +147,90 @@
                 <p>Lorem ipsum dolor sit amet consectetur. Tempus tincidunt etiam eget elit id imperdiet et. Cras eu sit dignissim lorem nibh et. Ac cum eget habitasse in velit fringilla feugiat senectus in.</p>
                 <a class="view" href="#">View All</a>
 
-                <div>
+                <div class="course">
                     <img src="./images/card-1.png" alt="">
-                    <p>4 Weeks</p>
-                    <p>Beginner</p>
-                    <p>By John Smith</p>
-                    <h3>Web Design Fundamentals</h3>
-                    <p>Learn the fundamentals of web design, including HTML, CSS, and responsive design principles. Develop the skills to create visually appealing and user-friendly websites.</p>
-                    <a href="#">Get it Now</a>
+                    <span class="week">4 Weeks</span>
+                    <span class="level">Beginner</span>
+                    <span class="author">By John Smith</span>
+
+                    <div class="course-info">
+                        <h3>Web Design Fundamentals</h3>
+                        <p>Learn the fundamentals of web design, including HTML, CSS, and responsive design principles. Develop the skills to create visually appealing and user-friendly websites.</p>
+                        <a href="#">Get it Now</a>
+                    </div>
                 </div>
 
-                <div>
+                <div class="course">
                     <img src="./images/card-2.png" alt="">
-                    <p>6 Weeks</p>
-                    <p>Intermediate</p>
-                    <p>By Emily Johnson</p>
-                    <h3>UI/UX Design</h3>
-                    <p>Master the art of creating intuitive user interfaces (UI) and enhancing user experiences (UX). Learn design principles, wireframing, prototyping, and usability testing techniques.</p>
-                    <a href="#">Get it Now</a>
+                    <span class="week">6 Weeks</span>
+                    <span class="level">Intermediate</span>
+                    <span class="author">By Emily Johnson</span>
+                    
+                    <div class="course-info">
+                        <h3>UI/UX Design</h3>
+                        <p>Master the art of creating intuitive user interfaces (UI) and enhancing user experiences (UX). Learn design principles, wireframing, prototyping, and usability testing techniques.</p>
+                        <a href="#">Get it Now</a>
+                    </div>
                 </div>
 
-                <div>
+                <div class="course">
                     <img src="./images/card-3.png" alt="">
-                    <p>8 Weeks</p>
-                    <p>Intermediate</p>
-                    <p>By David Brown</p>
-                    <h3>Mobile App Development</h3>
-                    <p>Dive into the world of mobile app development. Learn to build native iOS and Android applications using industry-leading frameworks like Swift and Kotlin.</p>
-                    <a href="#">Get it Now</a>
+                    <div class="data">
+                        <span class="week">8 Weeks</span>
+                        <span class="author">Intermediate</span>
+                        <span class="author">By David Brown</span>
+                    </div>
+                    
+                    <div class="course-info">
+                        <h3>Mobile App Development</h3>
+                        <p>Dive into the world of mobile app development. Learn to build native iOS and Android applications using industry-leading frameworks like Swift and Kotlin.</p>
+                        <a href="#">Get it Now</a>
+                    </div>
                 </div>
 
-                <div>
+                <div class="course">
                     <img src="./images/card-4.png" alt="">
-                    <p>10 Weeks</p>
-                    <p>Beginner</p>
-                    <p>By Sarah Thompson</p>
-                    <h3>Graphic Design for Beginners</h3>
-                    <p>Discover the fundamentals of graphic design, including typography, color theory, layout design, and image manipulation techniques. Create visually stunning designs for print and digital media.</p>
-                    <a href="#">Get it Now</a>
+                    <div class="data">
+                        <span class="week">10 Weeks</span>
+                        <span class="level">Beginner</span>
+                        <span class="author">By Sarah Thompson</span>
+                    </div>
+                    
+                    <div class="course-info">
+                        <h3>Graphic Design for Beginners</h3>
+                        <p>Discover the fundamentals of graphic design, including typography, color theory, layout design, and image manipulation techniques. Create visually stunning designs for print and digital media.</p>
+                        <a href="#">Get it Now</a>
+                    </div>
                 </div>
 
-                <div>
+                <div class="course">
                     <img src="./images/card-5.png" alt="">
-                    <p>10 weeks</p>
-                    <p>Intermediate</p>
-                    <p>By Michael Adams</p>
-                    <h3>Front-End Web Development</h3>
-                    <p>Become proficient in front-end web development. Learn HTML, CSS, JavaScript, and popular frameworks like Bootstrap and React. Build interactive and responsive websites.</p>
-                    <a href="#">Get it Now</a>
+                    <div class="data">
+                        <span class="week">10 weeks</span>
+                        <span class="level">Intermediate</span>
+                        <span class="author">By Michael Adams</span>
+                    </div>
+                    
+                    <div class="course-info">
+                        <h3>Front-End Web Development</h3>
+                        <p>Become proficient in front-end web development. Learn HTML, CSS, JavaScript, and popular frameworks like Bootstrap and React. Build interactive and responsive websites.</p>
+                        <a href="#">Get it Now</a>
+                    </div>
                 </div>
 
-                <div>
+                <div class="course">
                     <img src="./images/card-6.png" alt="">
-                    <p>6 Weeks</p>
-                    <p>Advance</p>
-                    <p>By Jennifer Wilson</p>
-                    <h3>Advanced JavaScript</h3>
-                    <p>Take your JavaScript skills to the next level. Explore advanced concepts like closures, prototypes, asynchronous programming, and ES6 features. Build complex applications with confidence.</p>
-                    <a href="#">Get it Now</a>
+                    <div class="data">
+                        <span class="week">6 Weeks</span>
+                        <span class="level">Advance</span>
+                        <span class="author">By Jennifer Wilson</span>
+                    </div>
+                    
+                    <div class="course-info">
+                        <h3>Advanced JavaScript</h3>
+                        <p>Take your JavaScript skills to the next level. Explore advanced concepts like closures, prototypes, asynchronous programming, and ES6 features. Build complex applications with confidence.</p>
+                        <a href="#">Get it Now</a>
+                    </div> 
                 </div>
             </div>
 
@@ -209,7 +248,7 @@
                     <p>The web design course provided a solid foundation for me. The instructors were knowledgeable and supportive, and the interactive learning environment was engaging. I highly recommend it!</p>
                     <div class="client">
                         <img src="./images/sarah.png" alt="">
-                        <p>Sarah L</p>
+                        <span class="author">Sarah L</span>
                         <a href="#">Read Full Story</a>
                     </div>
                 </div>
@@ -218,7 +257,7 @@
                     <p>The UI/UX design course exceeded my expectations. The instructor's expertise and practical assignments helped me improve my design skills. I feel more confident in my career now. Thank you!</p>
                     <div class="client">
                         <img src="./images/jason.png" alt="">
-                        <p>Jason M</p>
+                        <span class="author">Jason M</span>
                         <a href="#">Read Full Story</a>
                     </div>
                 </div>
@@ -227,7 +266,7 @@
                     <p>The mobile app development course was fantastic! The step-by-step tutorials and hands-on projects helped me grasp the concepts easily. I'm now building my own app. Great course!</p>
                     <div class="client">
                         <img src="./images/emily.png" alt="">
-                        <p>Emily R</p>
+                        <span class="author">Emily R</span>
                         <a href="#">Read Full Story</a>
                     </div>
                 </div>
@@ -236,7 +275,7 @@
                     <p>I enrolled in the graphic design course as a beginner, and it was the perfect starting point. The instructor's guidance and feedback improved my design abilities significantly. I'm grateful for this course!</p>
                     <div class="client">
                         <img src="./images/michael.png" alt="">
-                        <p>Michael K</p>
+                        <span class="author">Michael K</span>
                         <a href="#">Read Full Story</a>
                     </div>
                 </div>
@@ -258,37 +297,66 @@
               </div>
 
             <div class="container4">
+
                 <div class="freeplan">
                     <h3>Free Plan</h3>
-                    <h4>$0</h4>
-                    <p>/month</p>
-                    <div>
+                    <div class="money">
+                        <span class="price">$0</span>
+                        <span class="month">/month</span>
+                    </div>
+                    
+                    <div class="features">
                         <h4>Available Features</h4>
-                        <ul>
-                            <li>Access to selected free courses</li>
-                            <li>Limited course materials and resources</li>
-                            <li>Basic community support</li>
-                            <li>No certificate upon completion</li>
-                            <li>Ad-supported Platform</li>
-                            <li>Access to exclusive Pro Plan community forums</li>
-                            <li>Early access to new courses and updates</li>
-                        </ul>
+                        <div class="features-row">Access to selected free courses</div>
+                        <div class="features-row">Limited course materials and resources</div>
+                        <div class="features-row">Basic community support</div>
+                        <div class="features-row">No certificate upon completion</div>
+                        <div class="features-row">Ad-supported Platform</div>
+                        <div class="features-row">Access to exclusive Pro Plan community forums</div>
+                        <div class="features-row">Early access to new courses and updates</div>
+                
                         <a href="#">Get Started</a>
                     </div>
-
-                    <div class="proplan">
-                        <h3>Pro Plan</h3>
-                        <h4>$79</h4>
-                        <p>Available Features</p>
-                        <ul>
-                            <li>Unlimited access to all courses</li>
-                            <li>Unlimited course materials and resources</li>
-                            <li>Priority support from instructors</li>
-                            <li>Course completion certificates</li>
-                            <li>Ad-free experience</li>
-                            <li>Access to exclusive Pro Plan community features</li>
-                            <li>Early access to new courses and updates</li>
-                        </ul>
+                </div>
+                    
+                <div class="proplan">
+                    <h3>Pro Plan</h3>
+                        <div class="money">
+                            <span class="price">$79</span>
+                            <span class="month">/month</span>
+                        </div>
+                    
+                    <div class="features">
+                        <h4>Available Features</h4>
+                        <div class="features-row">
+                            <img src="./images/check-icon.svg" alt="">
+                            <span>Unlimited access to all courses</span>
+                        </div>
+                        <div class="features-row">
+                            <img src="./images/check-icon.svg" alt="">
+                            <span>Unlimited course materials and resources</span>
+                        </dov>
+                        <div class="features-row">
+                            <img src="./images/check-icon.svg" alt="">
+                            <span>Priority support from instructors</span>
+                        </div>
+                        <div class="features-row">
+                            <img src="./images/check-icon.svg" alt="">
+                            <span>Course completion certificates</span>
+                        </div>
+                        <div class="features-row">
+                            <img src="./images/check-icon.svg" alt="">
+                            <span>Ad-free experience</span>
+                        </div>
+                        <div class="features-row">
+                            <img src="./images/x-icon.svg" alt="">
+                            <span>Access to exclusive Pro Plan community features</span>
+                        </div>
+                        <div class="features-row">
+                            <img src="./images/x-icon.svg" alt="">
+                            <span>Early access to new courses and updates</span>
+                        </div>
+    
                         <a href="#">Get Started</a>
                     </div>
                 </div>
