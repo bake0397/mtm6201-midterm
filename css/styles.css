@@ -247,9 +247,22 @@ h3 {
     height: auto;
 }
 
-#mainimage {
-    width: 60%;
+#hero img {
+    overflow: auto;
+    object-fit: contain;
+    position: relative;
+    display: flex;
+    flex-grow: 1;
+    flex-shrink: 1;
+    width: 100%;
+    padding: 4rem;
+    border-radius: 10px;
 }
+
+
+/* #mainimage {
+    width: 60%;
+} */
 
 
 /* Toggle Button Styles */
