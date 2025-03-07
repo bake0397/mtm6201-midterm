@@ -260,8 +260,6 @@ h3 {
 }
 
 
-
-
 .item:not(:last-child) {
     border-right: 1px solid #F1F1F3;
 }
