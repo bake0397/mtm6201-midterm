@@ -9,6 +9,8 @@ html{
 *,
 *:after,
 *:before{
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
@@ -47,6 +49,9 @@ html{
     margin-top: 2rem;
 } */
 
+main {
+    margin: 0 4rem;
+}
 
 header {
     padding: 0 0 1.1rem;
@@ -101,6 +106,10 @@ nav a:hover {
 
 a {
     text-decoration: none;
+}
+
+p {
+    font-size: 14px;
 }
 
 header .row .user {
@@ -182,9 +191,15 @@ header .row .user .login:hover {
 }
 
 h3 {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     margin-block-end: 1em;
     margin-block-start: 1em;
+}
+
+h2 {
+    font-size: 1.6rem;
+    font-weight: 500;
+    display: flex;
 }
 
 .banner .bannersub p {
@@ -220,16 +235,18 @@ h3 {
 
 .brand-items {
     padding: 1rem;
+    /* margin: 0 3rem; */
     flex-wrap: nowrap;
     overflow-x: auto;
     display: flex;
     flex-direction: row;
     border-radius: 5px;
     background-color: #fff;
-    margin-inline-start: 4rem;
-    margin-inline-end: 4rem;
-    /* width: 80%; */
+    /* margin-inline-start: 4rem;
+    margin-inline-end: 4rem; */
+    width: 100%;
     justify-content: center;
+    align-items: center;
 }
 
 .brand-items .item {
@@ -238,8 +255,40 @@ h3 {
     justify-content: center;
     align-items: flex-start;
     flex-grow: 0.5;
-    /* flex-shrink: 1; */
+    /* flex-shrink: 2; */
 }
+
+.row-top {
+    display: flex;
+    /* align-items: center; */
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    gap: 1rem;
+    width: 100%;
+}
+
+.row-top p {
+    margin-right: 1rem;
+    margin-top: 1rem;
+}
+
+.row-top a {
+    font-size: 0.9rem;
+    margin-top: 1rem;
+    display: flex;
+    text-decoration: none;
+    white-space: nowrap;
+    color: #262626;
+    font-weight: 500;
+    background: #FCFCFD;
+    padding: 0.5rem;
+    height: 2rem;
+    /* width: 4rem;
+    padding: 5px; */
+    border-radius: 6px;
+    border: 1px solid #F1F1F3;
+}
+
 
 .item:not(:last-child) {
     border-right: 1px solid #F1F1F3;
@@ -259,17 +308,236 @@ h3 {
     flex-grow: 1;
     flex-shrink: 1;
     width: 100%;
-    padding: 4rem;
+    padding: 2rem 0;
 }
 
-/* #hero img .original {
+/* Benefits Section Styles */
+
+
+.grid {
+    display: grid;
+    margin-top: 3rem;
+    grid-template-columns: repeat(3, 2fr);
+    grid-template-rows: repeat(2, 0.5fr);
+    grid-column-gap: 9px;
+    grid-row-gap: 9px;
+}
+
+.number {
+    display: block;
+    text-align: right;
+    /* align-self: flex-end; */
+    font-size: 2.1rem;
+    font-weight: 600;
+}
+
+.card1 {
+    grid-area: 1 / 1 / 2 / 2;
+    background: #fff;
+    padding: 2rem;
     border-radius: 10px;
-}  */
+}
+
+.card2 {
+    grid-area: 1 / 2 / 2 / 3;
+    background: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+.card3 {
+    grid-area: 1 / 3 / 2 / 4;
+    background: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+.card4 {
+    grid-area: 2 / 1 / 3 / 2;
+    background: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+.card5 {
+    grid-area: 2 / 2 / 3 / 3;
+    background: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+.card6 {
+    grid-area: 2 / 3 / 3 / 4;
+    background: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+}
 
 
-/* #mainimage {
-    width: 60%;
+/* .row-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
 } */
+
+/* a {
+    text-decoration: none;
+} */
+
+/* #benefits {
+    width: calc(100% - 125px);
+    margin: auto;
+} */
+
+/* .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 0px;
+} */
+
+/* .section-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+} */
+
+/* .row-top{
+    display: flex;
+    align-items: flex-end;
+    gap: 300px;
+    align-self: stretch;
+} */
+
+/* .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+} */
+
+/* #benefits .container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+} */
+
+/* #benefits .section-top a {
+    color: #262626;
+    text-align: center;
+    display: flex;
+    font-size: 0.9rem;
+    justify-content: center;
+    align-items: center;
+    justify-self: flex-end;
+    align-self: flex-end;
+    margin-left: auto;
+    gap: 8px;
+    width: 4rem;
+    padding: 5px;
+    border-radius: 6px;
+    border: 1px solid #F1F1F3;
+    background: #FCFCFD;
+} */
+
+
+
+/* p {
+    display: flex;
+    flex: 1;
+} */
+
+
+/* .view {
+    display: inline-flex;
+} */
+
+/* .section-top {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+} */
+
+/* #benefits p {
+    margin-top: 1rem;
+}
+
+#benefits .row-top a {
+    display: flex;
+    flex-direction: row;
+} */
+
+/* main .container .row-top {
+    gap: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 20px;
+} */
+
+/* .section-top {
+    display: flex;
+    column-gap: 3rem;
+    row-gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: space-between;
+} */
+
+/* .view a {
+    display: flex;
+    align-self: flex-end;
+} */
+
+/* .row-top {
+    display: flex;
+    flex-wrap: wrap;        
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    gap: 20px 20px;
+    align-items: flex-start;
+    flex-direction: column;
+} */
+
+/* .view {
+    background-color: #FCFCFD;
+    border: 1px solid #F1F1F3;
+    padding: 1px;
+} */
+
+/* main #benefits .container .row-top a, main #courses .container .row-top a, main #testimonials .container .row-top a {
+    font-size: 14px;
+    font-weight: 500;
+    text-align: center;
+    color: rgba(38, 38, 38, 1);
+    background-color: rgba(252, 252, 253, 1);
+    padding: 14px 20px;
+    border-radius: 6px;
+    border: 1px solid rgba(241, 241, 243, 1);
+    flex-basis: 200px;
+} */
+
+/* .row-top p {
+    display: flex;
+    flex-wrap: wrap;
+    align-self: stretch;
+    flex-grow: 1;
+} */
+
+main #benefits .container .intro,
+main #courses .container .intro,
+main #testimonials .container .intro,
+main #pricing .container .intro {
+  gap: 20px 250px;
+  justify-content: flex-start;
+}
 
 
 /* Toggle Button Styles */
