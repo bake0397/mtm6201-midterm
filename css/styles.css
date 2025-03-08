@@ -35,7 +35,7 @@ h2 {
 }
 
 h3 {
-    font-size: 1.2rem;
+    font-size: 1rem;
     margin-block-end: 1em;
     margin-block-start: 1em;
     font-weight: 500;
@@ -111,8 +111,6 @@ nav a:hover {
     background-color: #F1F1F3;
     /* padding: 1rem; */
 }
-
-
 
 .row .user {
     display: flex;
@@ -422,6 +420,31 @@ main #pricing .container .intro {
   justify-content: flex-start;
 }
 
+.grid > div {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+/* .course-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-grow: 1;
+} */
+
+.course-info p {
+    flex-grow: 1;
+    min-height: 5rem;
+}
+
+.icon {
+    margin-top: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 /* Courses Section Styles */
 .coursegrid {
     display: grid;
@@ -433,7 +456,7 @@ main #pricing .container .intro {
 }
 
 .coursegrid p {
-    font-size: 1rem;
+    font-size: 0.8rem;
     font-weight: 200;
     line-height: 150%;
 }
@@ -443,6 +466,7 @@ main #pricing .container .intro {
     background: #fff;
     padding: 2rem;
     border-radius: 10px;
+    border: 1px solid #F1F1F3;
 }
 
 .course2 {
@@ -450,6 +474,7 @@ main #pricing .container .intro {
     background: #fff;
     padding: 2rem;
     border-radius: 10px;
+    border: 1px solid #F1F1F3;
 }
 
 .course3 {
@@ -457,6 +482,7 @@ main #pricing .container .intro {
     background: #fff;
     padding: 2rem;
     border-radius: 10px;
+    border: 1px solid #F1F1F3;
 }
 
 .course4 {
@@ -464,6 +490,7 @@ main #pricing .container .intro {
     background: #fff;
     padding: 2rem;
     border-radius: 10px;
+    border: 1px solid #F1F1F3;
 }
 
 .course5 {
@@ -471,6 +498,7 @@ main #pricing .container .intro {
     background: #fff;
     padding: 2rem;
     border-radius: 10px;
+    border: 1px solid #F1F1F3;
 }
 
 .course6 {
@@ -478,25 +506,98 @@ main #pricing .container .intro {
     background: #fff;
     padding: 2rem;
     border-radius: 10px;
+    border: 1px solid #F1F1F3;
 }
 
 #courses img {
     overflow-clip-margin: content-box;
     width: 100%;
+    margin-bottom: 1rem;
 }
 
-.data .sub-row {
+/* .data .sub-row,  .author {
     display: flex;
     gap: 10px;
     color: #4C4C4D;
     font-size: 1rem;
+    justify-content: space-between;
+} */
+
+/* .data .author {
+    display: flex;
+    flex-direction: row-reverse;
+    align-self: center;
+    align-items: flex-end;
+} */
+
+.coursegrid > div {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
 }
 
-.coursegrid .level {
+.course-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-grow: 1;
+}
+
+.course-info p {
+    flex-grow: 1;
+    min-height: 5rem;
+}
+
+.cardbtn {
+    margin-top: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.data {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.sub-row {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    gap: 1rem;
+}
+
+.author {
+    font-size: 0.7rem;
+    font-weight: 300;
+}
+
+.data .level, .week {
     background-color: #FFF;
     border: 1px solid #F1F1F3;
-    border-radius: 8px;
-    padding: 0.4rem 1rem;
+    border-radius: 5px;
+    padding: 0.4rem 0.8rem;
+    font-size: 0.6rem;
+}
+
+.course-info a {
+    width: 100%;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #F1F1F3;
+    text-decoration: none;
+    color: #262626;
+    padding: 0.6rem;
+    border-radius: 3px;
+    border: 1px solid #F1F1F3;
+    align-self: stretch;
+    flex-grow: 1;
+    margin-top: 1.2rem;
+    font-size: 0.8rem;
 }
 
 /* Toggle Button Styles */
@@ -551,10 +652,6 @@ main #pricing .container .intro {
     transition: color 0.25s ease-in-out;
   }
   
-  /* .switch-wrapper label:hover {
-    background: var(--lightgray);
-  } */
-  
   .switch-wrapper .highlighter {
     position: absolute;
     top: 4px;
@@ -566,18 +663,4 @@ main #pricing .container .intro {
     transition: transform 0.25s ease-in-out;
   }
 
-  /* @media screen and (max-width:920px) {
-    nav a {
-        display: none;
-    }
-
-   .burger {
-        display: contents;
-    }
-  }
-
-  @media screen and (max-width:450px) {
-    header .row .user .burger .navburger ul li a {
-        font-size: 12px;
-    }
-  } */
+/* Footer Styles */
