@@ -664,3 +664,149 @@ main #pricing .container .intro {
   }
 
 /* Footer Styles */
+/* footer {
+    background-color: #FFF;
+    padding: 4rem 0rem;
+}
+
+footer .footone {
+    display: flex;
+    flex-direction: column;
+    gap: 1.1rem;
+} */
+
+footer {
+    background-color: #FFF;
+    text-transform: capitalize;
+    padding: 3rem 5rem;
+    display: flex;
+    flex-grow: 1;
+    width: 100%;
+}
+
+.container6 {
+    display: flex;
+    /* justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; */
+}
+
+.footercontent {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.start {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2rem;
+}
+
+.end {
+    display: flex;
+    gap: 2rem;
+}
+
+.end ul {
+    list-style: none;
+}
+
+/* .end ul li {
+    margin-bottom: 1rem;
+} */
+
+/* .social-icons a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+} */
+
+footer .start {
+    display: flex;
+    flex-direction: column;
+    gap: 1.1rem;
+    margin-right: 4rem;
+    /* font-size: 1rem; */
+}
+
+.connections .footer-info {
+    font-size: 1rem;
+}
+
+footer .start .connections {
+    display: flex;
+    flex-direction: column;
+    /* gap: 1rem; */
+}
+
+footer .start .connections .footer-icon {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    width: 100%;
+}
+
+footer .control-list img {
+    width: 2.5rem;
+}
+
+footer .start .connections .footer-icon a {
+    color: #262626;
+    font-size: 1rem;
+}
+
+footer .end {
+    display: flex;
+    align-content: end;
+    /* gap: 5rem; */
+}
+
+footer .end .control-list {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: flex-end; */
+    gap: 14px;
+}
+
+.control-list ul {
+    gap: 8px;
+    display: flex;
+    flex-direction: column;
+}
+
+.control-list ul li {
+    list-style-type: none;
+    font-size: 1rem;
+}
+
+.control-list ul li a {
+    color: #59595A;
+}
+
+.control-list .buttons-footer {
+    display: flex;
+    gap: 12px;
+}
+
+.control-list .buttons-footer img{
+    background-color: #F7F7F8;
+    border: 1px solid #F1F1F3;
+    color: #59595A;
+    border-radius: 8px;
+    padding: 0.2rem;
+    /* box-sizing: content-box; */
+}
+
+footer .footercontent {
+    border-bottom: 1px solid #F1F1F3;
+    padding: 3rem 0rem;
+}
+
+.copyright {
+    display: flex;
+    justify-content: center;
+    padding: 3rem 0rem 0rem 0rem;
+}
