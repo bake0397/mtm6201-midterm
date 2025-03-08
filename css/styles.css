@@ -1,3 +1,4 @@
+/* Global Styles */
 html{
     font-family: "Be Vietnam Pro", sans-serif;
     font-size: 16px;
@@ -14,6 +15,42 @@ html{
     box-sizing: border-box;
 }
 
+header {
+    padding: 0 0 1.1rem;
+    width: 100%;
+    border-bottom: 1px solid #F1F1F3;
+    background-color: #fff;
+    z-index: 9;
+    box-sizing: border-box;
+}
+
+main {
+    margin: 0 4rem;
+}
+
+h2 {
+    font-size: 1.6rem;
+    font-weight: 500;
+    display: flex;
+}
+
+h3 {
+    font-size: 1.2rem;
+    margin-block-end: 1em;
+    margin-block-start: 1em;
+    font-weight: 500;
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    font-size: 14px;
+}
+
+
+/* Header Styles */
 .alert {
     background-color: #FF9500;
     color: white;
@@ -32,35 +69,6 @@ html{
     line-height: 30px;
 }
 
-/* .advertise {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    gap: 3rem; 
-    position: relative;
-    align-items: center;
-} */
-
-/* .logobox {
-    background-color: #FF9500;
-    width: fit-content;
-    padding: 0.22rem;
-    border-radius: 5px;
-    margin-top: 2rem;
-} */
-
-main {
-    margin: 0 4rem;
-}
-
-header {
-    padding: 0 0 1.1rem;
-    width: 100%;
-    border-bottom: 1px solid #F1F1F3;
-    background-color: #fff;
-    z-index: 9;
-    box-sizing: border-box;
-}
 
 #logo {
     margin-left: 1rem;
@@ -104,33 +112,27 @@ nav a:hover {
     /* padding: 1rem; */
 }
 
-a {
-    text-decoration: none;
-}
 
-p {
-    font-size: 14px;
-}
 
-header .row .user {
+.row .user {
     display: flex;
     align-items: center;
     justify-content: flex-end;
     margin-right: 1rem;
 }
 
-header .row .user .signup {
+.row .user .signup {
     color: #262626;
     margin-right: 1rem;
     /* padding: 0.3rem; */
 }
 
-header .row .user .signup:hover {
+.row .user .signup:hover {
     text-decoration: underline;
     color: #FF9500;
 }
 
-header .row .user .login {
+.row .user .login {
     display: flex;
     align-items: center;
     gap: 8px;
@@ -148,6 +150,9 @@ header .row .user .login:hover {
     border: 1px solid #FF9500;
 }
 
+
+
+/* Hero/Banner Styles */
 .fa-arrow-right {
     color: #FF9500;
     font-size: 3rem;
@@ -190,18 +195,7 @@ header .row .user .login:hover {
     font-weight: 600;
 }
 
-h2 {
-    font-size: 1.6rem;
-    font-weight: 500;
-    display: flex;
-}
 
-h3 {
-    font-size: 1.2rem;
-    margin-block-end: 1em;
-    margin-block-start: 1em;
-    font-weight: 500;
-}
 
 .banner .bannersub p {
     align-self: stretch;
@@ -283,7 +277,10 @@ h3 {
 
 /* Benefits Section Styles */
 
-.row-top {
+#benefits .row-top, 
+#courses .row-top, 
+#testimonials .row-top,
+#pricing .row-top {
     display: flex;
     /* align-items: center; */
     flex-wrap: nowrap;
@@ -292,12 +289,19 @@ h3 {
     width: 100%;
 }
 
-.row-top p {
+#benefits .row-top p,
+#courses .row-top p,
+#testimonials .row-top p,
+#pricing .row-top p {
     margin-right: 1rem;
     margin-top: 1rem;
+    font-size: 1rem;
 }
 
-.row-top a {
+#benefits .row-top a,
+#courses .row-top a,
+#testimonials .row-top a,
+#pricing .row-top a {
     font-size: 0.9rem;
     margin-top: 1rem;
     display: flex;
@@ -317,6 +321,7 @@ h3 {
 .grid {
     display: grid;
     margin-top: 3rem;
+    margin-bottom: 2rem;
     grid-template-columns: repeat(3, 2fr);
     grid-template-rows: repeat(2, 0.5fr);
     grid-column-gap: 9px;
@@ -324,7 +329,7 @@ h3 {
 }
 
 .grid p {
-    font-size: 1rempx;
+    font-size: 1rem;
     font-weight: 200;
     line-height: 150%;
 }
@@ -409,171 +414,90 @@ h3 {
 }
 
 
-/* .row-top {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 1rem;
-} */
-
-/* a {
-    text-decoration: none;
-} */
-
-/* #benefits {
-    width: calc(100% - 125px);
-    margin: auto;
-} */
-
-/* .container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    padding: 40px 0px;
-} */
-
-/* .section-top {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-} */
-
-/* .row-top{
-    display: flex;
-    align-items: flex-end;
-    gap: 300px;
-    align-self: stretch;
-} */
-
-/* .container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-} */
-
-/* #benefits .container {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    gap: 60px;
-} */
-
-/* #benefits .section-top a {
-    color: #262626;
-    text-align: center;
-    display: flex;
-    font-size: 0.9rem;
-    justify-content: center;
-    align-items: center;
-    justify-self: flex-end;
-    align-self: flex-end;
-    margin-left: auto;
-    gap: 8px;
-    width: 4rem;
-    padding: 5px;
-    border-radius: 6px;
-    border: 1px solid #F1F1F3;
-    background: #FCFCFD;
-} */
-
-
-
-/* p {
-    display: flex;
-    flex: 1;
-} */
-
-
-/* .view {
-    display: inline-flex;
-} */
-
-/* .section-top {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-} */
-
-/* #benefits p {
-    margin-top: 1rem;
-}
-
-#benefits .row-top a {
-    display: flex;
-    flex-direction: row;
-} */
-
-/* main .container .row-top {
-    gap: 20px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: flex-start;
-    flex-direction: column;
-    gap: 20px;
-} */
-
-/* .section-top {
-    display: flex;
-    column-gap: 3rem;
-    row-gap: 1rem;
-    flex-wrap: wrap;
-    justify-content: space-between;
-} */
-
-/* .view a {
-    display: flex;
-    align-self: flex-end;
-} */
-
-/* .row-top {
-    display: flex;
-    flex-wrap: wrap;        
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: row;
-    gap: 20px 20px;
-    align-items: flex-start;
-    flex-direction: column;
-} */
-
-/* .view {
-    background-color: #FCFCFD;
-    border: 1px solid #F1F1F3;
-    padding: 1px;
-} */
-
-/* main #benefits .container .row-top a, main #courses .container .row-top a, main #testimonials .container .row-top a {
-    font-size: 14px;
-    font-weight: 500;
-    text-align: center;
-    color: rgba(38, 38, 38, 1);
-    background-color: rgba(252, 252, 253, 1);
-    padding: 14px 20px;
-    border-radius: 6px;
-    border: 1px solid rgba(241, 241, 243, 1);
-    flex-basis: 200px;
-} */
-
-/* .row-top p {
-    display: flex;
-    flex-wrap: wrap;
-    align-self: stretch;
-    flex-grow: 1;
-} */
-
 main #benefits .container .intro,
 main #courses .container .intro,
 main #testimonials .container .intro,
 main #pricing .container .intro {
-  gap: 20px 250px;
+  /* gap: 20px 250px; */
   justify-content: flex-start;
 }
 
+/* Courses Section Styles */
+.coursegrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1.5fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 9px;
+    grid-row-gap: 9px;
+    margin-top: 3rem;
+}
+
+.coursegrid p {
+    font-size: 1rem;
+    font-weight: 200;
+    line-height: 150%;
+}
+    
+.course1 {
+    grid-area: 1 / 1 / 2 / 2;
+    background: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+.course2 {
+    grid-area: 1 / 2 / 2 / 3;
+    background: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+.course3 {
+    grid-area: 2 / 1 / 3 / 2;
+    background: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+.course4 {
+    grid-area: 2 / 2 / 3 / 3;
+    background: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+.course5 {
+    grid-area: 3 / 1 / 4 / 2;
+    background: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+.course6 {
+    grid-area: 3 / 2 / 4 / 3;
+    background: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+#courses img {
+    overflow-clip-margin: content-box;
+    width: 100%;
+}
+
+.data .sub-row {
+    display: flex;
+    gap: 10px;
+    color: #4C4C4D;
+    font-size: 1rem;
+}
+
+.coursegrid .level {
+    background-color: #FFF;
+    border: 1px solid #F1F1F3;
+    border-radius: 8px;
+    padding: 0.4rem 1rem;
+}
 
 /* Toggle Button Styles */
 
@@ -641,3 +565,19 @@ main #pricing .container .intro {
     background: #FF9500;
     transition: transform 0.25s ease-in-out;
   }
+
+  /* @media screen and (max-width:920px) {
+    nav a {
+        display: none;
+    }
+
+   .burger {
+        display: contents;
+    }
+  }
+
+  @media screen and (max-width:450px) {
+    header .row .user .burger .navburger ul li a {
+        font-size: 12px;
+    }
+  } */
