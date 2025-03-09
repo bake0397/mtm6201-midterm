@@ -45,9 +45,9 @@
             <div class="start-main">
                 <div class="banner">
                     <div class="bannersub">
-                        <img src="./images/lightning.svg" alt="">
+                        <img id="bannerlogo" src="./images/lightning.svg" alt="">
                         <h1>
-                        <span class="unlock">Unlock</span> Your Creative Potential</h1>
+                        <span class="unlock">Unlock</span>&nbsp; Your Creative Potential</h1>
                         <img id="line" src="./images/lines.svg" alt="">
                     </div>
                     <h3>with Online Design and Developmental Courses</h3>
@@ -136,7 +136,10 @@
                     <h2>Benefits</h2>
                     <div class="row-top">
                         <p>Lorem ipsum dolor sit amet consectetur. Tempus tincidunt etiam eget elit id imperdiet et. Cras eu sit dignissim lorem nibh et. Ac cum eget habitasse in velit fringilla feugiat senectus in.</p>
-                        <a href="#" class="view">View All</a>
+                        <div class="cardbtn">
+                            <a href="#">View All</a>
+                        </div>
+                        <!-- <a href="#" class="view">View All</a> -->
                     </div>
                 </div>     
                 
@@ -233,7 +236,7 @@
                     <div class="row-top">
                         <p>Lorem ipsum dolor sit amet consectetur. Tempus tincidunt etiam eget elit id imperdiet et. Cras eu sit dignissim lorem nibh et. Ac cum eget habitasse in velit fringilla feugiat senectus in.</p>
                         <div class="cardbtn">
-                            <a href="#">Get it Now</a>
+                            <a href="#">View All</a>
                         </div>
                     </div>
                 </div>
@@ -356,43 +359,77 @@
          <!-- Testimonials Section -->
         <section id="testimonials">
             <div class="container3">
-                <h2>Our Testimonials</h2>
-                <p>Lorem ipsum dolor sit amet consectetur. Tempus tincidunt etiam eget elit id imperdiet et. Cras eu sit dignissim lorem nibh et. Ac cum eget habitasse in velit fringilla feugiat senectus in.</p>
-                <a class="view" href="#">View All</a>
-
-                <div class="sarah">
-                    <p>The web design course provided a solid foundation for me. The instructors were knowledgeable and supportive, and the interactive learning environment was engaging. I highly recommend it!</p>
-                    <div class="client">
-                        <img src="./images/sarah.png" alt="">
-                        <span class="author">Sarah L</span>
-                        <a href="#">Read Full Story</a>
+                <div class="section-top">
+                    <h2>Testimonials</h2>
+                    <div class="row-top">
+                        <p>Lorem ipsum dolor sit amet consectetur. Tempus tincidunt etiam eget elit id imperdiet et. Cras eu sit dignissim lorem nibh et. Ac cum eget habitasse in velit fringilla feugiat senectus in.</p>
+                        <div class="cardbtn">
+                            <a href="#">View All</a>
+                        </div>
                     </div>
                 </div>
 
-                <div class="jason">
-                    <p>The UI/UX design course exceeded my expectations. The instructor's expertise and practical assignments helped me improve my design skills. I feel more confident in my career now. Thank you!</p>
-                    <div class="client">
-                        <img src="./images/jason.png" alt="">
-                        <span class="author">Jason M</span>
-                        <a href="#">Read Full Story</a>
+                <div class="gridtest">
+                    <div class="sarah">
+                        <div class="review">
+                            <p>The web design course provided a solid foundation for me. The instructors were knowledgeable and supportive, and the interactive learning environment was engaging. I highly recommend it!</p>
+                        </div>
+                        <div class="client">
+                            <div class="cite">
+                                <img src="./images/sarah.png" alt="">
+                                <span class="author">Sarah L</span>
+                            </div>
+                            <div class="story">
+                                <a href="#">Read Full Story</a>
+                            </div>
+                        </div>
+                        
                     </div>
-                </div>
-
-                <div class="emily">
-                    <p>The mobile app development course was fantastic! The step-by-step tutorials and hands-on projects helped me grasp the concepts easily. I'm now building my own app. Great course!</p>
-                    <div class="client">
-                        <img src="./images/emily.png" alt="">
-                        <span class="author">Emily R</span>
-                        <a href="#">Read Full Story</a>
+    
+                    <div class="jason">
+                        <div class="review">
+                            <p>The UI/UX design course exceeded my expectations. The instructor's expertise and practical assignments helped me improve my design skills. I feel more confident in my career now. Thank you!</p>
+                        </div>
+                        <div class="client">
+                            <div class="cite">
+                                <img src="./images/jason.png" alt="">
+                                <span class="author">Jason M</span>
+                            </div>
+                            <div class="story">
+                                <a href="#">Read Full Story</a>
+                            </div>
+                        </div>
+                        
                     </div>
-                </div>
-
-                <div class="michael">
-                    <p>I enrolled in the graphic design course as a beginner, and it was the perfect starting point. The instructor's guidance and feedback improved my design abilities significantly. I'm grateful for this course!</p>
-                    <div class="client">
-                        <img src="./images/michael.png" alt="">
-                        <span class="author">Michael K</span>
-                        <a href="#">Read Full Story</a>
+    
+                    <div class="emily">
+                        <div class="review">
+                            <p>The mobile app development course was fantastic! The step-by-step tutorials and hands-on projects helped me grasp the concepts easily. I'm now building my own app. Great course!</p>
+                        </div>
+                        <div class="client">
+                            <div class="cite">
+                                <img src="./images/emily.png" alt="">
+                                <span class="author">Emily R</span>
+                            </div>
+                            <div class="story">
+                                <a href="#">Read Full Story</a>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="michael">
+                        <div class="review">
+                            <p>I enrolled in the graphic design course as a beginner, and it was the perfect starting point. The instructor's guidance and feedback improved my design abilities significantly. I'm grateful for this course!</p>
+                        </div>
+                        <div class="client">
+                            <div class="cite">
+                                <img src="./images/michael.png" alt="">
+                                <span class="author">Michael K</span>
+                            </div>
+                            <div class="story">
+                                <a href="#">Read Full Story</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -400,116 +437,173 @@
         <!-- Testimonials Closing Tag -->
 
         <!-- Our Pricing Section -->
-         <section id="pricing">
-            <h2>Our Pricing</h2>
-            <p>Lorem ipsum dolor sit amet consectetur. Tempus tincidunt etiam eget elit id imperdiet et. Cras eu sit dignissim lorem nibh et. Ac cum eget habitasse in velit fringilla feugiat senectus in.</p>
-            <!-- ADD TOGGLE BUTTON -->
-            <div class="switch-wrapper">
-                <input id="monthly" type="radio" name="switch" checked>
-                <input id="yearly" type="radio" name="switch">
-                <label for="monthly">Monthly</label>
-                <label for="yearly">Yearly</label>
-                <span class="highlighter"></span>
-              </div>
-
+        <section id="pricing">
             <div class="container4">
-                <div class="freeplan">
-                    <h3>Free Plan</h3>
-                    <div class="money">
-                        <span class="price">$0</span>
-                        <span class="month">/month</span>
+                <div class="section-top">
+                    <h2>Our Pricing</h2>
+                    <div class="row-top">
+                        <p>Lorem ipsum dolor sit amet consectetur. Tempus tincidunt etiam eget elit id imperdiet et. Cras eu sit dignissim lorem nibh et. Ac cum eget habitasse in velit fringilla feugiat senectus in.</p>
                     </div>
-                    
-                    <div class="features">
-                        <h4>Available Features</h4>
-                        <div class="features-row">Access to selected free courses</div>
-                        <div class="features-row">Limited course materials and resources</div>
-                        <div class="features-row">Basic community support</div>
-                        <div class="features-row">No certificate upon completion</div>
-                        <div class="features-row">Ad-supported Platform</div>
-                        <div class="features-row">Access to exclusive Pro Plan community forums</div>
-                        <div class="features-row">Early access to new courses and updates</div>
-                
-                        <a href="#">Get Started</a>
+
+                     <!-- ADD TOGGLE BUTTON -->
+                    <div class="switch-wrapper">
+                        <input id="monthly" type="radio" name="switch" checked>
+                        <input id="yearly" type="radio" name="switch">
+                        <label for="monthly">Monthly</label>
+                        <label for="yearly">Yearly</label>
+                        <span class="highlighter"></span>
                     </div>
                 </div>
-                    
-                <div class="proplan">
-                    <h3>Pro Plan</h3>
+
+                <div class="container5">
+                    <div class="freeplan">
+                        <h3>Free Plan</h3>
                         <div class="money">
-                            <span class="price">$79</span>
+                            <span class="price">$0</span>
                             <span class="month">/month</span>
                         </div>
-                    
-                    <div class="features">
-                        <h4>Available Features</h4>
-                        <div class="features-row">
-                            <img src="./images/check-icon.svg" alt="">
-                            <span>Unlimited access to all courses</span>
+                        
+                        <div class="featcontainer">
+                            <div class="features">
+                                <div class="plan">
+                                    <h4>Available Features</h4>
+                                </div>
+                                
+                                <div class="features-row">
+                                    <img src="./images/check-icon.svg" alt="">
+                                    <span>Access to selected free courses</span>
+                                </div>
+                                <div class="features-row">
+                                    <img src="./images/check-icon.svg" alt="">
+                                    <span>Limited course materials and resources</span>
+                                </div>
+                                <div class="features-row">
+                                    <img src="./images/check-icon.svg" alt="">
+                                    <span>Basic community support</span>
+                                </div>
+                                <div class="features-row">
+                                    <img src="./images/check-icon.svg" alt="">
+                                    <span>No certificate upon completion</span>
+                                </div>
+                                <div class="features-row">
+                                    <img src="./images/check-icon.svg" alt="">
+                                    <span>Ad-supported Platform</span>
+                                </div>
+                                <div class="features-row">
+                                    <img id="cross" src="./images/not-check.svg" alt="">
+                                    <span>Access to exclusive Pro Plan community forums</span>
+                                </div>
+                                <div class="features-row">
+                                    <img id="cross" src="./images/not-check.svg" alt="">
+                                    <span>Early access to new courses and updates</span>
+                                </div>
+                            </div>
+                            <div class="getstarted">
+                                <a href="#">Get Started</a>
+                            </div>
                         </div>
-                        <div class="features-row">
-                            <img src="./images/check-icon.svg" alt="">
-                            <span>Unlimited course materials and resources</span>
-                        </dov>
-                        <div class="features-row">
-                            <img src="./images/check-icon.svg" alt="">
-                            <span>Priority support from instructors</span>
-                        </div>
-                        <div class="features-row">
-                            <img src="./images/check-icon.svg" alt="">
-                            <span>Course completion certificates</span>
-                        </div>
-                        <div class="features-row">
-                            <img src="./images/check-icon.svg" alt="">
-                            <span>Ad-free experience</span>
-                        </div>
-                        <div class="features-row">
-                            <img src="./images/x-icon.svg" alt="">
-                            <span>Access to exclusive Pro Plan community features</span>
-                        </div>
-                        <div class="features-row">
-                            <img src="./images/x-icon.svg" alt="">
-                            <span>Early access to new courses and updates</span>
-                        </div>
+                    </div>
+                        
+                    <div class="proplan">
+                        <h3>Pro Plan</h3>
+                            <div class="money">
+                                <span class="price">$79</span>
+                                <span class="month">/month</span>
+                            </div>
+                        
+                        <div class="featcontainer">
+                            <div class="features">
+                                <div class="plan">
+                                    <h4>Available Features</h4>
+                                </div>
     
-                        <a href="#">Get Started</a>
+                                <div class="features-row">
+                                    <img src="./images/check-icon.svg" alt="">
+                                    <span>Unlimited access to all courses</span>
+                                </div>
+    
+                                <div class="features-row">
+                                    <img src="./images/check-icon.svg" alt="">
+                                    <span>Unlimited course materials and resources</span>
+                                </div>
+    
+                                <div class="features-row">
+                                    <img src="./images/check-icon.svg" alt="">
+                                    <span>Priority support from instructors</span>
+                                </div>
+    
+                                <div class="features-row">
+                                    <img src="./images/check-icon.svg" alt="">
+                                    <span>Course completion certificates</span>
+                                </div>
+    
+                                <div class="features-row">
+                                    <img src="./images/check-icon.svg" alt="">
+                                    <span>Ad-free experience</span>
+                                </div>
+    
+                                <div class="features-row">
+                                    <img src="./images/check-icon.svg" alt="">
+                                    <span>Access to exclusive Pro Plan community features</span>
+                                </div>
+    
+                                <div class="features-row">
+                                    <img src="./images/check-icon.svg" alt="">
+                                    <span>Early access to new courses and updates</span>
+                                </div>
+                            </div>
+                            <div class="getstarted">
+                                <a href="#">Get Started</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>    
+            </div>
+        </section>
+        <!-- Our Pricing closing tag -->
+    
+        <!-- FAQ Section -->
+        <section id="faq">
+            <div class="container6">
+                <div class="side">
+                    <h2>Frequently Asked Questions</h2>
+                    <p>Still you have any questions? Contact our Team via support@skillbridge.com</p>
+                    <div class="faq-btn">
+                        <a href="#">See All FAQ's</a>
                     </div>
                 </div>
-            </div>
-         </section>
-         <!-- Our Pricing closing tag -->
-
-        <!-- FAQ Section -->
-         <section id="faq">
-            <div class="container5">
-                <h2>Frequently Asked Questions</h2>
-                <p>Still you have any questions? Contact our Team via support@skillbridge.com</p>
-                <a href="#">See All FAQ's</a>
-
-                <div class="faq1">
-                    <p>Can I enroll in mulitple courses at once?</p>
-                    <p>Absolutely! You can enroll in multiple courses simultaneously and access them at your convenience.</p>
-                    <a href="#">Enrollment Process for Different Courses</a>
+                
+                <div class="faq-list">
+                    <div class="faq1">
+                        <p>Can I enroll in mulitple courses at once?</p>
+                        <p>Absolutely! You can enroll in multiple courses simultaneously and access them at your convenience.</p>
+                        <a href="#">Enrollment Process for Different Courses</a>
+                    </div>
+        
+                    <div class="questions-group">
+                        <div class="question">
+                            <p>What kind of support can I expect from instructors?</p>
+                        </div>
+                        <div class="question">
+                            <p>Are the courses self-paced or do they have specific start and end dates?</p>
+                        </div>
+                        <div class="question">
+                            <p>Are the courses self-paced or do they have specific start and end dates?</p>
+                        </div>
+                        <div class="question">
+                            <p>Can I download the course materials for offline access?</p>
+                        </div>
+                    </div>
                 </div>
-
-                <div>
-                    <p>What kind of support can I expect from instructors?</p>
-
-                    <p>Are the courses self-paced or do they have specific start and end dates?</p>
-
-                    <p>Are the courses self-paced or do they have specific start and end dates?</p>
-
-                    <p>Can I download the course materials for offline access?</p>
-                </div>
+                
             </div>
-
-         </section>
-         <!-- FAQ closing tag-->
+        </section>
+        <!-- FAQ closing tag-->
     </main>
     <!-- Main closing tag -->
     
     <!-- Footer -->
-     <!-- <footer>
+     <footer>
         <div class="footone">
             <div class="logo">
                 <img src="./images/logo.svg" alt="logo">
@@ -545,11 +639,11 @@
 
         <p>&copy;2023 Skillbridge. All rights reserved.</p>
 
-     </footer> -->
-    <footer>
+     </footer>
+    <!-- <footer>
         <div class="container6">
             <div class="footercontent">    
-                <div class="start">
+                <div class="footstart">
                     <div class="logo">
                         <img src="./images/logo.svg" alt="logo">
                     </div>
@@ -567,7 +661,7 @@
                             </svg>
                             <span class="footer-info">hello@skillbridge.com</span>
                         </div>
-                        <!--footer-icon div-->
+                        
     
                         <div class="footer-icon">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
@@ -577,7 +671,7 @@
                             </svg>
                             <span class="footer-info">+91 91813 23 2309</span>
                         </div>
-                        <!--footer-icon div-->
+                        
     
                         <div class="footer-icon">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
@@ -588,9 +682,9 @@
                             <span class="footer-info">Somewhere in the World</span>
                         </div>
                     </div>
-                    <!--connections div-->    
+                      
                 </div>
-                <!--start div-->
+               
     
                 <div class="end">
                     <div class="control-list">
@@ -601,9 +695,9 @@
                             <li><a href="#">Our Testimonials</a></li>
                             <li><a href="#">Our FAQ</a></li>
                         </ul>
-                        <!--ul-one-->
+                        
                     </div>
-                    <!--control-list div-->
+                   
     
                     <div class="control-list">
                         <h3>About Us</h3>
@@ -612,7 +706,7 @@
                             <li><a href="#">Achievements</a></li>
                             <li><a href="#">Our Goals</a></li>
                         </ul>
-                        <!--ul-two-->
+        
                     </div>
     
                     <div class="control-list">
@@ -637,8 +731,7 @@
                 <span>&copy; 2023 Skillbridge. All rights reserved.</span>
             </div>
         </div>
-        <!--container-div-->
-    </footer>
+    </footer> -->
     </body>
     
     </html>
