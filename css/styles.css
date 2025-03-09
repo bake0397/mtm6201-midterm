@@ -15,6 +15,10 @@ html{
     box-sizing: border-box;
 }
 
+body {
+    background-color: #FCFCFD;
+}
+
 header {
     padding: 0 0 1.1rem;
     width: 100%;
@@ -27,6 +31,7 @@ header {
 main {
     margin: 0 4rem;
 }
+
 
 /* h1 {
     display: flex;
@@ -1398,10 +1403,6 @@ footer .logo img {
 
 }
 
-
-
-
-
 .copyright {
     grid-area: 2 / 1 / 3 / 5;
     display: flex;
@@ -1425,113 +1426,21 @@ footer .logo img {
     align-items: flex-start;
     flex-wrap: wrap;
 }
+/* ********** COURSES PAGE STYLES ************ */
 
-
-
-/* .footstart {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 2rem;
-}
-
-.end {
-    display: flex;
-    gap: 2rem;
-}
-
-.end ul {
-    list-style: none;
-} */
-
-/* .end ul li {
-    margin-bottom: 1rem;
-} */
-
-/* .social-icons a {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-} */
-
-/* footer .footstart {
-    display: flex;
-    flex-direction: column;
-    gap: 1.1rem;
-    margin-right: 4rem;
-}
-
-.connections .footer-info {
-    font-size: 1rem;
-}
-
-footer .footstart .connections {
-    display: flex;
-    flex-direction: column;
-}
-
-footer .footstart .connections .footer-icon {
-    display: flex;
-    align-items: center;
-    gap: 6px;
-    width: 100%;
-}
-
-footer .control-list img {
-    width: 2.5rem;
-}
-
-footer .footstart .connections .footer-icon a {
-    color: #262626;
-    font-size: 1rem;
-}
-
-footer .end {
-    display: flex;
-    align-content: end;
-}
-
-footer .end .control-list {
-    display: flex;
-    flex-direction: column;
-    gap: 14px;
-}
-
-.control-list ul {
-    gap: 8px;
-    display: flex;
-    flex-direction: column;
-}
-
-.control-list ul li {
-    list-style-type: none;
-    font-size: 1rem;
-}
-
-.control-list ul li a {
-    color: #59595A;
-}
-
-.control-list .buttons-footer {
-    display: flex;
-    gap: 12px;
-}
-
-.control-list .buttons-footer img{
-    background-color: #F7F7F8;
+#fundamentals {
+    background-color: #FFFFFF;
     border: 1px solid #F1F1F3;
-    color: #59595A;
-    border-radius: 8px;
-    padding: 0.2rem;
-}
-
-footer .footercontent {
-    border-bottom: 1px solid #F1F1F3;
-    padding: 3rem 0rem;
-}
-
-.copyright {
+    border-radius: 10px;
     display: flex;
+}
+
+.webdev {
+    display: flex;
+    flex-grow: 1;
+    flex-shrink: 1;
     justify-content: center;
-    padding: 3rem 0rem 0rem 0rem;
-} */
+    width: fill;
+    padding: 3rem;
+    flex-direction: row;
+}
