@@ -648,6 +648,12 @@ main #pricing .container .intro {
     align-items: center;
 }
 
+.icon svg:hover {
+    background-color: #FFF4E5;
+    color: #262626;
+    border: 1px solid #FF9500;
+}
+
 /* .grid .icon img:hover {
     background-color: #FFF4E5;
     color: #262626;
@@ -1028,6 +1034,12 @@ main #pricing .container .intro {
     box-sizing: content-box;
 }
 
+.story a:hover {
+    background-color: #F1F1F3;
+    border: 1px solid #262626;
+    color: #262626;
+}
+
 @media screen and (max-width: 640px) {
     .gridtest {
         display: grid;
@@ -1146,6 +1158,10 @@ main #pricing .container .intro {
     padding: 1rem;
 }
 
+.getstarted a:hover {
+    text-decoration: underline;
+}
+
 
 .freeplan .features-row,
 .proplan .features-row {
@@ -1253,6 +1269,12 @@ main #pricing .container .intro {
     border: 1px solid #F1F1F3;
     padding: 1rem;
     width: fit-content;
+}
+
+.faq-btn:hover {
+    background-color: #F1F1F3;
+    border: 1px solid #262626;
+    color: #262626;
 }
 
 .faq-list img {
