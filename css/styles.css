@@ -338,7 +338,7 @@ header .row .user .login:hover {
 
 .brand-items .item img {
     object-fit: contain;
-    width: 100%;
+    min-width: 100%;
     height: auto;
     /* min-width: ; */
 }
