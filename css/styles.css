@@ -151,6 +151,7 @@ nav a:hover {
     line-height: 100%;
     padding: 1rem;
     border-radius: 5px;
+    border: 1px solid #FF9500;
 }
 
 header .row .user .login:hover {
@@ -181,6 +182,7 @@ header .row .user .login:hover {
     align-items: center;
     gap: 1rem;
     background-color: #fff;
+    border: 1px solid #F1F1F3;
     /* width: fit-content; */
     border-radius: 5px;
     position: relative;
@@ -276,10 +278,17 @@ header .row .user .login:hover {
 
 .banner .bannerlink .explore {
     border-radius: 5px;
+    border: 1px solid #FF9500;
     padding: 1rem;
     background-color: #FF9500;
     color: #fff;
     text-align: center;
+}
+
+.banner .bannerlink .explore:hover {
+    background-color: #FFF4E5;
+    color: #262626;
+    border: 1px solid #FF9500;
 }
 
 .banner .bannerlink .pricing {
@@ -288,6 +297,13 @@ header .row .user .login:hover {
     background-color: #fff;
     color: #000;
     text-align: center;
+    border: 1px solid #F1F1F3;
+}
+
+.banner .bannerlink .pricing:hover {
+    background-color: #F1F1F3;
+    border: 1px solid #262626;
+    color: #262626;
 }
 
 .brand-items {
@@ -382,6 +398,22 @@ header .row .user .login:hover {
     border: 1px solid #F1F1F3;
 }
 
+/* #benefits .row-top a:hover
+#courses .row-top a:hover
+#testimonials .row-top a:hover {
+    background-color: #F1F1F3;
+    border: 1px solid #262626;
+    color: #262626;
+} */
+
+#benefits .row-top a:hover,
+#courses .row-top a:hover,
+#testimonials .row-top a:hover {
+    background-color: #F1F1F3;
+    border: 1px solid #262626;
+    color: #262626;
+}
+
 /* @media screen and (min-width: 600px) and (max-width: 992px) {
     .card1, .card2, .card3, .card4, .card5, .card6 {
         display: flex;
@@ -449,6 +481,7 @@ header .row .user .login:hover {
     background: #fff;
     padding: 2rem;
     border-radius: 10px;
+    border: 1px solid #F1F1F3;
 }
 
 .card2 {
@@ -456,6 +489,7 @@ header .row .user .login:hover {
     background: #fff;
     padding: 2rem;
     border-radius: 10px;
+    border: 1px solid #F1F1F3;
 }
 
 .card3 {
@@ -463,6 +497,7 @@ header .row .user .login:hover {
     background: #fff;
     padding: 2rem;
     border-radius: 10px;
+    border: 1px solid #F1F1F3;
 }
 
 .card4 {
@@ -470,6 +505,7 @@ header .row .user .login:hover {
     background: #fff;
     padding: 2rem;
     border-radius: 10px;
+    border: 1px solid #F1F1F3;
 }
 
 .card5 {
@@ -477,6 +513,7 @@ header .row .user .login:hover {
     background: #fff;
     padding: 2rem;
     border-radius: 10px;
+    border: 1px solid #F1F1F3;
 }
 
 .card6 {
@@ -484,6 +521,7 @@ header .row .user .login:hover {
     background: #fff;
     padding: 2rem;
     border-radius: 10px;
+    border: 1px solid #F1F1F3;
 }
 
 .grid .card1 svg,
@@ -609,6 +647,12 @@ main #pricing .container .intro {
     justify-content: center;
     align-items: center;
 }
+
+/* .grid .icon img:hover {
+    background-color: #FFF4E5;
+    color: #262626;
+    border: 1px solid #FF9500;
+} */
 
 /* Courses Section Styles */
 .coursegrid {
@@ -764,6 +808,12 @@ main #pricing .container .intro {
     flex-grow: 1;
     margin-top: 1.2rem;
     font-size: 0.8rem;
+}
+
+.course-info a:hover {
+    background-color: #FFF4E5;
+    color: #262626;
+    border: 1px solid #FF9500;
 }
 
 /* Courses Responsive Sizing */
@@ -1426,6 +1476,7 @@ footer .logo img {
     align-items: flex-start;
     flex-wrap: wrap;
 }
+
 /* ********** COURSES PAGE STYLES ************ */
 
 #fundamentals {
