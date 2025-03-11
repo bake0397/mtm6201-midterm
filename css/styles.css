@@ -1542,23 +1542,64 @@ footer .logo img {
 
 .curr-row {
     color: #59595A;
+    display: flex;
+    flex-direction: column;
 }
 
 .curr-row h2 {
     color: #262626;
+    font-size: 1.3rem;
+}
+
+/* .curr-row p {
+    display: flex;
+    flex-wrap: wrap;
+} */
+
+.text-btn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+
+.container7 .text-btn p, 
+.container8 .text-btn p,
+.container9 .text-btn p,
+.container10 .text-btn p {
+    flex: 1;
+    margin-right: 1.1rem;
+    font-weight: 300;
 }
 
 .curr-btn button{
-    background-color: #fcfcfd;
+    background-color: #FCFCFD;
     color: #262626;
     border: 1px solid #F1F1F3;
     border-radius: 8px;
-    font-weight: 500;
+    font-weight: 520;
     padding: 0.7rem;
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     display: flex;
-    width: 17%;
+    justify-content: flex-end;
+    width: auto;
 }
+
+.curr-btn {
+    display: flex;
+    justify-content: flex-end;
+}
+
+button:hover {
+    /* background-color: #F1F1F3;
+    border: 1px solid #262626;
+    color: #262626; */
+    background-color: #FFF4E5;
+    color: #262626;
+    border: 1px solid #FF9500;
+}
+    
 
 .webdev, .ui-ux, .mobile, .graphic, .front-dev  {
     display: grid;
@@ -1624,7 +1665,8 @@ footer .logo img {
 
 .numbers {
     font-weight: 600;
-    margin-bottom: 1.5rem;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
     color: #262626;
     /* text-align: left; */
 
@@ -1680,4 +1722,8 @@ footer .logo img {
 
 .curr-data5 {
     grid-area: 2 / 5 / 3 / 6;
+}
+
+#frontdevelopment {
+    margin-bottom: 3rem;
 }
