@@ -1527,6 +1527,50 @@ footer .logo img {
 
 /* ********** COURSES PAGE STYLES ************ */
 
+/* .courses-title h1 {
+    display: flex;
+    white-space: nowrap;
+    width: 40%;
+} */
+
+#courses-banner {
+    background-color: #F7F7F8;
+    display: flex;
+    flex-direction: column;
+    margin-top: 3rem;
+    margin-bottom: 5rem;
+}
+
+.courses-row {
+    display: flex;
+    gap: 10rem;
+    align-items: center;
+}
+
+.courses-row p {
+    font-weight: 400;
+    color: #59595A;
+    width: 60%;
+    line-height: 150%;
+}
+
+.courses-row h1 {
+    font-size: 2rem;
+    font-weight: 600;
+    width: 80%;
+    line-height: 150%;
+    /* max-width: 50%; */
+    flex-wrap: wrap;
+    display: flex;
+    /* width: fit-content; */
+}
+
+.courses-title {
+    display: flex;
+    /* white-space: nowrap; */
+    /* max-width: 100%; */
+}
+
 #fundamentals, #uiuxdesign, #mobileapp, #graphicdesign, #frontdevelopment {
     background-color: #FFFFFF;
     border: 1px solid #F1F1F3;
@@ -1751,6 +1795,9 @@ button:hover {
 .contact-row p {
     font-weight: 400;
     color: #59595A;
+    margin-left: 10rem;
+    /* width: 80%; */
+    line-height: 150%;
 }
 
 .contact-row h1 {
@@ -1764,6 +1811,7 @@ button:hover {
     display: flex;
     white-space: nowrap;
     max-width: 100%;
+    padding-right: 3rem;
 }
 
 #contact {
