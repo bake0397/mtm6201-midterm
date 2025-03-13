@@ -528,6 +528,10 @@ header .row .user .login:hover {
     border: 1px solid #F1F1F3;
 }
 
+#courses img {
+    padding: 0;
+}
+
 .grid .card1 svg,
 .grid .card2 svg,
 .grid .card3 svg,
