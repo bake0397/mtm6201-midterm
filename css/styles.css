@@ -1,4 +1,7 @@
 /* Global Styles */
+
+@import url(https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap);
+
 html {
     font-family: "Be Vietnam Pro", sans-serif;
     font-size: 16px;
@@ -1736,7 +1739,7 @@ button:hover {
     display: flex;
     flex-direction: column;
     margin-top: 3rem;
-    margin-bottom: 3rem;
+    margin-bottom: 5rem;
 }
 
 .contact-row {
@@ -1747,6 +1750,7 @@ button:hover {
 
 .contact-row p {
     font-weight: 400;
+    color: #59595A;
 }
 
 .contact-row h1 {
@@ -1768,7 +1772,7 @@ button:hover {
     border: 1px solid #F1F1F3;
     display: grid;
     grid-template-columns: 1fr 0.5fr;
-    grid-template-rows: repeat(2, 0.5fr);
+    grid-template-rows: 0.5fr;
     grid-column-gap: 9px;
     grid-row-gap: 0px;
     padding: 3rem;
@@ -1787,6 +1791,7 @@ button:hover {
     grid-column-gap: 1rem;
     grid-row-gap: 1rem;
     margin-right: 3rem;
+    margin-top: 1rem;
     height: fit-content;
     /* grid-template-columns: 1fr 1fr; */
     /* gap: 15px 20px; */
@@ -1803,6 +1808,10 @@ button:hover {
 .sub input,
 .textarea textarea {
     margin-top: 0.5rem;
+    background: #FCFCFD;
+    padding: 0.3rem;
+    border: 1px solid #F1F1F3;
+    border-radius: 8px;
 }
 
 .name1 {
@@ -1831,7 +1840,7 @@ button:hover {
 
 textarea {
     resize: none;
-    height: 10rem;
+    height: 13rem;
 }
 
 /* form input, textarea{
@@ -1871,9 +1880,28 @@ textarea {
     flex-grow: 1;
     line-height: 1.7rem;
     width: 100%;
+    padding-left: 1rem;
+    color: #656567;
 }
 
+ #send {
+    background: #FF9500;
+    color: #FFF;
+    border-radius: 10px;
+    padding: 1rem 1.4rem;
+    font-weight: 500;
+    line-height: 150%;
+    border: 1px solid #FF9500;
+    display: flex;
+    margin: 0 auto;
+    margin-top: 3rem;
+}
 
+#send:hover {
+    background: #FFEACC;
+    color: #000;
+    border: 1px solid #FF9500;
+}
 
 /* Side Contact */
 .sidecontact svg {
@@ -1883,10 +1911,19 @@ textarea {
     align-items: center;
 }
 
+.sidecontact {
+    border-left: 1px solid #F1F1F3;
+    padding-left: 2rem;
+}
+
 .text {
     display: flex;
     justify-content: center;
     margin-top: 2rem;
+    padding-bottom: 1rem;
+    color: #4C4C4D;
+    font-weight: 300;
+    font-size: 0.89em;
 }
 
 .mail {
@@ -1894,7 +1931,9 @@ textarea {
     background-color: #FCFCFD;
     border: 1px solid #F1F1F3;
     border-radius: 8px;
-    height: 30%;
+    box-sizing: content-box;
+    height: 20%;
+    padding-top: 1rem;
     margin-bottom: 1rem;
     display: flex;
     flex-direction: column;
@@ -1906,8 +1945,10 @@ textarea {
     background-color: #FCFCFD;
     border: 1px solid #F1F1F3;
     border-radius: 8px;
-    height: 30%;
+    box-sizing: content-box;
+    height: 20%;
     margin-bottom: 1rem;
+    padding-top: 1rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -1918,8 +1959,10 @@ textarea {
     background-color: #FCFCFD;
     border: 1px solid #F1F1F3;
     border-radius: 8px;
-    height: 30%;
+    box-sizing: content-box;
+    height: 20%;
     margin-bottom: 1rem;
+    padding-top: 1rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -1930,7 +1973,8 @@ textarea {
     background-color: #FCFCFD;
     border: 1px solid #F1F1F3;
     border-radius: 8px;
-    height: 30%;
+    box-sizing: content-box;
+    height: 20%;
     /* display: flex; */
     flex-direction: row;
     padding-top: 1rem;
