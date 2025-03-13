@@ -1779,6 +1779,101 @@ button:hover {
     margin-bottom: 3rem;
 }
 
+@media screen and (max-width: 640px) {
+    .curriculum {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.5fr repeat(5, 1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 9px;
+    }
+
+    .curr-info {
+        grid-area: 1 / 1 / 2 / 2;
+    }
+
+    .curr-data1 {
+        grid-area: 2 / 1 / 3 / 2;
+        border-bottom: 1px solid #F1F1F3;
+    }
+
+    .curr-data2 {
+        grid-area: 3 / 1 / 4 / 2;
+        border-bottom: 1px solid #F1F1F3;
+    }
+
+    .curr-data3 {
+        grid-area: 4 / 1 / 5 / 2;
+        border-bottom: 1px solid #F1F1F3;
+    }
+
+    .curr-data4 {
+        grid-area: 5 / 1 / 6 / 2;
+        border-bottom: 1px solid #F1F1F3;
+    }
+
+    .curr-data5 {
+        grid-area: 6 / 1 / 7 / 2;
+    }
+
+    [class^="curr-data"]:not(.curr-data5)::after {
+        border-right: none;
+    }
+
+    .step {
+        font-size: 1rem;
+        font-weight: 400;
+        color: #333333;
+    }
+
+    #courses-banner {
+        background-color: #F7F7F8;
+        display: flex;
+        flex-direction: row;
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+    }
+    
+    .courses-row {
+        display: flex;
+        gap: 4rem;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .courses-row p {
+        font-weight: 400;
+        color: #59595A;
+        width: 100%;
+        line-height: 150%;
+    }
+    
+    .courses-row h1 {
+        font-size: 2rem;
+        font-weight: 600;
+        width: 100%;
+        line-height: 150%;
+        /* max-width: 50%; */
+        flex-wrap: wrap;
+        display: flex;
+        /* width: fit-content; */
+    }
+
+    .text-btn {
+        display: flex;
+        /* justify-content: space-between; */
+        align-items: center;
+        flex-direction: column;
+        margin-bottom: 1rem;
+        margin-top: 1rem;
+    }
+
+    .curr-btn {
+        margin-top: 1rem;
+        align-self: flex-start;
+    }
+}
+
 
 /* ********** CONTACT PAGE STYLES ************ */
 
