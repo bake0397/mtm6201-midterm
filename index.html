@@ -42,52 +42,52 @@
     
     <main role="main">
         <!-- Banner -->
-        <section id="start">
+        <section id="start" role="region" aria-labelledby="banner-heading">
             <div class="start-main">
-                <div class="banner">
+                <div class="banner" role="banner">
                     <div class="bannersub">
                         <img id="bannerlogo" src="./images/lightning.svg" alt="">
-                        <h1>
+                        <h1 role="heading" aria-level="1">
                         <span class="unlock">Unlock</span>&nbsp; Your Creative Potential</h1>
                         <img id="line" src="./images/lines.svg" alt="">
                     </div>
-                    <h3>with Online Design and Developmental Courses</h3>
+                    <h3 role="heading" aria-level="3">with Online Design and Developmental Courses</h3>
                     <p>Learn from Industry Experts and Enhance Your Skills.</p>
                     
-                    <div class="bannerlink">
-                        <a class="explore" href="#">Explore Courses</a>
-                        <a class="pricing" href="#">View Pricing</a>
+                    <div class="bannerlink" role="group" aria-label="Banner Actions">
+                        <a class="explore" href="#" role="button" aria-label="Explore Courses">Explore Courses</a>
+                        <a class="pricing" href="#" role="button" aria-label="View Pricing">View Pricing</a>
                     </div>
                 </div>
             </div>
         </section>
         
         <!-- Brands -->
-        <section class="filler">
+        <section class="filler" role="region" aria-labelledby="brands-heading">
             <div class="brand-items">
                 <div class="item">
-                    <img src="./images/brands/zapier.svg" alt="zapier logo">
+                    <img src="./images/brands/zapier.svg" alt="Zapier logo" itemprop="image">
                 </div>
                 <div class="item">
-                    <img src="./images/brands/spotify.svg" alt="spotify logo">
+                    <img src="./images/brands/spotify.svg" alt="Spotify logo" itemprop="image">
                 </div>
                 <div class="item">
-                    <img src="./images/brands/zoom.svg" alt="zoom logo">
+                    <img src="./images/brands/zoom.svg" alt="Zoom logo" itemprop="image">
                 </div>
                 <div class="item">
-                    <img src="./images/brands/amazon.svg" alt="amazon logo">
+                    <img src="./images/brands/amazon.svg" alt="Amazon logo" itemprop="image">
                 </div>
                 <div class="item">
-                    <img src="./images/brands/adobe.svg" alt="adobe logo">
+                    <img src="./images/brands/adobe.svg" alt="Adobe logo" itemprop="image">
                 </div>
                 <div class="item">
-                    <img src="./images/brands/notion.svg" alt="notion logo">
+                    <img src="./images/brands/notion.svg" alt="Notion logo" itemprop="image">
                 </div>
                 <div class="item">
-                    <img src="./images/brands/netflix.svg" alt="netflix logo">
+                    <img src="./images/brands/netflix.svg" alt="Netflix logo" itemprop="image">
                 </div>    
             </div>
-            <picture id="hero">
+            <picture id="hero" role="img" aria-labelledby="hero-label" itemscope itemtype="https://schema.org/ImageObject">
                 <!-- Desktop MIN: 1600px -->
                 <source srcset="./images/hero/mobile-1200x.jpg,
                 ./images/hero/laptop-2400x.jpg 2x,
@@ -123,98 +123,98 @@
                 media="(max-width: 480px)">
             
                 <!-- Default Fallback Image -->
-                <img class="original" src="./images/hero/hero.JPG" alt="">
+                <img class="original" src="./images/hero/hero.JPG" alt="Hero banner" itemprop="contentUrl">
             </picture>
         </section>
         
 
         <!-- Benefits Section -->
-         <section id="benefits">
+        <section id="benefits" role="region" aria-labelledby="benefits-heading" itemscope itemtype="https://schema.org/ItemList">
             <div class="container">
                 <div class="section-top">
-                    <h2>Benefits</h2>
+                    <h2 role="heading" aria-level="2">Benefits</h2>
                     <div class="row-top">
-                        <p class="ben-text">Lorem ipsum dolor sit amet consectetur. Tempus tincidunt etiam eget elit id imperdiet et. Cras eu sit dignissim lorem nibh et. Ac cum eget habitasse in velit fringilla feugiat senectus in.</p>
+                        <p class="ben-text" itemprop="description">Lorem ipsum dolor sit amet consectetur. Tempus tincidunt etiam eget elit id imperdiet et. Cras eu sit dignissim lorem nibh et. Ac cum eget habitasse in velit fringilla feugiat senectus in.</p>
                         <div class="cardbtn">
-                            <a href="#">View All</a>
+                            <a href="#" role="button" aria-label="View all benefits">View All</a>
                         </div>
                         <!-- <a href="#" class="view">View All</a> -->
                     </div>
                 </div>     
                 
-                <div class="grid">
-                    <div class="card1">
-                        <span class="number">01</span>
+                <div class="grid" role="list">
+                    <div class="card1" role="listitem" itemscope itemtype="https://schema.org/ListItem">
+                        <span class="number" itemprop="position">01</span>
                         <div class="card-info">
-                            <h3>Flexible Learning Schedule</h3>
-                            <p>Fit your coursework around your existing commitments and obligations.</p>
+                            <h3 role="heading" aria-level="3">Flexible Learning Schedule</h3>
+                            <p itemprop="description">Fit your coursework around your existing commitments and obligations.</p>
                         </div>
-                        <a class="icon">
+                        <a class="icon" role="button" aria-label="Learn more about flexible learning schedule">
                             <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26" fill="none">
                                 <path fill-rule="evenodd" clip-rule="evenodd" d="M6.78557 19.2144C7.16633 19.5952 7.78367 19.5952 8.16443 19.2144L17.55 9.82886V17.225C17.55 17.7635 17.9865 18.2 18.525 18.2C19.0635 18.2 19.5 17.7635 19.5 17.225V7.475C19.5 6.93652 19.0635 6.5 18.525 6.5H8.775C8.23652 6.5 7.8 6.93652 7.8 7.475C7.8 8.01348 8.23652 8.45 8.775 8.45H16.1711L6.78557 17.8356C6.40481 18.2163 6.40481 18.8337 6.78557 19.2144Z" fill="#FF9500"></path>
                             </svg>
                         </a>
                     </div>
     
-                    <div class="card2">
-                        <span class="number">02</span>
+                    <div class="card2" role="listitem" itemscope itemtype="https://schema.org/ListItem">
+                        <span class="number" itemprop="position">02</span>
                         <div class="card-info">
-                            <h3>Expert Instruction</h3>
-                            <p>Learn from industry experts who have hands-on experience in design and development.</p>
+                            <h3 role="heading" aria-level="3">Expert Instruction</h3>
+                            <p itemprop="description">Learn from industry experts who have hands-on experience in design and development.</p>
                         </div>
-                        <a class="icon">
+                        <a class="icon" role="button" aria-label="Learn more about expert instruction">
                             <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26" fill="none">
                                 <path fill-rule="evenodd" clip-rule="evenodd" d="M6.78557 19.2144C7.16633 19.5952 7.78367 19.5952 8.16443 19.2144L17.55 9.82886V17.225C17.55 17.7635 17.9865 18.2 18.525 18.2C19.0635 18.2 19.5 17.7635 19.5 17.225V7.475C19.5 6.93652 19.0635 6.5 18.525 6.5H8.775C8.23652 6.5 7.8 6.93652 7.8 7.475C7.8 8.01348 8.23652 8.45 8.775 8.45H16.1711L6.78557 17.8356C6.40481 18.2163 6.40481 18.8337 6.78557 19.2144Z" fill="#FF9500"></path>
                             </svg>
                         </a>
                     </div>
     
-                    <div class="card3">
-                        <span class="number">03</span>
+                    <div class="card3" role="listitem" itemscope itemtype="https://schema.org/ListItem">
+                        <span class="number" itemprop="position">03</span>
                         <div class="card-info">
-                            <h3>Diverse Course Offerings</h3>
-                            <p>Explore a wide range of design and development courses covering various topics.</p>
+                            <h3 role="heading" aria-level="3">Diverse Course Offerings</h3>
+                            <p itemprop="description">Explore a wide range of design and development courses covering various topics.</p>
                         </div>
-                        <a class="icon">
+                        <a class="icon" role="button" aria-label="Learn more about diverse course offerings">
                             <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26" fill="none">
                                 <path fill-rule="evenodd" clip-rule="evenodd" d="M6.78557 19.2144C7.16633 19.5952 7.78367 19.5952 8.16443 19.2144L17.55 9.82886V17.225C17.55 17.7635 17.9865 18.2 18.525 18.2C19.0635 18.2 19.5 17.7635 19.5 17.225V7.475C19.5 6.93652 19.0635 6.5 18.525 6.5H8.775C8.23652 6.5 7.8 6.93652 7.8 7.475C7.8 8.01348 8.23652 8.45 8.775 8.45H16.1711L6.78557 17.8356C6.40481 18.2163 6.40481 18.8337 6.78557 19.2144Z" fill="#FF9500"></path>
                             </svg>
                         </a>
                     </div>
     
-                    <div class="card4">
-                        <span class="number">04</span>
+                    <div class="card4" role="listitem" itemscope itemtype="https://schema.org/ListItem">
+                        <span class="number" itemprop="position">04</span>
                         <div class="card-info">
-                            <h3>Updated Curriculum</h3>
-                            <p>Access courses with up-to-date content reflecting the latest trends and industry practices.</p>
+                            <h3 role="heading" aria-level="3">Updated Curriculum</h3>
+                            <p itemprop="description">Access courses with up-to-date content reflecting the latest trends and industry practices.</p>
                         </div>
-                        <a class="icon">
+                        <a class="icon" role="button" aria-label="Learn more about diverse course offerings">
                             <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26" fill="none">
                                 <path fill-rule="evenodd" clip-rule="evenodd" d="M6.78557 19.2144C7.16633 19.5952 7.78367 19.5952 8.16443 19.2144L17.55 9.82886V17.225C17.55 17.7635 17.9865 18.2 18.525 18.2C19.0635 18.2 19.5 17.7635 19.5 17.225V7.475C19.5 6.93652 19.0635 6.5 18.525 6.5H8.775C8.23652 6.5 7.8 6.93652 7.8 7.475C7.8 8.01348 8.23652 8.45 8.775 8.45H16.1711L6.78557 17.8356C6.40481 18.2163 6.40481 18.8337 6.78557 19.2144Z" fill="#FF9500"></path>
                             </svg>
                         </a>
                     </div>
     
-                    <div class="card5">
-                        <span class="number">05</span>
+                    <div class="card5" role="listitem" itemscope itemtype="https://schema.org/ListItem">
+                        <span class="number" itemprop="position">05</span>
                         <div class="card-info">
-                            <h3>Practical Projects and Assignments</h3>
-                            <p>Develop a portfolio showcasing your skills and abilities to potential employers.</p>
+                            <h3 role="heading" aria-level="3">Practical Projects and Assignments</h3>
+                            <p itemprop="description">Develop a portfolio showcasing your skills and abilities to potential employers.</p>
                         </div>
-                        <a class="icon">
+                        <a class="icon" role="button" aria-label="Learn more about diverse course offerings">
                             <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26" fill="none">
                                 <path fill-rule="evenodd" clip-rule="evenodd" d="M6.78557 19.2144C7.16633 19.5952 7.78367 19.5952 8.16443 19.2144L17.55 9.82886V17.225C17.55 17.7635 17.9865 18.2 18.525 18.2C19.0635 18.2 19.5 17.7635 19.5 17.225V7.475C19.5 6.93652 19.0635 6.5 18.525 6.5H8.775C8.23652 6.5 7.8 6.93652 7.8 7.475C7.8 8.01348 8.23652 8.45 8.775 8.45H16.1711L6.78557 17.8356C6.40481 18.2163 6.40481 18.8337 6.78557 19.2144Z" fill="#FF9500"></path>
                             </svg>
                         </a>
                     </div>
     
-                    <div class="card6">
-                        <span class="number">06</span>
+                    <div class="card6" role="listitem" itemscope itemtype="https://schema.org/ListItem">
+                        <span class="number" itemprop="position">06</span>
                         <div class="card-info">
-                            <h3>Interactive Learning Environment</h3>
-                            <p>Collaborate with fellow learners, exchanging ideas and feedback to enhance your understanding.</p>
+                            <h3 role="heading" aria-level="3">Interactive Learning Environment</h3>
+                            <p itemprop="description">Collaborate with fellow learners, exchanging ideas and feedback to enhance your understanding.</p>
                         </div>
-                        <a class="icon">
+                        <a class="icon" role="button" aria-label="Learn more about diverse course offerings">
                             <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26" fill="none">
                                 <path fill-rule="evenodd" clip-rule="evenodd" d="M6.78557 19.2144C7.16633 19.5952 7.78367 19.5952 8.16443 19.2144L17.55 9.82886V17.225C17.55 17.7635 17.9865 18.2 18.525 18.2C19.0635 18.2 19.5 17.7635 19.5 17.225V7.475C19.5 6.93652 19.0635 6.5 18.525 6.5H8.775C8.23652 6.5 7.8 6.93652 7.8 7.475C7.8 8.01348 8.23652 8.45 8.775 8.45H16.1711L6.78557 17.8356C6.40481 18.2163 6.40481 18.8337 6.78557 19.2144Z" fill="#FF9500"></path>
                             </svg>
@@ -222,19 +222,18 @@
                     </div>
                 </div>
             </div>
-            
          </section>
          <!-- Benefits section closing tag -->
 
          <!-- Courses Section -->
-         <section id="courses">
+         <section id="courses" role="region">
             <div class="container2">
                 <div class="section-top">
-                    <h2>Courses</h2>
+                    <h2 role="heading" aria-level="3">Courses</h2>
                     <div class="row-top">
                         <p class="course-text">Lorem ipsum dolor sit amet consectetur. Tempus tincidunt etiam eget elit id imperdiet et. Cras eu sit dignissim lorem nibh et. Ac cum eget habitasse in velit fringilla feugiat senectus in.</p>
                         <div class="cardbtn">
-                            <a href="#">View All</a>
+                            <a href="#" role="button" aria-label="View All">View All</a>
                         </div>
                     </div>
                 </div>
@@ -290,10 +289,10 @@
                         </div>
                         
                         <div class="course-info">
-                            <h3>Web Design Fundamentals</h3>
-                            <p>Learn the fundamentals of web design, including HTML, CSS, and responsive design principles. Develop the skills to create visually appealing and user-friendly websites.</p>
+                            <h3 role="heading" aria-level="3">Web Design Fundamentals</h3>
+                            <p itemprop="description">Learn the fundamentals of web design, including HTML, CSS, and responsive design principles. Develop the skills to create visually appealing and user-friendly websites.</p>
                             <div class="cardbtn">
-                                <a href="#">Get it Now</a>
+                                <a href="#" role="button" aria-label="Get it Now">Get it Now</a>
                             </div>
                         </div>
                     </div>
@@ -347,10 +346,10 @@
                             <span class="author">By Emily Johnson</span>
                         </div>
                         <div class="course-info">
-                            <h3>UI/UX Design</h3>
-                            <p>Master the art of creating intuitive user interfaces (UI) and enhancing user experiences (UX). Learn design principles, wireframing, prototyping, and usability testing techniques.</p>
+                            <h3 role="heading" aria-level="3">UI/UX Design</h3>
+                            <p itemprop="description">Master the art of creating intuitive user interfaces (UI) and enhancing user experiences (UX). Learn design principles, wireframing, prototyping, and usability testing techniques.</p>
                             <div class="cardbtn">
-                                <a href="#">Get it Now</a>
+                                <a href="#" role="button" aria-label="Get it Now">Get it Now</a>
                             </div>
                         </div>
                     </div>
@@ -405,10 +404,10 @@
                             
                         </div>
                         <div class="course-info">
-                            <h3>Mobile App Development</h3>
-                            <p>Dive into the world of mobile app development. Learn to build native iOS and Android applications using industry-leading frameworks like Swift and Kotlin.</p>
+                            <h3 role="heading" aria-level="3">Mobile App Development</h3>
+                            <p itemprop="description">Dive into the world of mobile app development. Learn to build native iOS and Android applications using industry-leading frameworks like Swift and Kotlin.</p>
                             <div class="cardbtn">
-                                <a href="#">Get it Now</a>
+                                <a href="#" role="button" aria-label="Get it Now">Get it Now</a>
                             </div>
                         </div>
                     </div>
@@ -463,10 +462,10 @@
                             
                         </div>
                         <div class="course-info">
-                            <h3>Graphic Design for Beginners</h3>
-                            <p>Discover the fundamentals of graphic design, including typography, color theory, layout design, and image manipulation techniques. Create visually stunning designs for print and digital media.</p>
+                            <h3 role="heading" aria-level="3">Graphic Design for Beginners</h3>
+                            <p itemprop="description">Discover the fundamentals of graphic design, including typography, color theory, layout design, and image manipulation techniques. Create visually stunning designs for print and digital media.</p>
                             <div class="cardbtn">
-                                <a href="#">Get it Now</a>
+                                <a href="#" role="button" aria-label="Get it Now">Get it Now</a>
                             </div>
                         </div>
                     </div>
@@ -520,10 +519,10 @@
                             <span class="author">By Michael Adams</span>
                         </div>
                         <div class="course-info">
-                            <h3>Front-End Web Development</h3>
-                            <p>Become proficient in front-end web development. Learn HTML, CSS, JavaScript, and popular frameworks like Bootstrap and React. Build interactive and responsive websites.</p>
+                            <h3 role="heading" aria-level="3">Front-End Web Development</h3>
+                            <p itemprop="description">Become proficient in front-end web development. Learn HTML, CSS, JavaScript, and popular frameworks like Bootstrap and React. Build interactive and responsive websites.</p>
                             <div class="cardbtn">
-                                <a href="#">Get it Now</a>
+                                <a href="#" role="button" aria-label="Get it Now">Get it Now</a>
                             </div>
                         </div>
                     </div>
@@ -578,10 +577,10 @@
                             
                         </div>
                         <div class="course-info">
-                            <h3>Advanced JavaScript</h3>
-                            <p>Take your JavaScript skills to the next level. Explore advanced concepts like closures, prototypes, asynchronous programming, and ES6 features. Build complex applications with confidence.</p>
+                            <h3 role="heading" aria-level="3">Advanced JavaScript</h3>
+                            <p itemprop="description">Take your JavaScript skills to the next level. Explore advanced concepts like closures, prototypes, asynchronous programming, and ES6 features. Build complex applications with confidence.</p>
                             <div class="cardbtn">
-                                <a href="#">Get it Now</a>
+                                <a href="#" role="button" aria-label="Get it Now">Get it Now</a>
                             </div>
                         </div> 
                     </div>
@@ -591,14 +590,14 @@
          <!-- Courses section closing tag -->
 
          <!-- Testimonials Section -->
-        <section id="testimonials">
+        <section id="testimonials" role="region">
             <div class="container3">
                 <div class="section-top">
-                    <h2>Testimonials</h2>
+                    <h2 role="heading" aria-level="2">Testimonials</h2>
                     <div class="row-top">
-                        <p class="test-text">Lorem ipsum dolor sit amet consectetur. Tempus tincidunt etiam eget elit id imperdiet et. Cras eu sit dignissim lorem nibh et. Ac cum eget habitasse in velit fringilla feugiat senectus in.</p>
+                        <p class="test-text" itemprop="description">Lorem ipsum dolor sit amet consectetur. Tempus tincidunt etiam eget elit id imperdiet et. Cras eu sit dignissim lorem nibh et. Ac cum eget habitasse in velit fringilla feugiat senectus in.</p>
                         <div class="cardbtn">
-                            <a href="#">View All</a>
+                            <a href="#" role="button" aria-label="View All">View All</a>
                         </div>
                     </div>
                 </div>
@@ -606,7 +605,7 @@
                 <div class="gridtest">
                     <div class="sarah">
                         <div class="review">
-                            <p>The web design course provided a solid foundation for me. The instructors were knowledgeable and supportive, and the interactive learning environment was engaging. I highly recommend it!</p>
+                            <p itemprop="description">The web design course provided a solid foundation for me. The instructors were knowledgeable and supportive, and the interactive learning environment was engaging. I highly recommend it!</p>
                         </div>
                         <div class="client">
                             <div class="cite">
@@ -614,7 +613,7 @@
                                 <span class="author">Sarah L</span>
                             </div>
                             <div class="story">
-                                <a href="#">Read Full Story</a>
+                                <a href="#" role="button" aria-label="Read Full Story">Read Full Story</a>
                             </div>
                         </div>
                         
@@ -622,7 +621,7 @@
     
                     <div class="jason">
                         <div class="review">
-                            <p>The UI/UX design course exceeded my expectations. The instructor's expertise and practical assignments helped me improve my design skills. I feel more confident in my career now. Thank you!</p>
+                            <p itemprop="description">The UI/UX design course exceeded my expectations. The instructor's expertise and practical assignments helped me improve my design skills. I feel more confident in my career now. Thank you!</p>
                         </div>
                         <div class="client">
                             <div class="cite">
@@ -630,7 +629,7 @@
                                 <span class="author">Jason M</span>
                             </div>
                             <div class="story">
-                                <a href="#">Read Full Story</a>
+                                <a href="#" role="button" aria-label="Read Full Story">Read Full Story</a>
                             </div>
                         </div>
                         
@@ -638,7 +637,7 @@
     
                     <div class="emily">
                         <div class="review">
-                            <p>The mobile app development course was fantastic! The step-by-step tutorials and hands-on projects helped me grasp the concepts easily. I'm now building my own app. Great course!</p>
+                            <p itemprop="description">The mobile app development course was fantastic! The step-by-step tutorials and hands-on projects helped me grasp the concepts easily. I'm now building my own app. Great course!</p>
                         </div>
                         <div class="client">
                             <div class="cite">
@@ -646,14 +645,14 @@
                                 <span class="author">Emily R</span>
                             </div>
                             <div class="story">
-                                <a href="#">Read Full Story</a>
+                                <a href="#" role="button" aria-label="Read Full Story">Read Full Story</a>
                             </div>
                         </div>
                     </div>
     
                     <div class="michael">
                         <div class="review">
-                            <p>I enrolled in the graphic design course as a beginner, and it was the perfect starting point. The instructor's guidance and feedback improved my design abilities significantly. I'm grateful for this course!</p>
+                            <p itemprop="description">I enrolled in the graphic design course as a beginner, and it was the perfect starting point. The instructor's guidance and feedback improved my design abilities significantly. I'm grateful for this course!</p>
                         </div>
                         <div class="client">
                             <div class="cite">
@@ -661,7 +660,7 @@
                                 <span class="author">Michael K</span>
                             </div>
                             <div class="story">
-                                <a href="#">Read Full Story</a>
+                                <a href="#" role="button" aria-label="Read Full Story">Read Full Story</a>
                             </div>
                         </div>
                     </div>
@@ -671,12 +670,12 @@
         <!-- Testimonials Closing Tag -->
 
         <!-- Our Pricing Section -->
-        <section id="pricing">
+        <section id="pricing" role="region">
             <div class="container4">
                 <div class="section-top">
-                    <h2>Our Pricing</h2>
+                    <h2 role="heading" aria-level="2">Our Pricing</h2>
                     <div class="row-top">
-                        <p class="price-text">Lorem ipsum dolor sit amet consectetur. Tempus tincidunt etiam eget elit id imperdiet et. Cras eu sit dignissim lorem nibh et. Ac cum eget habitasse in velit fringilla feugiat senectus in.</p>
+                        <p class="price-text" itemprop="description">Lorem ipsum dolor sit amet consectetur. Tempus tincidunt etiam eget elit id imperdiet et. Cras eu sit dignissim lorem nibh et. Ac cum eget habitasse in velit fringilla feugiat senectus in.</p>
                         <!-- ADD TOGGLE BUTTON -->
                         <div class="switch-wrapper">
                             <input id="monthly" type="radio" name="switch" checked>
@@ -690,7 +689,7 @@
             
                 <div class="container5">
                     <div class="freeplan">
-                        <h3>Free Plan</h3>
+                        <h3 role="heading" aria-level="3">Free Plan</h3>
                         <div class="money">
                             <span class="price">$0</span>
                             <span class="month">/month</span>
@@ -699,7 +698,7 @@
                         <div class="featcontainer">
                             <div class="features">
                                 <div class="plan">
-                                    <h4>Available Features</h4>
+                                    <h4 role="heading" aria-level="4">Available Features</h4>
                                 </div>
                                 
                                 <div class="features-row">
@@ -732,13 +731,13 @@
                                 </div>
                             </div>
                             <div class="getstarted">
-                                <a href="#">Get Started</a>
+                                <a href="#" role="button" aria-label="Get Started">Get Started</a>
                             </div>
                         </div>
                     </div>
                         
                     <div class="proplan">
-                        <h3>Pro Plan</h3>
+                        <h3 role="heading" aria-level="3">Pro Plan</h3>
                             <div class="money">
                                 <span class="price">$79</span>
                                 <span class="month">/month</span>
@@ -747,7 +746,7 @@
                         <div class="featcontainer">
                             <div class="features">
                                 <div class="plan">
-                                    <h4>Available Features</h4>
+                                    <h4 role="heading" aria-level="4">Available Features</h4>
                                 </div>
     
                                 <div class="features-row">
@@ -786,7 +785,7 @@
                                 </div>
                             </div>
                             <div class="getstarted">
-                                <a href="#">Get Started</a>
+                                <a href="#" role="button" aria-label="Get Started">Get Started</a>
                             </div>
                         </div>
                     </div>
@@ -796,10 +795,10 @@
         <!-- Our Pricing closing tag -->
     
         <!-- FAQ Section -->
-        <section id="faq">
+        <section id="faq" role="region">
             <div class="container6">
                 <div class="side">
-                    <h2>Frequently Asked Questions</h2>
+                    <h2 role="heading" aria-level="2">Frequently Asked Questions</h2>
                     <p>Still you have any questions? Contact our Team via support@skillbridge.com</p>
                     <div class="faq-btn">
                         <span>See All FAQ's</span>
@@ -884,24 +883,24 @@
             <div class="foot-group">
                 <div class="footer-home">
                     <div class="foot-title">
-                        <h4>Home</h4>
+                        <h4 role="heading" aria-level="4">Home</h4>
                     </div>
                     <div class="foot-links">
-                        <a href="#benefits">Benefits</a>
-                        <a href="#ourcourses">Our Courses</a>
-                        <a href="#ourtestimonials">Our Testimonials</a>
-                        <a href="#ourfaq">Our FAQ</a>
+                        <a href="#benefits" itemprop="url">Benefits</a>
+                        <a href="#ourcourses" itemprop="url">Our Courses</a>
+                        <a href="#ourtestimonials" itemprop="url">Our Testimonials</a>
+                        <a href="#ourfaq" itemprop="url">Our FAQ</a>
                     </div>
                 </div>
         
                 <div class="footer-about">
                     <div class="foot-title">
-                        <h4>About Us</h4>
+                        <h4 role="heading" aria-level="4">About Us</h4>
                     </div>
                     <div class="foot-links">
-                        <a href="#company">Company</a>
-                        <a href="#achievments">Achievments</a>
-                        <a href="ourgoals">Our Goals</a>
+                        <a href="#company" itemprop="url">Company</a>
+                        <a href="#achievments" itemprop="url">Achievments</a>
+                        <a href="ourgoals" itemprop="url">Our Goals</a>
                     </div>
                 </div>
 
@@ -910,7 +909,7 @@
             
             <div class="footer-social">
                 <div class="foot-title">
-                    <h4>Social Profiles</h4>
+                    <h4 role="heading" aria-level="4">Social Profiles</h4>
                 </div>
                 <div class="media">
                     <img src="./images2/linkedin.svg" alt="">
