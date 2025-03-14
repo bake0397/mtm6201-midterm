@@ -18,9 +18,9 @@ html {
     box-sizing: border-box;
 }
 
-body {
-    /* background-color: #FCFCFD; */
-}
+/* body {
+    background-color: #FCFCFD;
+} */
 
 header {
     padding: 0 0 1.1rem;
@@ -36,12 +36,6 @@ main {
     #F7F7F8
 }
 
-
-/* h1 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-} */
 
 h2 {
     font-size: 1.6rem;
@@ -77,8 +71,6 @@ p {
 }
 
 .advertise {
-    /* display: inline; */
-    /* margin: 0 auto; */
     text-align: center;
     width: 100%;
     line-height: 30px;
@@ -95,7 +87,6 @@ p {
 }
 
 header .row {
-    /* gap: 1rem; */
     position: relative;
     align-items: center;
     flex-wrap: wrap;
@@ -105,10 +96,7 @@ header .row nav {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    /* align-content: center; */
     justify-content: flex-start;
-    /* align-items: center; */
-    /* gap: 1.5rem;  */
     flex-grow: 1;
     margin-left: 1rem;
 }
@@ -118,13 +106,11 @@ nav a {
     line-height: 100%;
     padding: 1rem;
     border-radius: 5px;
-    /* justify-content: center; */
     box-sizing: border-box;
 }
 
 nav a:hover {
     background-color: #F1F1F3;
-    /* padding: 1rem; */
 }
 
 .row .user {
@@ -137,7 +123,6 @@ nav a:hover {
 .row .user .signup {
     color: #262626;
     margin-right: 1rem;
-    /* padding: 0.3rem; */
 }
 
 .row .user .signup:hover {
@@ -187,22 +172,18 @@ header .row .user .login:hover {
     gap: 1rem;
     background-color: #fff;
     border: 1px solid #F1F1F3;
-    /* width: fit-content; */
     border-radius: 5px;
     position: relative;
     padding: 1rem;
 }
 
-/* TRIAL STARTS */
 .banner {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    /* overflow: hidden; */
     position: relative;
     margin: 0 auto;
-    /* box-sizing: border-box; */
 }
 
 #line {
@@ -212,21 +193,6 @@ header .row .user .login:hover {
     width: auto;
     max-width: 100%;
 }
-
-/* .bannerlogo {
-    display: flex;
-    flex-grow: 1;
-} */
-
-/* TRIAL END */
-
-/* .banner #line {
-    width: 39px;
-    height: 43px;
-    position: absolute;
-    left: -20.5rem;
-    top: -3.6rem;
-} */
 
 .start .bannersub {
     justify-content: inline-block;
@@ -242,20 +208,8 @@ header .row .user .login:hover {
     font-size: clamp(0.5rem, 4vw, 2rem);
     font-weight: 600;
     display: flex;
-    /* justify-content: center; */
-    /* max-width: 100%; */
-    /* white-space: wrap;
-    align-items: center; */
 }
 
-/* .banner h1 .unlock {
-    display: flex;
-    flex-grow: 1;
-    justify-self: center;
-    align-self: center;
-} */
-
-/* TRIAL EDIT AD WIDTH POSITION */
 .bannersub {
     display: flex;
     align-items: center;
@@ -312,15 +266,12 @@ header .row .user .login:hover {
 
 .brand-items {
     padding: 1rem;
-    /* margin: 0 3rem; */
     flex-wrap: nowrap;
     overflow-x: auto;
     display: flex;
     flex-direction: row;
     border-radius: 5px;
     background-color: #fff;
-    /* margin-inline-start: 4rem;
-    margin-inline-end: 4rem; */
     width: 100%;
     justify-content: center;
     align-items: center;
@@ -332,7 +283,6 @@ header .row .user .login:hover {
     justify-content: center;
     align-items: flex-start;
     flex-grow: 0.5;
-    /* flex-shrink: 2; */
 }
 
 
@@ -344,7 +294,6 @@ header .row .user .login:hover {
     object-fit: contain;
     min-width: 100%;
     height: auto;
-    /* min-width: ; */
 }
 
 #hero img {
@@ -365,7 +314,6 @@ header .row .user .login:hover {
 #testimonials .row-top,
 #pricing .row-top {
     display: flex;
-    /* align-items: center; */
     flex-wrap: nowrap;
     justify-content: space-between;
     gap: 1rem;
@@ -396,19 +344,10 @@ header .row .user .login:hover {
     background: #FCFCFD;
     padding: 0.5rem;
     height: 2rem;
-    /* width: 4rem;
-    padding: 5px; */
     border-radius: 6px;
     border: 1px solid #F1F1F3;
 }
 
-/* #benefits .row-top a:hover
-#courses .row-top a:hover
-#testimonials .row-top a:hover {
-    background-color: #F1F1F3;
-    border: 1px solid #262626;
-    color: #262626;
-} */
 
 #benefits .row-top a:hover,
 #courses .row-top a:hover,
@@ -418,44 +357,6 @@ header .row .user .login:hover {
     color: #262626;
 }
 
-/* @media screen and (min-width: 600px) and (max-width: 992px) {
-    .card1, .card2, .card3, .card4, .card5, .card6 {
-        display: flex;
-        flex-direction: column;
-        width: calc((100% - 20px) / 2);
-        border-radius: 6px;
-        background: #fff;
-        padding: 0.5rem;
-        height: 2rem;
-    }
-}
-
-@media screen and (min-width: 320px) and (max-width: 600px) {
-    .card1, .card2, .card3, .card4, .card5, .card6 {
-        width: 100%;
-        border-radius: 6px;
-        background: #fff;
-        padding: 0.5rem;
-        height: 2rem;
-    }
-}
-
-@media screen and (max-width: 319px) {
-    .card1, .card2, .card3, .card4, .card5, .card6 {
-        width: 100%;
-        border-radius: 12px;
-        background: #fff;
-        padding: 0.5rem;
-        height: 2rem;
-    }
-} */
-
-/* .card1 .card2 .card3 .card4 .card5 .card6 {
-    background: #fff;
-    padding: 2rem;
-    border-radius: 10px;
-} */
-
 .grid {
     display: grid;
     margin-top: 3rem;
@@ -463,8 +364,6 @@ header .row .user .login:hover {
     grid-template-columns: repeat(auto-fit, 2fr);
     grid-template-rows: repeat(auto-fit, 0.5fr);
     gap: 9px;
-    /* grid-column-gap: 9px;
-    grid-row-gap: 9px; */
 }
 
 .grid p {
@@ -546,9 +445,6 @@ header .row .user .login:hover {
     margin-top: 4rem;
     justify-content: center;
     align-items: center;
-    /* gap: 0.3rem;
-    width: 1.4rem;
-    height: 26; */
     border-radius: 6px;
     box-sizing: content-box;
     border: 1px solid #F1F1F3;
@@ -628,7 +524,6 @@ main #benefits .container .intro,
 main #courses .container .intro,
 main #testimonials .container .intro,
 main #pricing .container .intro {
-    /* gap: 20px 250px; */
     justify-content: flex-start;
 }
 
@@ -637,14 +532,6 @@ main #pricing .container .intro {
     flex-direction: column;
     height: 100%;
 }
-
-
-/* .course-info {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    flex-grow: 1;
-} */
 
 .course-info p {
     flex-grow: 1;
@@ -663,12 +550,6 @@ main #pricing .container .intro {
     color: #262626;
     border: 1px solid #FF9500;
 }
-
-/* .grid .icon img:hover {
-    background-color: #FFF4E5;
-    color: #262626;
-    border: 1px solid #FF9500;
-} */
 
 /* Courses Section Styles */
 .coursegrid {
@@ -740,21 +621,6 @@ main #pricing .container .intro {
     width: 100%;
     margin-bottom: 1rem;
 }
-
-/* .data .sub-row,  .author {
-    display: flex;
-    gap: 10px;
-    color: #4C4C4D;
-    font-size: 1rem;
-    justify-content: space-between;
-} */
-
-/* .data .author {
-    display: flex;
-    flex-direction: row-reverse;
-    align-self: center;
-    align-items: flex-end;
-} */
 
 .coursegrid>div {
     display: flex;
@@ -835,45 +701,11 @@ main #pricing .container .intro {
 
 /* Courses Responsive Sizing */
 
-/* @media screen and (max-width: 800px) {
-    .coursegrid {
-        display: grid;
-        grid-template-columns: repeat(2, 2fr);
-        grid-template-rows: repeat(3, 0.5fr);
-        grid-column-gap: 9px;
-        grid-row-gap: 9px;
-    }
-
-    .course1 {
-        grid-area: 1 / 1 / 2 / 2;
-    }
-
-    .course2 {
-        grid-area: 1 / 2 / 2 / 3;
-    }
-
-    .course3 {
-        grid-area: 2 / 1 / 3 / 2;
-    }
-
-    .course4 {
-        grid-area: 2 / 2 / 3 / 3;
-    }
-
-    .course5 {
-        grid-area: 3 / 1 / 4/ 2;
-    }
-    .course6 {
-        grid-area: 3 / 2 / 4 / 3; 
-    }
-} */
-
 @media screen and (max-width: 640px) {
     .coursegrid {
         display: grid;
         grid-template-columns: 1.5fr;
         grid-template-rows: repeat(6, 3fr);
-        /* grid-column-gap: 9px; */
         grid-row-gap: 9px;
     }
 
@@ -917,7 +749,6 @@ main #pricing .container .intro {
     display: flex;
     flex: 0 1 auto;
     align-self: stretch;
-    /* flex-grow: 1; */
 }
 
 .sarah p,
@@ -940,7 +771,6 @@ main #pricing .container .intro {
     flex-shrink: 0;
     border-bottom-right-radius: 3px;
     border-bottom-left-radius: 3px;
-    /* border-radius: 10px; */
     background: #FCFCFD;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -950,15 +780,8 @@ main #pricing .container .intro {
     position: relative;
     width: 100%;
     box-sizing: border-box;
-    /* max-height: auto; */
     flex: 1 auto;
-    /* gap: 20px; */
-    /* justify-content: space-between; */
 }
-
-/* .client img {
-    margin-top: 1rem;
-} */
 
 .client .author {
     display: flex;
@@ -972,13 +795,11 @@ main #pricing .container .intro {
     align-items: center;
     justify-content: flex-end;
     margin-right: 1rem;
-    /* align-items: flex-end; */
 }
 
 .sarah {
     grid-area: 1 / 1 / 2 / 2;
     background: #fff;
-    /* padding: 2rem; */
     border-radius: 10px;
     border: 1px solid #F1F1F3;
     display: flex;
@@ -988,7 +809,6 @@ main #pricing .container .intro {
 .jason {
     grid-area: 1 / 2 / 2 / 3;
     background: #fff;
-    /* padding: 2rem; */
     border-radius: 10px;
     border: 1px solid #F1F1F3;
     display: flex;
@@ -998,7 +818,6 @@ main #pricing .container .intro {
 .emily {
     grid-area: 2 / 1 / 3 / 2;
     background: #fff;
-    /* padding: 2rem; */
     border-radius: 10px;
     border: 1px solid #F1F1F3;
     display: flex;
@@ -1008,7 +827,6 @@ main #pricing .container .intro {
 .michael {
     grid-area: 2 / 2 / 3 / 3;
     background: #fff;
-    /* padding: 2rem; */
     border-radius: 10px;
     border: 1px solid #F1F1F3;
     display: flex;
@@ -1028,13 +846,11 @@ main #pricing .container .intro {
 
 .story a {
     background: #F7F7F8;
-    /* width: 22%; */
     justify-content: center;
     padding: 0.6rem;
     text-align: center;
     font-size: 0.7rem;
     margin: 0 auto;
-    /* box-sizing: border-box; */
     border: 1px solid #F1F1F3;
     text-decoration: none;
     color: #262626;
@@ -1066,7 +882,7 @@ main #pricing .container .intro {
     }
 
     .jason {
-        grid-area: 1 / 1 / 3 / 3;
+        grid-area: 2 / 1 / 3 / 2;
     }
 
     .emily {
@@ -1078,12 +894,6 @@ main #pricing .container .intro {
     }
 }
 
-
-/* .client {
-    background: #FCFCFD;
-    width: 100%;
-    box-sizing: border-box;
-} */
 
 /* Toggle Button Styles */
 
@@ -1126,7 +936,6 @@ main #pricing .container .intro {
     border: 1px solid #F1F1F3;
     display: flex;
     flex-direction: column;
-    /* padding: 3rem; */
 }
 
 .features span {
@@ -1191,7 +1000,6 @@ main #pricing .container .intro {
     position: relative;
     display: inline-flex;
     padding: 4px;
-    /* border: 1px solid lightgrey; */
     margin-bottom: 40px;
     border-radius: 10px;
     background: #ffff;
@@ -1207,16 +1015,6 @@ main #pricing .container .intro {
 .switch-wrapper [type="radio"]:checked#yearly~label[for="yearly"] {
     color: #ffff;
 }
-
-/* .switch-wrapper:hover {
-    color: #FF9500;
-    text-decoration: underline;
-  } */
-
-/* .switch-wrapper [type="radio"]:checked#monthly ~ label[for="monthly"]:hover,
-  .switch-wrapper [type="radio"]:checked#yearly ~ label[for="yearly"]:hover {
-    background: transparent;
-  } */
 
 .switch-wrapper [type="radio"]:checked#monthly+label[for="yearly"]~.highlighter {
     transform: none;
@@ -1254,6 +1052,72 @@ main #pricing .container .intro {
 }
 
 @media screen and (max-width: 800px) {
+    #benefits .cardbtn a,
+    #courses .cardbtn a,
+    #testimonials .cardbtn a {
+    font-size: 0.9rem;
+    margin-top: 1rem;
+    display: flex;
+    text-decoration: none;
+    white-space: nowrap;
+    color: #262626;
+    font-weight: 500;
+    background: #FCFCFD;
+    padding: 1rem 2rem;
+    border-radius: 6px;
+    border: 1px solid #F1F1F3;
+    align-items: center;
+}
+
+    .cardbtn a {
+        padding: 8rem;
+    }
+
+    #benefits .row-top {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, 1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 9px;
+        flex-direction: row;
+        gap: 0;
+    }
+
+    .ben-text {
+        grid-area: 1 / 1 / 2 / 2;
+        width: 100%;
+    }
+
+    #courses .row-top {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, 1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 9px;
+        flex-direction: row;
+        gap: 0;
+    }
+
+    .course-text {
+        grid-area: 1 / 1 / 2 / 2;
+        width: 100%;
+    }
+
+    #testimonials .row-top {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, 1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 9px;
+        flex-direction: row;
+        gap: 0;
+    }
+
+    .test-text {
+        grid-area: 1 / 1 / 2 / 2;
+        width: 100%;
+    }
+    
     .container5 {
         display: grid;
         grid-template-columns: 1fr;
@@ -1262,18 +1126,18 @@ main #pricing .container .intro {
         grid-row-gap: 9px;
     }
 
-    
-
-    .row-top {
+    #pricing .row-top {
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: repeat(2, 1fr);
         grid-column-gap: 0px;
         grid-row-gap: 9px;
+        flex-direction: row;
     }
 
     .price-text {
         grid-area: 1 / 1 / 2 / 2;
+        width: 100%;
     }
 
     .switch-wrapper {
@@ -1281,8 +1145,6 @@ main #pricing .container .intro {
         display: flex;
         padding: 4px;
         margin: auto;
-        /* border: 1px solid lightgrey; */
-        /* margin-bottom: 0; */
         border-radius: 10px;
         background: #ffff;
         border: 1px solid #F7F7F8;
@@ -1448,7 +1310,6 @@ main #pricing .container .intro {
 footer {
     background-color: #FFF;
     padding: 3rem 5rem;
-    /* display: flex; */
     flex-grow: 1;
     width: 100%;
 }
@@ -1472,6 +1333,14 @@ footer {
 
 footer .logo img {
     width: 40px;
+}
+
+.foot-group {
+    display: flex;
+    gap: 4rem;
+    flex-grow: 1;
+    margin-top: 1rem;
+    flex-flow: row;
 }
 
 .footer-contact {
@@ -1539,12 +1408,6 @@ footer .logo img {
     margin-top: 2rem;
 }
 
-
-/* .footer-contact {
-    display: inline-flex;
-    flex-direction: column;
-} */
-
 .contact-info {
     font-size: 0.9rem;
 }
@@ -1559,8 +1422,8 @@ footer .logo img {
 @media screen and (max-width: 640px) {
     #foot-wrapper {
         display: grid;
-        grid-template-columns: repeat(2, 0.5fr);
-        grid-template-rows: repeat(2, 1fr) 0.5fr 0.5fr;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, 0.5fr) 0.5fr;
         grid-column-gap: 0px;
         grid-row-gap: 9px;
     }
@@ -1571,29 +1434,26 @@ footer .logo img {
 
     .footer-home {
         grid-area: 2 / 1 / 3 / 3;
-        /* display: inline; */
     }
 
     .footer-about {
-        grid-area: 3 / 1 / 4 / 2;
+        grid-area: 3 / 1 / 4 / 3;
     }
 
     .footer-social {
-        grid-area: 3 / 2 / 4 / 3;
+        grid-area: 4 / 1 / 5 / 3;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        position: relative;
     }
 
     .copyright {
-        grid-area: 4 / 1 / 5 / 3;
+        grid-area: 5 / 1 / 6 / 2;
     }
 }
 
 /* ********** COURSES PAGE STYLES ************ */
-
-/* .courses-title h1 {
-    display: flex;
-    white-space: nowrap;
-    width: 40%;
-} */
 
 #courses-banner {
     background-color: #F7F7F8;
@@ -1621,16 +1481,12 @@ footer .logo img {
     font-weight: 600;
     width: 80%;
     line-height: 150%;
-    /* max-width: 50%; */
     flex-wrap: wrap;
     display: flex;
-    /* width: fit-content; */
 }
 
 .courses-title {
     display: flex;
-    /* white-space: nowrap; */
-    /* max-width: 100%; */
 }
 
 #fundamentals, #uiuxdesign, #mobileapp, #graphicdesign, #frontdevelopment {
@@ -1659,11 +1515,6 @@ footer .logo img {
     color: #262626;
     font-size: 1.3rem;
 }
-
-/* .curr-row p {
-    display: flex;
-    flex-wrap: wrap;
-} */
 
 .text-btn {
     display: flex;
@@ -1701,9 +1552,6 @@ footer .logo img {
 }
 
 button:hover {
-    /* background-color: #F1F1F3;
-    border: 1px solid #262626;
-    color: #262626; */
     background-color: #FFF4E5;
     color: #262626;
     border: 1px solid #FF9500;
@@ -1768,8 +1616,6 @@ button:hover {
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-start;
-    /* flex-grow: 1;
-    justify-content: space-around; */
 }
 
 .numbers {
@@ -1777,18 +1623,7 @@ button:hover {
     font-size: 2.5rem;
     margin-bottom: 1rem;
     color: #262626;
-    /* text-align: left; */
-
 }
-
-/* .curr-data1 .number, 
-.curr-data2 .number, 
-.curr-data3 .number, 
-.curr-data4 .number,
-.curr-data5 .number {
-    display: flex;
-    padding-bottom: 1rem;
-} */
 
 .step {
     font-size: 0.7rem;
@@ -1911,15 +1746,12 @@ button:hover {
         font-weight: 600;
         width: 100%;
         line-height: 150%;
-        /* max-width: 50%; */
         flex-wrap: wrap;
         display: flex;
-        /* width: fit-content; */
     }
 
     .text-btn {
         display: flex;
-        /* justify-content: space-between; */
         align-items: center;
         flex-direction: column;
         margin-bottom: 1rem;
@@ -1953,7 +1785,6 @@ button:hover {
     font-weight: 400;
     color: #59595A;
     margin-left: 10rem;
-    /* width: 80%; */
     line-height: 150%;
 }
 
@@ -1961,7 +1792,6 @@ button:hover {
     font-size: 2rem;
     font-weight: 600;
     display: flex;
-    /* width: fit-content; */
 }
 
 .contact-title {
@@ -1998,12 +1828,6 @@ button:hover {
     margin-right: 3rem;
     margin-top: 1rem;
     height: fit-content;
-    /* grid-template-columns: 1fr 1fr; */
-    /* gap: 15px 20px; */
-    /* align-items: center; */
-    /* gap: 30px; */
-    /* display: flex;
-    flex-direction: column; */
 }
 
 .name1 input, 
@@ -2047,39 +1871,6 @@ textarea {
     resize: none;
     height: 13rem;
 }
-
-/* form input, textarea{
-    width: 90%;
-} */
-
-/* #firstname-label #firstname #lastname-label #lastname {
-    display: flex;
-    flex-direction: row;
-} */
-
-/* .form-items label {
-    flex-basis: 400px;
-    text-align: left;
-    padding-bottom: 3rem;
-    margin-top: 0.8rem;
-} */
-
-/* .names {
-    display: flex;
-} */
-
-/* #subject-label, #subject,
-#message-label, #message {
-    grid-column: span 2;
-} */
-
-/* .form-items input {
-    width: 100%;
-} */
-
-/* .firstname, .lastname {
-    flex: 1;
-} */
 
 .form-items input, .form-items textarea {
     flex-grow: 1;
@@ -2180,10 +1971,8 @@ textarea {
     border-radius: 8px;
     box-sizing: content-box;
     height: 20%;
-    /* display: flex; */
     flex-direction: row;
     padding-top: 1rem;
-    /* justify-content: space-around; */
 }
 
 .social-media {
@@ -2200,7 +1989,3 @@ textarea {
     margin: 0 auto;
     margin-top: 2rem;
 }
-
-/* .social1, .social2, .social3 {
-    width: 50px;
-} */
