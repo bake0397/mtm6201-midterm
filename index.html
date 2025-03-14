@@ -670,28 +670,28 @@
         <!-- Testimonials Closing Tag -->
 
         <!-- Our Pricing Section -->
-        <section id="pricing" role="region">
+        <section id="pricing" role="region" aria-labelledby="pricing-heading" itemscope itemtype="https://schema.org/OfferCatalog">
             <div class="container4">
                 <div class="section-top">
                     <h2 role="heading" aria-level="2">Our Pricing</h2>
                     <div class="row-top">
                         <p class="price-text" itemprop="description">Lorem ipsum dolor sit amet consectetur. Tempus tincidunt etiam eget elit id imperdiet et. Cras eu sit dignissim lorem nibh et. Ac cum eget habitasse in velit fringilla feugiat senectus in.</p>
-                        <!-- ADD TOGGLE BUTTON -->
-                        <div class="switch-wrapper">
-                            <input id="monthly" type="radio" name="switch" checked>
-                            <input id="yearly" type="radio" name="switch">
+                        <!-- TOGGLE BUTTON -->
+                        <div class="switch-wrapper" role="radiogroup" aria-label="Billing Options">
+                            <input id="monthly" type="radio" name="switch" checked aria-label="Monthly billing">
+                            <input id="yearly" type="radio" name="switch" aria-label="Yearly billing">
                             <label for="monthly">Monthly</label>
                             <label for="yearly">Yearly</label>
-                            <span class="highlighter"></span>
+                            <span class="highlighter" aria-hidden="true"></span>
                         </div>
                     </div>
                 </div>
             
                 <div class="container5">
-                    <div class="freeplan">
+                    <div class="freeplan" role="article" itemscope itemtype="https://schema.org/Offer">
                         <h3 role="heading" aria-level="3">Free Plan</h3>
                         <div class="money">
-                            <span class="price">$0</span>
+                            <span class="price" itemprop="price" content="0">$0</span>
                             <span class="month">/month</span>
                         </div>
                         
@@ -701,45 +701,45 @@
                                     <h4 role="heading" aria-level="4">Available Features</h4>
                                 </div>
                                 
-                                <div class="features-row">
-                                    <img src="./images/check-icon.svg" alt="">
+                                <div class="features-row" role="listitem" aria-label="Access to selected free courses (Included)">
+                                    <img src="./images/check-icon.svg" alt="" aria-hidden="true">
                                     <span>Access to selected free courses</span>
                                 </div>
-                                <div class="features-row">
-                                    <img src="./images/check-icon.svg" alt="">
+                                <div class="features-row" role="listitem" aria-label="Access to selected free courses (Included)">
+                                    <img src="./images/check-icon.svg" alt="" aria-hidden="true">
                                     <span>Limited course materials and resources</span>
                                 </div>
-                                <div class="features-row">
-                                    <img src="./images/check-icon.svg" alt="">
+                                <div class="features-row" role="listitem" aria-label="Access to selected free courses (Included)">
+                                    <img src="./images/check-icon.svg" alt="" aria-hidden="true">
                                     <span>Basic community support</span>
                                 </div>
-                                <div class="features-row">
-                                    <img src="./images/check-icon.svg" alt="">
+                                <div class="features-row" role="listitem" aria-label="Access to selected free courses (Included)">
+                                    <img src="./images/check-icon.svg" alt="" aria-hidden="true">
                                     <span>No certificate upon completion</span>
                                 </div>
-                                <div class="features-row">
-                                    <img src="./images/check-icon.svg" alt="">
+                                <div class="features-row" role="listitem" aria-label="Access to selected free courses (Included)">
+                                    <img src="./images/check-icon.svg" alt="" aria-hidden="true">
                                     <span>Ad-supported Platform</span>
                                 </div>
-                                <div class="features-row">
-                                    <img id="cross" src="./images/not-check.svg" alt="">
+                                <div class="features-row" role="listitem" aria-label=" Feature access exclusive to Pro Plan (Not Included in Free Plan)">
+                                    <img id="cross" src="./images/not-check.svg" alt="" aria-hidden="true">
                                     <span>Access to exclusive Pro Plan community forums</span>
                                 </div>
-                                <div class="features-row">
-                                    <img id="cross" src="./images/not-check.svg" alt="">
+                                <div class="features-row" role="listitem" aria-label="Access to exclusive Pro Plan (Not Included in Free Plan)">
+                                    <img id="cross" src="./images/not-check.svg" alt="" aria-hidden="true">
                                     <span>Early access to new courses and updates</span>
                                 </div>
                             </div>
                             <div class="getstarted">
-                                <a href="#" role="button" aria-label="Get Started">Get Started</a>
+                                <a href="#" role="button" aria-label="Get Started with Free Plan">Get Started</a>
                             </div>
                         </div>
                     </div>
                         
-                    <div class="proplan">
+                    <div class="proplan" role="article" itemscope itemtype="https://schema.org/Offer">
                         <h3 role="heading" aria-level="3">Pro Plan</h3>
                             <div class="money">
-                                <span class="price">$79</span>
+                                <span class="price" itemprop="price" content="79">$79</span>
                                 <span class="month">/month</span>
                             </div>
                         
@@ -749,43 +749,43 @@
                                     <h4 role="heading" aria-level="4">Available Features</h4>
                                 </div>
     
-                                <div class="features-row">
-                                    <img src="./images/check-icon.svg" alt="">
+                                <div class="features-row" role="listitem">
+                                    <img src="./images/check-icon.svg" alt="" aria-hidden="true">
                                     <span>Unlimited access to all courses</span>
                                 </div>
     
-                                <div class="features-row">
-                                    <img src="./images/check-icon.svg" alt="">
+                                <div class="features-row" role="listitem">
+                                    <img src="./images/check-icon.svg" alt="" aria-hidden="true">
                                     <span>Unlimited course materials and resources</span>
                                 </div>
     
-                                <div class="features-row">
-                                    <img src="./images/check-icon.svg" alt="">
+                                <div class="features-row" role="listitem">
+                                    <img src="./images/check-icon.svg" alt="" aria-hidden="true">
                                     <span>Priority support from instructors</span>
                                 </div>
     
-                                <div class="features-row">
-                                    <img src="./images/check-icon.svg" alt="">
+                                <div class="features-row" role="listitem">
+                                    <img src="./images/check-icon.svg" alt="" aria-hidden="true">
                                     <span>Course completion certificates</span>
                                 </div>
     
-                                <div class="features-row">
-                                    <img src="./images/check-icon.svg" alt="">
+                                <div class="features-row" role="listitem">
+                                    <img src="./images/check-icon.svg" alt="" aria-hidden="true">
                                     <span>Ad-free experience</span>
                                 </div>
     
-                                <div class="features-row">
-                                    <img src="./images/check-icon.svg" alt="">
+                                <div class="features-row" role="listitem">
+                                    <img src="./images/check-icon.svg" alt="" aria-hidden="true">
                                     <span>Access to exclusive Pro Plan community features</span>
                                 </div>
     
-                                <div class="features-row">
-                                    <img src="./images/check-icon.svg" alt="">
+                                <div class="features-row" role="listitem">
+                                    <img src="./images/check-icon.svg" alt="" aria-hidden="true">
                                     <span>Early access to new courses and updates</span>
                                 </div>
                             </div>
                             <div class="getstarted">
-                                <a href="#" role="button" aria-label="Get Started">Get Started</a>
+                                <a href="#" role="button" aria-label="Get Started with Pro Plan">Get Started</a>
                             </div>
                         </div>
                     </div>
