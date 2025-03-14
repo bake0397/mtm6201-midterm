@@ -14,8 +14,9 @@
     <title>MTM6201 Midterm</title>
 </head>
 <body>
-    <header role="banner" itemscope itemtype="https://schema.org/WPHeader">
+    <header role="banner" itemscope itemtype="https://schema.org/WPHeader" id="top">
         <div class="alert" role="alert">
+            <a href="#main-content" class="skip-link">Skip to main content</a>
             <span class="advertise">Free Courses🌟Sale Ends Soon, Get It Now<i class="fa-solid fa-arrow-right"></i></span>
         </div>
        <div class="row">
@@ -42,7 +43,7 @@
     
     <main role="main">
         <!-- Banner -->
-        <section id="start" role="region" aria-labelledby="banner-heading">
+        <section id="start" role="region">
             <div class="start-main">
                 <div class="banner" role="banner">
                     <div class="bannersub">
@@ -63,31 +64,31 @@
         </section>
         
         <!-- Brands -->
-        <section class="filler" role="region" aria-labelledby="brands-heading">
+        <section class="filler" role="region">
             <div class="brand-items">
                 <div class="item">
-                    <img src="./images/brands/zapier.svg" alt="Zapier logo" itemprop="image">
+                    <img src="./images/brands/zapier.svg" alt="Zapier logo" role="img">
                 </div>
                 <div class="item">
-                    <img src="./images/brands/spotify.svg" alt="Spotify logo" itemprop="image">
+                    <img src="./images/brands/spotify.svg" alt="Spotify logo" role="img">
                 </div>
                 <div class="item">
-                    <img src="./images/brands/zoom.svg" alt="Zoom logo" itemprop="image">
+                    <img src="./images/brands/zoom.svg" alt="Zoom logo" role="img">
                 </div>
                 <div class="item">
-                    <img src="./images/brands/amazon.svg" alt="Amazon logo" itemprop="image">
+                    <img src="./images/brands/amazon.svg" alt="Amazon logo" role="img">
                 </div>
                 <div class="item">
-                    <img src="./images/brands/adobe.svg" alt="Adobe logo" itemprop="image">
+                    <img src="./images/brands/adobe.svg" alt="Adobe logo" role="img">
                 </div>
                 <div class="item">
-                    <img src="./images/brands/notion.svg" alt="Notion logo" itemprop="image">
+                    <img src="./images/brands/notion.svg" alt="Notion logo" role="img">
                 </div>
                 <div class="item">
-                    <img src="./images/brands/netflix.svg" alt="Netflix logo" itemprop="image">
+                    <img src="./images/brands/netflix.svg" alt="Netflix logo" role="img">
                 </div>    
             </div>
-            <picture id="hero" role="img" aria-labelledby="hero-label" itemscope itemtype="https://schema.org/ImageObject">
+            <picture id="hero" itemscope itemtype="https://schema.org/ImageObject">
                 <!-- Desktop MIN: 1600px -->
                 <source srcset="./images/hero/mobile-1200x.jpg,
                 ./images/hero/laptop-2400x.jpg 2x,
@@ -129,8 +130,8 @@
         
 
         <!-- Benefits Section -->
-        <section id="benefits" role="region" aria-labelledby="benefits-heading" itemscope itemtype="https://schema.org/ItemList">
-            <div class="container">
+        <section id="benefits" role="region" itemscope itemtype="https://schema.org/ItemList">
+            <div class="container"  id="main-content">
                 <div class="section-top">
                     <h2 role="heading" aria-level="2">Benefits</h2>
                     <div class="row-top">
@@ -138,7 +139,7 @@
                         <div class="cardbtn">
                             <a href="#" role="button" aria-label="View all benefits">View All</a>
                         </div>
-                        <!-- <a href="#" class="view">View All</a> -->
+                       
                     </div>
                 </div>     
                 
@@ -226,21 +227,21 @@
          <!-- Benefits section closing tag -->
 
          <!-- Courses Section -->
-         <section id="courses" role="region">
+         <section id="courses" role="region" itemscope itemtype="https://schema.org/Course">
             <div class="container2">
                 <div class="section-top">
                     <h2 role="heading" aria-level="3">Courses</h2>
                     <div class="row-top">
-                        <p class="course-text">Lorem ipsum dolor sit amet consectetur. Tempus tincidunt etiam eget elit id imperdiet et. Cras eu sit dignissim lorem nibh et. Ac cum eget habitasse in velit fringilla feugiat senectus in.</p>
+                        <p class="course-text" itemprop="description">Lorem ipsum dolor sit amet consectetur. Tempus tincidunt etiam eget elit id imperdiet et. Cras eu sit dignissim lorem nibh et. Ac cum eget habitasse in velit fringilla feugiat senectus in.</p>
                         <div class="cardbtn">
-                            <a href="#" role="button" aria-label="View All">View All</a>
+                            <a href="#" role="button" aria-label="View All Courses">View All</a>
                         </div>
                     </div>
                 </div>
                 
                 <div class="coursegrid">
                     <div class="course1">
-                        <picture id="course1-card">
+                        <picture id="course1-card" itemscope itemtype="https://schema.org/ImageObject">
                             <!-- Desktop MIN: 1600px -->
                             <source srcset="./images/card1/card-01-800x.jpg,
                             ./images/card1/card-01-1600x.jpg 2x,
@@ -277,28 +278,28 @@
                             media="(max-width: 480px)">
                         
                             <!-- Default Fallback Image -->
-                            <img class="original" src="./images/card1/card-01.jpg" alt="">
+                            <img class="original" src="./images/card1/card-01.jpg" alt="Beginner Web Design Fundamentals Course Preview" itemprop="contentUrl" role="img">
                         </picture>
-                        <!-- <img src="./images/card-1.png" alt=""> -->
-                        <div class="data">
+                        
+                        <div class="data" itemscope itemtype="https://schema.org/Course">
                             <div class="sub-row">
-                                <span class="week">4 Weeks</span>
-                                <span class="level">Beginner</span>
+                                <span class="week" itemprop="duration" aria-label="Course Duration: 4 Weeks">4 Weeks</span>
+                                <span class="level" itemprop="educationalLevel" aria-label="Course Level: Beginner">Beginner</span>
                             </div>
-                            <span class="author">By John Smith</span>
+                            <span class="author" itemprop="author" aria-label="Instructor: John Smith">By John Smith</span>
                         </div>
                         
                         <div class="course-info">
-                            <h3 role="heading" aria-level="3">Web Design Fundamentals</h3>
+                            <h3 role="heading" aria-level="3" itemprop="name">Web Design Fundamentals</h3>
                             <p itemprop="description">Learn the fundamentals of web design, including HTML, CSS, and responsive design principles. Develop the skills to create visually appealing and user-friendly websites.</p>
                             <div class="cardbtn">
-                                <a href="#" role="button" aria-label="Get it Now">Get it Now</a>
+                                <a href="#" role="button" aria-label="Enroll in Beginner Web Design Fundamentals">Get it Now</a>
                             </div>
                         </div>
                     </div>
     
                     <div class="course2">
-                        <picture id="course2-card">
+                        <picture id="course2-card" itemscope itemtype="https://schema.org/ImageObject">
                             <!-- Desktop MIN: 1600px -->
                             <source srcset="./images/card2/card-02-800x.jpg,
                             ./images/card2/card-02-1600x.jpg 2x,
@@ -335,27 +336,27 @@
                             media="(max-width: 480px)">
                         
                             <!-- Default Fallback Image -->
-                            <img class="original" src="./images/card2/card-02.jpg" alt="">
+                            <img class="original" src="./images/card2/card-02.jpg" alt="Intermediate UI/UX Design Course Preview" itemprop="contentUrl" role="img">
                         </picture>
-                        <!-- <img src="./images/card-2.png" alt=""> -->
-                        <div class="data">
+   
+                        <div class="data" itemscope itemtype="https://schema.org/Course">
                             <div class="sub-row">
-                                <span class="week">6 Weeks</span>
-                                <span class="level">Intermediate</span>
+                                <span class="week" itemprop="duration" aria-label="Course Duration: 6 Weeks">6 Weeks</span>
+                                <span class="level" itemprop="educationalLevel" aria-label="Course Level: Intermediate">Intermediate</span>
                             </div>
-                            <span class="author">By Emily Johnson</span>
+                            <span class="author" itemprop="author" aria-label="Instructor: Emily Johnson">By Emily Johnson</span>
                         </div>
                         <div class="course-info">
-                            <h3 role="heading" aria-level="3">UI/UX Design</h3>
+                            <h3 role="heading" aria-level="3" itemprop="name">UI/UX Design</h3>
                             <p itemprop="description">Master the art of creating intuitive user interfaces (UI) and enhancing user experiences (UX). Learn design principles, wireframing, prototyping, and usability testing techniques.</p>
                             <div class="cardbtn">
-                                <a href="#" role="button" aria-label="Get it Now">Get it Now</a>
+                                <a href="#" role="button" aria-label="Enroll in Intermediate UI/UX Design">Get it Now</a>
                             </div>
                         </div>
                     </div>
     
                     <div class="course3">
-                        <picture id="course3-card">
+                        <picture id="course3-card" itemscope itemtype="https://schema.org/ImageObject">
                             <!-- Desktop MIN: 1600px -->
                             <source srcset="./images/card3/card-03-800x.jpg,
                             ./images/card3/card-03-1600x.jpg 2x,
@@ -392,28 +393,28 @@
                             media="(max-width: 480px)">
                         
                             <!-- Default Fallback Image -->
-                            <img class="original" src="./images/card3/card-03.jpg" alt="">
+                            <img class="original" src="./images/card3/card-03.jpg" alt="Intermediate Mobile App Development Course Preview" itemprop="contentUrl" role="img">
                         </picture>
-                        <!-- <img src="./images/card-3.png" alt=""> -->
-                        <div class="data">
+
+                        <div class="data" itemscope itemtype="https://schema.org/Course">
                             <div class="sub-row">
-                                <span class="week">8 Weeks</span>
-                                <span class="level">Intermediate</span>
+                                <span class="week" itemprop="duration" aria-label="Course Duration: 8 Weeks">8 Weeks</span>
+                                <span class="level" itemprop="educationalLevel" aria-label="Course Level: Intermediate">Intermediate</span>
                             </div>
-                            <span class="author">By David Brown</span>
+                            <span class="author" itemprop="author" aria-label="Instructor: David Brown">By David Brown</span>
                             
                         </div>
                         <div class="course-info">
-                            <h3 role="heading" aria-level="3">Mobile App Development</h3>
+                            <h3 role="heading" aria-level="3" itemprop="name">Mobile App Development</h3>
                             <p itemprop="description">Dive into the world of mobile app development. Learn to build native iOS and Android applications using industry-leading frameworks like Swift and Kotlin.</p>
                             <div class="cardbtn">
-                                <a href="#" role="button" aria-label="Get it Now">Get it Now</a>
+                                <a href="#" role="button" aria-label="Enroll in Intermediate Mobile App Development">Get it Now</a>
                             </div>
                         </div>
                     </div>
     
                     <div class="course4">
-                        <picture id="course4-card">
+                        <picture id="course4-card" itemscope itemtype="https://schema.org/ImageObject"> 
                             <!-- Desktop MIN: 1600px -->
                             <source srcset="./images/card4/card-04-800x.jpg,
                             ./images/card4/card-04-1600x.jpg 2x,
@@ -450,28 +451,28 @@
                             media="(max-width: 480px)">
                         
                             <!-- Default Fallback Image -->
-                            <img class="original" src="./images/card4/card-04.jpg" alt="">
+                            <img class="original" src="./images/card4/card-04.jpg" alt="Beginner Graphic Design Course Preview" itemprop="contentUrl" role="img">
                         </picture>
-                        <!-- <img src="./images/card-4.png" alt=""> -->
-                        <div class="data">
+                        
+                        <div class="data" itemscope itemtype="https://schema.org/Course">
                             <div class="sub-row">
-                                <span class="week">10 Weeks</span>
-                                <span class="level">Beginner</span>
+                                <span class="week" itemprop="duration" aria-label="Course Duration: 10 Weeks">10 Weeks</span>
+                                <span class="level" itemprop="educationalLevel" aria-label="Course Level: Beginner">Beginner</span>
                             </div>
-                            <span class="author">By Sarah Thompson</span>
+                            <span class="author" itemprop="author" aria-label="Instructor: Sarah Thompson">By Sarah Thompson</span>
                             
                         </div>
                         <div class="course-info">
-                            <h3 role="heading" aria-level="3">Graphic Design for Beginners</h3>
+                            <h3 role="heading" aria-level="3" itemprop="name">Graphic Design for Beginners</h3>
                             <p itemprop="description">Discover the fundamentals of graphic design, including typography, color theory, layout design, and image manipulation techniques. Create visually stunning designs for print and digital media.</p>
                             <div class="cardbtn">
-                                <a href="#" role="button" aria-label="Get it Now">Get it Now</a>
+                                <a href="#" role="button" aria-label="Enroll in Beginner Graphic Design">Get it Now</a>
                             </div>
                         </div>
                     </div>
     
                     <div class="course5">
-                        <picture id="course5-card">
+                        <picture id="course5-card" itemscope itemtype="https://schema.org/ImageObject">
                             <!-- Desktop MIN: 1600px -->
                             <source srcset="./images/card5/card-05-800x.jpg,
                             ./images/card5/card-05-1600x.jpg 2x,
@@ -508,27 +509,27 @@
                             media="(max-width: 480px)">
                         
                             <!-- Default Fallback Image -->
-                            <img class="original" src="./images/card5/card-05.jpg" alt="">
+                            <img class="original" src="./images/card5/card-05.jpg" alt="Intermediate Front-End Web Development Course Preview" role="img" itemprop="contentUrl">
                         </picture>
-                        <!-- <img src="./images/card-5.png" alt=""> -->
-                        <div class="data">
+                    
+                        <div class="data" itemscope itemtype="https://schema.org/Course">
                             <div class="sub-row">
-                                <span class="week">10 weeks</span>
-                                <span class="level">Intermediate</span>
+                                <span class="week" itemprop="duration" aria-label="Course Duration: 10 Weeks">10 weeks</span>
+                                <span class="level" itemprop="educationalLevel" aria-label="Course Level: Intermediate">Intermediate</span>
                             </div>
-                            <span class="author">By Michael Adams</span>
+                            <span class="author" itemprop="author" aria-label="Instructor: Michael Adams">By Michael Adams</span>
                         </div>
                         <div class="course-info">
-                            <h3 role="heading" aria-level="3">Front-End Web Development</h3>
+                            <h3 role="heading" aria-level="3" itemprop="name">Front-End Web Development</h3>
                             <p itemprop="description">Become proficient in front-end web development. Learn HTML, CSS, JavaScript, and popular frameworks like Bootstrap and React. Build interactive and responsive websites.</p>
                             <div class="cardbtn">
-                                <a href="#" role="button" aria-label="Get it Now">Get it Now</a>
+                                <a href="#" role="button" aria-label="Enroll in Intermediate Front-end Web Development">Get it Now</a>
                             </div>
                         </div>
                     </div>
     
                     <div class="course6">
-                        <picture id="course6-card">
+                        <picture id="course6-card" itemscope itemtype="https://schema.org/ImageObject">
                             <!-- Desktop MIN: 1600px -->
                             <source srcset="./images/card6/card-06-800x.jpg,
                             ./images/card6/card-06-1600x.jpg 2x,
@@ -565,22 +566,21 @@
                             media="(max-width: 480px)">
                         
                             <!-- Default Fallback Image -->
-                            <img class="original" src="./images/card6/card-06.jpg" alt="">
+                            <img class="original" src="./images/card6/card-06.jpg" alt="Advanced JavaScript Course Preview" itemprop="contentUrl" role="img">
                         </picture>
-                        <!-- <img src="./images/card-6.png" alt=""> -->
-                        <div class="data">
+            
+                        <div class="data" itemscope itemtype="https://schema.org/Course">
                             <div class="sub-row">
-                                <span class="week">6 Weeks</span>
-                                <span class="level">Advance</span>
+                                <span class="week" itemprop="duration" aria-label="Course Duration: 6 Weeks">6 Weeks</span>
+                                <span class="level" itemprop="educationalLevel" aria-label="Course Level: Advanced">Advance</span>
                             </div>
-                            <span class="author">By Jennifer Wilson</span>
-                            
+                            <span class="author" itemprop="author" aria-label="Instructor: Jennifer Wilson">By Jennifer Wilson</span>
                         </div>
                         <div class="course-info">
-                            <h3 role="heading" aria-level="3">Advanced JavaScript</h3>
+                            <h3 role="heading" aria-level="3" itemprop="name">Advanced JavaScript</h3>
                             <p itemprop="description">Take your JavaScript skills to the next level. Explore advanced concepts like closures, prototypes, asynchronous programming, and ES6 features. Build complex applications with confidence.</p>
                             <div class="cardbtn">
-                                <a href="#" role="button" aria-label="Get it Now">Get it Now</a>
+                                <a href="#" role="button" aria-label="Enroll in Advanced JavaScript">Get it Now</a>
                             </div>
                         </div> 
                     </div>
@@ -590,14 +590,14 @@
          <!-- Courses section closing tag -->
 
          <!-- Testimonials Section -->
-        <section id="testimonials" role="region">
+        <section id="testimonials" role="region" itemscope itemtype="https://schema.org/Review">
             <div class="container3">
                 <div class="section-top">
-                    <h2 role="heading" aria-level="2">Testimonials</h2>
+                    <h2 id="testimonials-heading" role="heading" aria-level="2">Testimonials</h2>
                     <div class="row-top">
-                        <p class="test-text" itemprop="description">Lorem ipsum dolor sit amet consectetur. Tempus tincidunt etiam eget elit id imperdiet et. Cras eu sit dignissim lorem nibh et. Ac cum eget habitasse in velit fringilla feugiat senectus in.</p>
+                        <p class="test-text" itemprop="reviewBody">Lorem ipsum dolor sit amet consectetur. Tempus tincidunt etiam eget elit id imperdiet et. Cras eu sit dignissim lorem nibh et. Ac cum eget habitasse in velit fringilla feugiat senectus in.</p>
                         <div class="cardbtn">
-                            <a href="#" role="button" aria-label="View All">View All</a>
+                            <a href="#" role="button" aria-label="View All Testimonials">View All</a>
                         </div>
                     </div>
                 </div>
@@ -605,15 +605,15 @@
                 <div class="gridtest">
                     <div class="sarah">
                         <div class="review">
-                            <p itemprop="description">The web design course provided a solid foundation for me. The instructors were knowledgeable and supportive, and the interactive learning environment was engaging. I highly recommend it!</p>
+                            <p itemprop="reviewBody">The web design course provided a solid foundation for me. The instructors were knowledgeable and supportive, and the interactive learning environment was engaging. I highly recommend it!</p>
                         </div>
-                        <div class="client">
+                        <div class="client" itemscope itemtype="https://schema.org/Person" itemprop="author">
                             <div class="cite">
-                                <img src="./images/sarah.png" alt="">
-                                <span class="author">Sarah L</span>
+                                <img src="./images/sarah.png" alt="Customer Sarah L" itemprop="image">
+                                <span class="author" itemprop="name">Sarah L</span>
                             </div>
                             <div class="story">
-                                <a href="#" role="button" aria-label="Read Full Story">Read Full Story</a>
+                                <a href="#" role="button" aria-label="Read Full Story from Sarah">Read Full Story</a>
                             </div>
                         </div>
                         
@@ -621,15 +621,15 @@
     
                     <div class="jason">
                         <div class="review">
-                            <p itemprop="description">The UI/UX design course exceeded my expectations. The instructor's expertise and practical assignments helped me improve my design skills. I feel more confident in my career now. Thank you!</p>
+                            <p itemprop="reviewBody">The UI/UX design course exceeded my expectations. The instructor's expertise and practical assignments helped me improve my design skills. I feel more confident in my career now. Thank you!</p>
                         </div>
-                        <div class="client">
+                        <div class="client" itemscope itemtype="https://schema.org/Person" itemprop="author">
                             <div class="cite">
-                                <img src="./images/jason.png" alt="">
-                                <span class="author">Jason M</span>
+                                <img src="./images/jason.png" alt="Customer Jason M" itemprop="image">
+                                <span class="author" itemprop="name">Jason M</span>
                             </div>
                             <div class="story">
-                                <a href="#" role="button" aria-label="Read Full Story">Read Full Story</a>
+                                <a href="#" role="button" aria-label="Read Full Story from Jason">Read Full Story</a>
                             </div>
                         </div>
                         
@@ -637,30 +637,30 @@
     
                     <div class="emily">
                         <div class="review">
-                            <p itemprop="description">The mobile app development course was fantastic! The step-by-step tutorials and hands-on projects helped me grasp the concepts easily. I'm now building my own app. Great course!</p>
+                            <p itemprop="reviewBody">The mobile app development course was fantastic! The step-by-step tutorials and hands-on projects helped me grasp the concepts easily. I'm now building my own app. Great course!</p>
                         </div>
                         <div class="client">
                             <div class="cite">
-                                <img src="./images/emily.png" alt="">
-                                <span class="author">Emily R</span>
+                                <img src="./images/emily.png" alt="Customer Emily" itemprop="image">
+                                <span class="author" itemprop="name">Emily R</span>
                             </div>
                             <div class="story">
-                                <a href="#" role="button" aria-label="Read Full Story">Read Full Story</a>
+                                <a href="#" role="button" aria-label="Read Full Story from Emily">Read Full Story</a>
                             </div>
                         </div>
                     </div>
     
                     <div class="michael">
                         <div class="review">
-                            <p itemprop="description">I enrolled in the graphic design course as a beginner, and it was the perfect starting point. The instructor's guidance and feedback improved my design abilities significantly. I'm grateful for this course!</p>
+                            <p itemprop="reviewBody">I enrolled in the graphic design course as a beginner, and it was the perfect starting point. The instructor's guidance and feedback improved my design abilities significantly. I'm grateful for this course!</p>
                         </div>
                         <div class="client">
                             <div class="cite">
-                                <img src="./images/michael.png" alt="">
-                                <span class="author">Michael K</span>
+                                <img src="./images/michael.png" alt="Client Michael" itemprop="image">
+                                <span class="author" itemprop="name">Michael K</span>
                             </div>
                             <div class="story">
-                                <a href="#" role="button" aria-label="Read Full Story">Read Full Story</a>
+                                <a href="#" role="button" aria-label="Read Full Story from Michael">Read Full Story</a>
                             </div>
                         </div>
                     </div>
@@ -670,7 +670,7 @@
         <!-- Testimonials Closing Tag -->
 
         <!-- Our Pricing Section -->
-        <section id="pricing" role="region" aria-labelledby="pricing-heading" itemscope itemtype="https://schema.org/OfferCatalog">
+        <section id="pricing" role="region" itemscope itemtype="https://schema.org/OfferCatalog">
             <div class="container4">
                 <div class="section-top">
                     <h2 role="heading" aria-level="2">Our Pricing</h2>
@@ -695,7 +695,7 @@
                             <span class="month">/month</span>
                         </div>
                         
-                        <div class="featcontainer">
+                        <div class="featcontainer" role="group">
                             <div class="features">
                                 <div class="plan">
                                     <h4 role="heading" aria-level="4">Available Features</h4>
@@ -722,11 +722,11 @@
                                     <span>Ad-supported Platform</span>
                                 </div>
                                 <div class="features-row" role="listitem" aria-label=" Feature access exclusive to Pro Plan (Not Included in Free Plan)">
-                                    <img id="cross" src="./images/not-check.svg" alt="" aria-hidden="true">
+                                    <img class="cross" src="./images/not-check.svg" alt="" aria-hidden="true">
                                     <span>Access to exclusive Pro Plan community forums</span>
                                 </div>
                                 <div class="features-row" role="listitem" aria-label="Access to exclusive Pro Plan (Not Included in Free Plan)">
-                                    <img id="cross" src="./images/not-check.svg" alt="" aria-hidden="true">
+                                    <img class="cross" src="./images/not-check.svg" alt="" aria-hidden="true">
                                     <span>Early access to new courses and updates</span>
                                 </div>
                             </div>
@@ -743,43 +743,43 @@
                                 <span class="month">/month</span>
                             </div>
                         
-                        <div class="featcontainer">
+                        <div class="featcontainer" role="group">
                             <div class="features">
                                 <div class="plan">
                                     <h4 role="heading" aria-level="4">Available Features</h4>
                                 </div>
     
-                                <div class="features-row" role="listitem">
+                                <div class="features-row" role="listitem" aria-label="Included in Pro Plan">
                                     <img src="./images/check-icon.svg" alt="" aria-hidden="true">
                                     <span>Unlimited access to all courses</span>
                                 </div>
     
-                                <div class="features-row" role="listitem">
+                                <div class="features-row" role="listitem" aria-label="Included in Pro Plan">
                                     <img src="./images/check-icon.svg" alt="" aria-hidden="true">
                                     <span>Unlimited course materials and resources</span>
                                 </div>
     
-                                <div class="features-row" role="listitem">
+                                <div class="features-row" role="listitem" aria-label="Included in Pro Plan">
                                     <img src="./images/check-icon.svg" alt="" aria-hidden="true">
                                     <span>Priority support from instructors</span>
                                 </div>
     
-                                <div class="features-row" role="listitem">
+                                <div class="features-row" role="listitem" aria-label="Included in Pro Plan">
                                     <img src="./images/check-icon.svg" alt="" aria-hidden="true">
                                     <span>Course completion certificates</span>
                                 </div>
     
-                                <div class="features-row" role="listitem">
+                                <div class="features-row" role="listitem" aria-label="Included in Pro Plan">
                                     <img src="./images/check-icon.svg" alt="" aria-hidden="true">
                                     <span>Ad-free experience</span>
                                 </div>
     
-                                <div class="features-row" role="listitem">
+                                <div class="features-row" role="listitem" aria-label="Included in Pro Plan">
                                     <img src="./images/check-icon.svg" alt="" aria-hidden="true">
                                     <span>Access to exclusive Pro Plan community features</span>
                                 </div>
     
-                                <div class="features-row" role="listitem">
+                                <div class="features-row" role="listitem" aria-label="Included in Pro Plan">
                                     <img src="./images/check-icon.svg" alt="" aria-hidden="true">
                                     <span>Early access to new courses and updates</span>
                                 </div>
@@ -795,101 +795,102 @@
         <!-- Our Pricing closing tag -->
     
         <!-- FAQ Section -->
-        <section id="faq" role="region">
+        <section id="faq" role="region" itemscope itemtype="https://schema.org/FAQPage">
             <div class="container6">
                 <div class="side">
-                    <h2 role="heading" aria-level="2">Frequently Asked Questions</h2>
-                    <p>Still you have any questions? Contact our Team via support@skillbridge.com</p>
-                    <div class="faq-btn">
+                    <h2 id="faq-heading" role="heading" aria-level="2">Frequently Asked Questions</h2>
+                    <p>Still you have any questions? Contact our Team via <a href="mailto:support@skillbridge.com" aria-label="Email support at Skillbridge">support@skillbridge.com</a></p>
+                    <div class="faq-btn" role="button" tabindex="0" aria-label="See all frequently asked questions">
                         <span>See All FAQ's</span>
                     </div>
                 </div>
                 
-                <div class="faq-list">
-                    <div class="faq1">
-                        <div class="faq-question">
+                <div class="faq-list" role="list">
+                    <div class="faq1" role="listitem" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                        <div class="faq-question" role="button" tabindex="0" aria-expanded="false" aria-controls="faq-answer-1" itemprop="name">
                             <span>Can I enroll in mulitple courses at once?</span>
-                            <img src="./images/orange-not-check.svg" alt="">
+                            <img src="./images/orange-not-check.svg" alt="" aria-hidden="true">
                         </div>
-                        <div class="faq-answer">
-                            <span>Absolutely! You can enroll in multiple courses simultaneously and access them at your convenience.</span>
+                        <div class="faq-answer" id="faq-answer-1" role="region" hidden itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
+                            <span itemprop="text">Absolutely! You can enroll in multiple courses simultaneously and access them at your convenience.</span>
                         </div>
-                        <div class="faq-more">
+                        <div class="faq-more" role="button" tabindex="0" aria-label="More about enrollment process for different courses">
                             <span>Enrollment Process for Different Courses</span>
-                            <img src="./images/circle-arrow.svg" alt="">
+                            <img src="./images/circle-arrow.svg" alt="" aria-hidden="true">
                         </div>
                     </div>
         
-                    <div class="questions-group">
-                        <div class="question">
+                    <div class="questions-group" role="list">
+                        <div class="question" role="listitem"  tabindex="0" aria-expanded="false">
                             <span>What kind of support can I expect from instructors?</span>
-                            <img src="./images/plus-icon.svg" alt="">
+                            <img src="./images/plus-icon.svg" alt="" aria-hidden="true">
                         </div>
-                        <div class="question">
+                        <div class="question" role="listitem"  tabindex="0" aria-expanded="false">
                             <span>Are the courses self-paced or do they have specific start and end dates?</span>
-                            <img src="./images/plus-icon.svg" alt="">
+                            <img src="./images/plus-icon.svg" alt="" aria-hidden="true">
                         </div>
-                        <div class="question">
+                        <div class="question" role="listitem"  tabindex="0" aria-expanded="false">
                             <span>Are the courses self-paced or do they have specific start and end dates?</span>
-                            <img src="./images/plus-icon.svg" alt="">
+                            <img src="./images/plus-icon.svg" alt="" aria-hidden="true">
                         </div>
-                        <div class="question">
+                        <div class="question" role="listitem"  tabindex="0" aria-expanded="false">
                             <span>Can I download the course materials for offline access?</span>
-                            <img src="./images/plus-icon.svg" alt="">
+                            <img src="./images/plus-icon.svg" alt="" aria-hidden="true">
                         </div>
                     </div>
                 </div>
-                
             </div>
         </section>
         <!-- FAQ closing tag-->
+        <a href="#top" class="skip-link-2">Back to Top</a>
     </main>
     <!-- Main closing tag -->
     
     <!-- Footer -->
-    <footer role="contentinfo">
+    <footer role="contentinfo" itemscope itemtype="https://schema.org/WPFooter">
         <section id="foot-wrapper">
             <div class="footer-one">
                 <div class="logo">
-                    <img src="./images/logo.svg" alt="logo">
+                    <img src="./images/logo.svg" alt="Skillbridge logo" role="img" itemprop="logo">
                 </div>
 
-                <div class="footer-contact">
+                <div class="footer-contact" role="list">
                     <div class="footer-icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none" aria-hidden="true">
                             <path d="M1.5 9.1691V17.75C1.5 19.4069 2.84315 20.75 4.5 20.75H19.5C21.1569 20.75 22.5 19.4069 22.5 17.75V9.1691L13.5723 14.6631C12.6081 15.2564 11.3919 15.2564 10.4277 14.6631L1.5 9.1691Z" fill="#262626"/>
                             <path d="M22.5 7.40783V7.25C22.5 5.59315 21.1569 4.25 19.5 4.25H4.5C2.84315 4.25 1.5 5.59315 1.5 7.25V7.40783L11.2139 13.3856C11.696 13.6823 12.304 13.6823 12.7861 13.3856L22.5 7.40783Z" fill="#262626"/>
                         </svg>
-                        <span class="contact-info">&nbsp;hello@skillbridge.com</span>
+                        <span class="contact-info"><a href="mailto:hello@skillbridge.com" itemprop="email">hello@skillbridge.com</a></span>
+                        <!-- <span class="contact-info">&nbsp;hello@skillbridge.com</span> -->
                     </div>
         
-                    <div class="footer-icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+                    <div class="footer-icon" role="listitem">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none" aria-hidden="true">
                             <path fill-rule="evenodd" clip-rule="evenodd" d="M1.5 5C1.5 3.34315 2.84315 2 4.5 2H5.87163C6.732 2 7.48197 2.58556 7.69064 3.42025L8.79644 7.84343C8.97941 8.5753 8.70594 9.34555 8.10242 9.79818L6.8088 10.7684C6.67447 10.8691 6.64527 11.0167 6.683 11.1197C7.81851 14.2195 10.2805 16.6815 13.3803 17.817C13.4833 17.8547 13.6309 17.8255 13.7316 17.6912L14.7018 16.3976C15.1545 15.7941 15.9247 15.5206 16.6566 15.7036L21.0798 16.8094C21.9144 17.018 22.5 17.768 22.5 18.6284V20C22.5 21.6569 21.1569 23 19.5 23H17.25C8.55151 23 1.5 15.9485 1.5 7.25V5Z" fill="#262626"/>
                         </svg>
-                        <span class="contact-info">&nbsp;+91 91813 23 2309</span>
+                        <span class="contact-info" itemprop="telephone">&nbsp;+91 91813 23 2309</span>
                     </div>
         
-                    <div class="footer-icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+                    <div class="footer-icon" role="listitem">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none" aria-hidden="true">
                             <path fill-rule="evenodd" clip-rule="evenodd" d="M11.5397 22.851C11.57 22.8685 11.5937 22.8821 11.6105 22.8915L11.6384 22.9071C11.8613 23.0294 12.1378 23.0285 12.3608 22.9075L12.3895 22.8915C12.4063 22.8821 12.43 22.8685 12.4603 22.851C12.5207 22.816 12.607 22.765 12.7155 22.6982C12.9325 22.5646 13.2388 22.3676 13.6046 22.1091C14.3351 21.5931 15.3097 20.8274 16.2865 19.8273C18.2307 17.8368 20.25 14.8462 20.25 11C20.25 6.44365 16.5563 2.75 12 2.75C7.44365 2.75 3.75 6.44365 3.75 11C3.75 14.8462 5.76932 17.8368 7.71346 19.8273C8.69025 20.8274 9.66491 21.5931 10.3954 22.1091C10.7612 22.3676 11.0675 22.5646 11.2845 22.6982C11.393 22.765 11.4793 22.816 11.5397 22.851ZM12 14C13.6569 14 15 12.6569 15 11C15 9.34315 13.6569 8 12 8C10.3431 8 9 9.34315 9 11C9 12.6569 10.3431 14 12 14Z" fill="#262626"/>
                         </svg>
-                        <span class="contact-info">&nbsp;Somewhere in the World</span>
+                        <span class="contact-info" itemprop="address">&nbsp;Somewhere in the World</span>
                     </div>
                 </div>
                 
             </div>
             
-            <div class="foot-group">
+            <div class="foot-group" role="navigation" aria-label="Footer Navigation">
                 <div class="footer-home">
                     <div class="foot-title">
                         <h4 role="heading" aria-level="4">Home</h4>
                     </div>
-                    <div class="foot-links">
-                        <a href="#benefits" itemprop="url">Benefits</a>
-                        <a href="#ourcourses" itemprop="url">Our Courses</a>
-                        <a href="#ourtestimonials" itemprop="url">Our Testimonials</a>
-                        <a href="#ourfaq" itemprop="url">Our FAQ</a>
+                    <div class="foot-links" role="list">
+                        <a href="#benefits" role="listitem">Benefits</a>
+                        <a href="#ourcourses" role="listitem">Our Courses</a>
+                        <a href="#ourtestimonials" role="listitem">Our Testimonials</a>
+                        <a href="#ourfaq" role="listitem">Our FAQ</a>
                     </div>
                 </div>
         
@@ -897,29 +898,28 @@
                     <div class="foot-title">
                         <h4 role="heading" aria-level="4">About Us</h4>
                     </div>
-                    <div class="foot-links">
-                        <a href="#company" itemprop="url">Company</a>
-                        <a href="#achievments" itemprop="url">Achievments</a>
-                        <a href="ourgoals" itemprop="url">Our Goals</a>
+                    <div class="foot-links" role="list">
+                        <a href="#company" role="listitem">Company</a>
+                        <a href="#achievments" role="listitem">Achievments</a>
+                        <a href="ourgoals" role="listitem">Our Goals</a>
                     </div>
                 </div>
-
             </div>
             
             
-            <div class="footer-social">
+            <div class="footer-social" role="list" aria-label="Social Media Links" itemscope itemtype="https://schema.org/Organization">
                 <div class="foot-title">
                     <h4 role="heading" aria-level="4">Social Profiles</h4>
                 </div>
                 <div class="media">
-                    <img src="./images2/linkedin.svg" alt="">
-                    <img src="./images2/twitter.svg" alt="">
-                    <img src="./images2/facebook.svg" alt="">
+                    <img src="./images2/linkedin.svg" alt="LinkedIn Logo" itemprop="sameAs" aria-label="Follow us on LinkedIn" role="img">
+                    <img src="./images2/twitter.svg" alt="Twitter Logo" itemprop="sameAs" aria-label="Follow us on Twitter" role="img">
+                    <img src="./images2/facebook.svg" alt="Facebook Logo" itemprop="sameAs" aria-label="Follow us on Facebook" role="img">
                 </div>
             </div>
 
-            <div class="copyright">
-                <p>&copy;2023 Skillbridge. All rights reserved.</p>
+            <div class="copyright" itemprop="copyrightHolder" itemscope itemtype="https://schema.org/CreativeWork">
+                <p itemprop="copyrightNotice">&copy;2023 Skillbridge. All rights reserved.</p>
             </div>
         </section>    
     </footer>
