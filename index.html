@@ -14,23 +14,23 @@
     <title>MTM6201 Midterm</title>
 </head>
 <body>
-    <header>
-        <div class="alert">
+    <header role="banner" itemscope itemtype="https://schema.org/WPHeader">
+        <div class="alert" role="alert">
             <span class="advertise">Free Courses🌟Sale Ends Soon, Get It Now<i class="fa-solid fa-arrow-right"></i></span>
         </div>
        <div class="row">
-            <img id='logo' src="./images/logo.svg" alt="logo">
-            <nav id="nav">
-                <a href="index.html">Home</a>
-                <a href="courses.html">Courses</a>
-                <a href="#about">About Us</a>
-                <a href="#pricing">Pricing</a>
-                <a href="contact.html">Contact</a>
+            <img id='logo' src="./images/logo.svg" alt="Company Logo" itemprop="logo">
+            <nav id="nav" role="navigation" aria-label="Main Navigation" itemscope itemtype="https://schema.org/SiteNavigationElement">
+                <a href="index.html" itemprop="url">Home</a>
+                <a href="courses.html" itemprop="url">Courses</a>
+                <a href="#about" itemprop="url">About Us</a>
+                <a href="#pricing" itemprop="url">Pricing</a>
+                <a href="contact.html" itemprop="url">Contact</a>
             </nav>
 
-            <div class="user">
-                <a class="signup" href="#">Sign Up</a>
-                <a class="login" href="#">Login</a>
+            <div class="user" role="group" aria-label="User Authentication">
+                <a class="signup" href="#" role="button">Sign Up</a>
+                <a class="login" href="#" role="button">Login</a>
             </div>
             <div class="burger">
                 <svg xmlns="http://www.w3.org/2000/svg" width="34" height="35" viewBox="0 0 34 35" fill="none">
@@ -40,7 +40,7 @@
         </div>  
     </header>
     
-    <main>
+    <main role="main">
         <!-- Banner -->
         <section id="start">
             <div class="start-main">
@@ -848,7 +848,7 @@
     <!-- Main closing tag -->
     
     <!-- Footer -->
-    <footer>
+    <footer role="contentinfo">
         <section id="foot-wrapper">
             <div class="footer-one">
                 <div class="logo">
