@@ -14,13 +14,13 @@
     <title>MTM6201 Midterm</title>
 </head>
 <body>
-
-    <header role="banner" itemscope itemtype="https://schema.org/WPHeader">
+    <header role="banner" itemscope itemtype="https://schema.org/WPHeader" id="top">
         <div class="alert" role="alert">
+            <a href="#main-content" class="skip-link">Skip to main content</a>
             <span class="advertise">Free Courses🌟Sale Ends Soon, Get It Now<i class="fa-solid fa-arrow-right"></i></span>
         </div>
        <div class="row">
-            <img id='logo' src="./images/logo.svg" alt="Company Logo" itemprop="logo">
+            <img id='logo' src="./images/logo.svg" alt="Company Logo" role="img">
             <nav id="nav" role="navigation" aria-label="Main Navigation" itemscope itemtype="https://schema.org/SiteNavigationElement">
                 <a href="index.html" itemprop="url">Home</a>
                 <a href="courses.html" itemprop="url">Courses</a>
@@ -40,12 +40,12 @@
             </div>
         </div>  
     </header>
-   
+
     <main role="main">
         <section id="contact-banner">
             <div class="contact-row">
                 <div class="contact-title">
-                    <h1>Contact Us</h1>
+                    <h1 role="heading" aria-level="1">Contact Us</h1>
                 </div>
                 <div class="cont-text">
                     <p itemprop="description">Welcome to SkillBridge's Pricing Plan page, where we offer two comprehensive options to cater to your needs: Free and Pro. We believe in providing flexible and affordable pricing options for our services. Whether you're an individual looking to enhance your skills or a business seeking professional development solutions, we have a plan that suits you. Explore our pricing options below and choose the one that best fits your requirements.</p>
@@ -53,32 +53,32 @@
             </div>
         </section>
 
-        <section id="contact">
-            <div class="contact-data">
-                <form action="" method="get" role="form">
-                    <fieldset class="form-items">
+        <section id="contact" itemscope itemtype="https://schema.org/ContactPage">
+            <div class="contact-data" >
+                <form action="#" method="get" role="form">
+                    <fieldset class="form-items" id="#main-content">
                         <div class="name1">
-                            <label for="firstname" class="firstname" id="firstname-label">First Name</label>
+                            <label for="firstname" class="firstname" id="firstname-label" itemprop="name">First Name</label>
                             <input type="text" name="firstname" id="firstname" placeholder="Enter First Name">
                         </div>
                         <div class="name2">
-                            <label for="lastname" class="lastname" id="lastname-label">Last Name</label>
+                            <label for="lastname" class="lastname" id="lastname-label" itemprop="name">Last Name</label>
                             <input type="text" name="lastname" id="lastname" placeholder="Enter Last Name">
                         </div>
                         <div class="email-form">
-                            <label for="email" class="email" id="email-label">Email</label>
+                            <label for="email" class="email" id="email-label" itemprop="name">Email</label>
                             <input type="email" name="email" id="email" placeholder="Enter your Email">
                         </div>
                         <div class="telephone">
-                            <label for="phone" class="phone" id="phone-label">Phone</label>
+                            <label for="phone" class="phone" id="phone-label" itemprop="name">Phone</label>
                             <input type="tel" id="phone" name="phone" placeholder="Enter Phone Number" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">
                         </div>
                         <div class="sub">
-                            <label for="subject" class="subject" id="subject-label">Subject</label>
+                            <label for="subject" class="subject" id="subject-label" itemprop="name">Subject</label>
                             <input type="text" name="subject" id="subject" placeholder="Type in the Subject of your message">
                         </div>
                         <div class="textarea">
-                            <label for="message" class="message" id="message-label">Message</label>
+                            <label for="message" class="message" id="message-label" itemprop="comment">Message</label>
                             <textarea name="message" id="message" placeholder="Enter your message here..."></textarea>
                         </div>  
                     </fieldset>
@@ -94,7 +94,7 @@
                         <path d="M15.5 23.5441V32.125C15.5 33.7819 16.8431 35.125 18.5 35.125H33.5C35.1569 35.125 36.5 33.7819 36.5 32.125V23.5441L27.5723 29.0381C26.6081 29.6314 25.3919 29.6314 24.4277 29.0381L15.5 23.5441Z" fill="#262626"/>
                         <path d="M36.5 21.7828V21.625C36.5 19.9681 35.1569 18.625 33.5 18.625H18.5C16.8431 18.625 15.5 19.9681 15.5 21.625V21.7828L25.2139 27.7606C25.696 28.0573 26.304 28.0573 26.7861 27.7606L36.5 21.7828Z" fill="#262626"/>
                     </svg>
-                    <span class="text">support@skillbridge.com</span>
+                    <span class="text" itemprop="name" aria-label="Email support at Skillbridge">support@skillbridge.com</span>
                 </div>
                 <div class="tel">
                     <svg width="52" height="53" viewBox="0 0 52 53" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -102,7 +102,7 @@
                         <rect x="0.5" y="1.125" width="51" height="51" rx="7.5" stroke="#F1F1F3"/>
                         <path fill-rule="evenodd" clip-rule="evenodd" d="M15.5 19.125C15.5 17.4681 16.8431 16.125 18.5 16.125H19.8716C20.732 16.125 21.482 16.7106 21.6906 17.5452L22.7964 21.9684C22.9794 22.7003 22.7059 23.4705 22.1024 23.9232L20.8088 24.8934C20.6745 24.9941 20.6453 25.1417 20.683 25.2447C21.8185 28.3445 24.2805 30.8065 27.3803 31.942C27.4833 31.9797 27.6309 31.9505 27.7316 31.8162L28.7018 30.5226C29.1545 29.9191 29.9247 29.6456 30.6566 29.8286L35.0798 30.9344C35.9144 31.143 36.5 31.893 36.5 32.7534V34.125C36.5 35.7819 35.1569 37.125 33.5 37.125H31.25C22.5515 37.125 15.5 30.0735 15.5 21.375V19.125Z" fill="#262626"/>
                     </svg>
-                    <span class="text">+91 00000 00000</span>
+                    <span class="text" itemprop="name" aria-label="Phone support at Skillbridge">+91 00000 00000</span>
                 </div>
                 <div class="location">
                     <svg width="52" height="53" viewBox="0 0 52 53" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -110,7 +110,7 @@
                         <rect x="0.5" y="0.875" width="51" height="51" rx="7.5" stroke="#F1F1F3"/>
                         <path fill-rule="evenodd" clip-rule="evenodd" d="M25.5397 36.726C25.57 36.7435 25.5937 36.7571 25.6105 36.7665L25.6384 36.7821C25.8613 36.9044 26.1378 36.9035 26.3608 36.7825L26.3895 36.7665C26.4063 36.7571 26.43 36.7435 26.4603 36.726C26.5207 36.691 26.607 36.64 26.7155 36.5732C26.9325 36.4396 27.2388 36.2426 27.6046 35.9841C28.3351 35.4681 29.3097 34.7024 30.2865 33.7023C32.2307 31.7118 34.25 28.7212 34.25 24.875C34.25 20.3187 30.5563 16.625 26 16.625C21.4437 16.625 17.75 20.3187 17.75 24.875C17.75 28.7212 19.7693 31.7118 21.7135 33.7023C22.6903 34.7024 23.6649 35.4681 24.3954 35.9841C24.7612 36.2426 25.0675 36.4396 25.2845 36.5732C25.393 36.64 25.4793 36.691 25.5397 36.726ZM26 27.875C27.6569 27.875 29 26.5319 29 24.875C29 23.2181 27.6569 21.875 26 21.875C24.3431 21.875 23 23.2181 23 24.875C23 26.5319 24.3431 27.875 26 27.875Z" fill="#262626"/>
                     </svg>
-                    <span class="text">Some Where in the World</span>
+                    <span class="text" itemprop="name" aria-label="Skillbridge Office Location">Some Where in the World</span>
                 </div>
                 <div class="social">
                     <div class="social-media">
@@ -157,6 +157,7 @@
                 </div>
             </div>
         </section>
+        <a href="#top" class="skip-link-2">Back to Top</a>
     </main>
     <!-- Main Closing Tag -->
 
@@ -165,7 +166,7 @@
         <section id="foot-wrapper">
             <div class="footer-one">
                 <div class="logo">
-                    <img src="./images/logo.svg" alt="Skillbridge logo" role="img" itemprop="logo">
+                    <img src="./images/logo.svg" alt="Skillbridge logo" role="img">
                 </div>
 
                 <div class="footer-contact" role="list">
@@ -174,7 +175,7 @@
                             <path d="M1.5 9.1691V17.75C1.5 19.4069 2.84315 20.75 4.5 20.75H19.5C21.1569 20.75 22.5 19.4069 22.5 17.75V9.1691L13.5723 14.6631C12.6081 15.2564 11.3919 15.2564 10.4277 14.6631L1.5 9.1691Z" fill="#262626"/>
                             <path d="M22.5 7.40783V7.25C22.5 5.59315 21.1569 4.25 19.5 4.25H4.5C2.84315 4.25 1.5 5.59315 1.5 7.25V7.40783L11.2139 13.3856C11.696 13.6823 12.304 13.6823 12.7861 13.3856L22.5 7.40783Z" fill="#262626"/>
                         </svg>
-                        <span class="contact-info"><a href="mailto:hello@skillbridge.com" itemprop="email">hello@skillbridge.com</a></span>
+                        <span class="contact-info"><a href="mailto:hello@skillbridge.com" aria-label="Company Email">hello@skillbridge.com</a></span>
                         <!-- <span class="contact-info">&nbsp;hello@skillbridge.com</span> -->
                     </div>
         
@@ -182,17 +183,16 @@
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none" aria-hidden="true">
                             <path fill-rule="evenodd" clip-rule="evenodd" d="M1.5 5C1.5 3.34315 2.84315 2 4.5 2H5.87163C6.732 2 7.48197 2.58556 7.69064 3.42025L8.79644 7.84343C8.97941 8.5753 8.70594 9.34555 8.10242 9.79818L6.8088 10.7684C6.67447 10.8691 6.64527 11.0167 6.683 11.1197C7.81851 14.2195 10.2805 16.6815 13.3803 17.817C13.4833 17.8547 13.6309 17.8255 13.7316 17.6912L14.7018 16.3976C15.1545 15.7941 15.9247 15.5206 16.6566 15.7036L21.0798 16.8094C21.9144 17.018 22.5 17.768 22.5 18.6284V20C22.5 21.6569 21.1569 23 19.5 23H17.25C8.55151 23 1.5 15.9485 1.5 7.25V5Z" fill="#262626"/>
                         </svg>
-                        <span class="contact-info" itemprop="telephone">&nbsp;+91 91813 23 2309</span>
+                        <span class="contact-info" aria-label="Company Phone Number">&nbsp;+91 91813 23 2309</span>
                     </div>
         
                     <div class="footer-icon" role="listitem">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none" aria-hidden="true">
                             <path fill-rule="evenodd" clip-rule="evenodd" d="M11.5397 22.851C11.57 22.8685 11.5937 22.8821 11.6105 22.8915L11.6384 22.9071C11.8613 23.0294 12.1378 23.0285 12.3608 22.9075L12.3895 22.8915C12.4063 22.8821 12.43 22.8685 12.4603 22.851C12.5207 22.816 12.607 22.765 12.7155 22.6982C12.9325 22.5646 13.2388 22.3676 13.6046 22.1091C14.3351 21.5931 15.3097 20.8274 16.2865 19.8273C18.2307 17.8368 20.25 14.8462 20.25 11C20.25 6.44365 16.5563 2.75 12 2.75C7.44365 2.75 3.75 6.44365 3.75 11C3.75 14.8462 5.76932 17.8368 7.71346 19.8273C8.69025 20.8274 9.66491 21.5931 10.3954 22.1091C10.7612 22.3676 11.0675 22.5646 11.2845 22.6982C11.393 22.765 11.4793 22.816 11.5397 22.851ZM12 14C13.6569 14 15 12.6569 15 11C15 9.34315 13.6569 8 12 8C10.3431 8 9 9.34315 9 11C9 12.6569 10.3431 14 12 14Z" fill="#262626"/>
                         </svg>
-                        <span class="contact-info" itemprop="address">&nbsp;Somewhere in the World</span>
+                        <span class="contact-info" aria-label="Company Location">&nbsp;Somewhere in the World</span>
                     </div>
                 </div>
-                
             </div>
             
             <div class="foot-group" role="navigation" aria-label="Footer Navigation">
@@ -200,11 +200,11 @@
                     <div class="foot-title">
                         <h4 role="heading" aria-level="4">Home</h4>
                     </div>
-                    <div class="foot-links" role="list">
-                        <a href="#benefits" role="listitem">Benefits</a>
-                        <a href="#ourcourses" role="listitem">Our Courses</a>
-                        <a href="#ourtestimonials" role="listitem">Our Testimonials</a>
-                        <a href="#ourfaq" role="listitem">Our FAQ</a>
+                    <div class="foot-links" itemprop="url">
+                        <a href="#benefits" itemprop="url">Benefits</a>
+                        <a href="#courses" itemprop="url">Our Courses</a>
+                        <a href="#testimonials" itemprop="url">Our Testimonials</a>
+                        <a href="#faq" itemprop="url">Our FAQ</a>
                     </div>
                 </div>
         
@@ -213,13 +213,12 @@
                         <h4 role="heading" aria-level="4">About Us</h4>
                     </div>
                     <div class="foot-links" role="list">
-                        <a href="#company" role="listitem">Company</a>
-                        <a href="#achievments" role="listitem">Achievments</a>
-                        <a href="ourgoals" role="listitem">Our Goals</a>
+                        <a href="#" itemprop="url">Company</a>
+                        <a href="#" itemprop="url">Achievments</a>
+                        <a href="#" itemprop="url">Our Goals</a>
                     </div>
                 </div>
             </div>
-            
             
             <div class="footer-social" role="list" aria-label="Social Media Links" itemscope itemtype="https://schema.org/Organization">
                 <div class="foot-title">
@@ -237,79 +236,7 @@
             </div>
         </section>    
     </footer>
-    <!-- <footer role="contentinfo">
-        <section id="foot-wrapper">
-            <div class="footer-one">
-                <div class="logo">
-                    <img src="./images/logo.svg" alt="logo">
-                </div>
-
-                <div class="footer-contact">
-                    <div class="footer-icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
-                            <path d="M1.5 9.1691V17.75C1.5 19.4069 2.84315 20.75 4.5 20.75H19.5C21.1569 20.75 22.5 19.4069 22.5 17.75V9.1691L13.5723 14.6631C12.6081 15.2564 11.3919 15.2564 10.4277 14.6631L1.5 9.1691Z" fill="#262626"/>
-                            <path d="M22.5 7.40783V7.25C22.5 5.59315 21.1569 4.25 19.5 4.25H4.5C2.84315 4.25 1.5 5.59315 1.5 7.25V7.40783L11.2139 13.3856C11.696 13.6823 12.304 13.6823 12.7861 13.3856L22.5 7.40783Z" fill="#262626"/>
-                        </svg>
-                        <span class="contact-info">&nbsp;hello@skillbridge.com</span>
-                    </div>
-        
-                    <div class="footer-icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M1.5 5C1.5 3.34315 2.84315 2 4.5 2H5.87163C6.732 2 7.48197 2.58556 7.69064 3.42025L8.79644 7.84343C8.97941 8.5753 8.70594 9.34555 8.10242 9.79818L6.8088 10.7684C6.67447 10.8691 6.64527 11.0167 6.683 11.1197C7.81851 14.2195 10.2805 16.6815 13.3803 17.817C13.4833 17.8547 13.6309 17.8255 13.7316 17.6912L14.7018 16.3976C15.1545 15.7941 15.9247 15.5206 16.6566 15.7036L21.0798 16.8094C21.9144 17.018 22.5 17.768 22.5 18.6284V20C22.5 21.6569 21.1569 23 19.5 23H17.25C8.55151 23 1.5 15.9485 1.5 7.25V5Z" fill="#262626"/>
-                        </svg>
-                        <span class="contact-info">&nbsp;+91 91813 23 2309</span>
-                    </div>
-        
-                    <div class="footer-icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M11.5397 22.851C11.57 22.8685 11.5937 22.8821 11.6105 22.8915L11.6384 22.9071C11.8613 23.0294 12.1378 23.0285 12.3608 22.9075L12.3895 22.8915C12.4063 22.8821 12.43 22.8685 12.4603 22.851C12.5207 22.816 12.607 22.765 12.7155 22.6982C12.9325 22.5646 13.2388 22.3676 13.6046 22.1091C14.3351 21.5931 15.3097 20.8274 16.2865 19.8273C18.2307 17.8368 20.25 14.8462 20.25 11C20.25 6.44365 16.5563 2.75 12 2.75C7.44365 2.75 3.75 6.44365 3.75 11C3.75 14.8462 5.76932 17.8368 7.71346 19.8273C8.69025 20.8274 9.66491 21.5931 10.3954 22.1091C10.7612 22.3676 11.0675 22.5646 11.2845 22.6982C11.393 22.765 11.4793 22.816 11.5397 22.851ZM12 14C13.6569 14 15 12.6569 15 11C15 9.34315 13.6569 8 12 8C10.3431 8 9 9.34315 9 11C9 12.6569 10.3431 14 12 14Z" fill="#262626"/>
-                        </svg>
-                        <span class="contact-info">&nbsp;Somewhere in the World</span>
-                    </div>
-                </div>
-                
-            </div>
-            
-            <div class="footer-home">
-                <div class="foot-title">
-                    <h4 role="heading" aria-level="4">Home</h4>
-                </div>
-                <div class="foot-links">
-                    <a href="#benefits" itemprop="url">Benefits</a>
-                    <a href="#ourcourses" itemprop="url">Our Courses</a>
-                    <a href="#ourtestimonials" itemprop="url">Our Testimonials</a>
-                    <a href="#ourfaq" itemprop="url">Our FAQ</a>
-                </div>
-            </div>
-    
-            <div class="footer-about">
-                <div class="foot-title">
-                    <h4 role="heading" aria-level="4">About Us</h4>
-                </div>
-                <div class="foot-links">
-                    <a href="#company" itemprop="url">Company</a>
-                    <a href="#achievments" itemprop="url">Achievments</a>
-                    <a href="ourgoals" itemprop="url">Our Goals</a>
-                </div>
-                
-            </div>
-            
-            <div class="footer-social">
-                <div class="foot-title">
-                    <h4 role="heading" aria-level="4">Social Profiles</h4>
-                </div>
-                <div class="media">
-                    <img src="./images2/linkedin.svg" alt="">
-                    <img src="./images2/twitter.svg" alt="">
-                    <img src="./images2/facebook.svg" alt="">
-                </div>
-            </div>
-
-            <div class="copyright">
-                <p>&copy;2023 Skillbridge. All rights reserved.</p>
-            </div>
-        </section>    
-    </footer> -->
-  
+    <!-- Footer Closing Tag -->
 </body>
+<!-- Body Closing Tag -->
 </html>

@@ -14,13 +14,13 @@
     <title>MTM6201 Midterm</title>
 </head>
 <body>
-    <header role="banner" itemscope itemtype="https://schema.org/WPHeader" id="top">
+    <header role="banner" itemscope itemtype="https://schema.org/Brand" id="top">
         <div class="alert" role="alert">
             <a href="#main-content" class="skip-link">Skip to main content</a>
             <span class="advertise">Free Courses🌟Sale Ends Soon, Get It Now<i class="fa-solid fa-arrow-right"></i></span>
         </div>
        <div class="row">
-            <img id='logo' src="./images/logo.svg" alt="Company Logo" itemprop="logo">
+            <img id='logo' src="./images/logo.svg" alt="Company Logo" role="img">
             <nav id="nav" role="navigation" aria-label="Main Navigation" itemscope itemtype="https://schema.org/SiteNavigationElement">
                 <a href="index.html" itemprop="url">Home</a>
                 <a href="courses.html" itemprop="url">Courses</a>
@@ -124,7 +124,7 @@
                 media="(max-width: 480px)">
             
                 <!-- Default Fallback Image -->
-                <img class="original" src="./images/hero/hero.JPG" alt="Hero banner" itemprop="contentUrl">
+                <img class="original" src="./images/hero/hero.JPG" alt="Hero banner" role="img">
             </picture>
         </section>
         
@@ -283,8 +283,8 @@
                         
                         <div class="data" itemscope itemtype="https://schema.org/Course">
                             <div class="sub-row">
-                                <span class="week" itemprop="duration" aria-label="Course Duration: 4 Weeks">4 Weeks</span>
-                                <span class="level" itemprop="educationalLevel" aria-label="Course Level: Beginner">Beginner</span>
+                                <span class="week" itemprop="hasCourseInstance" aria-label="Course Duration: 4 Weeks">4 Weeks</span>
+                                <span class="level" itemprop="educationalLevel"  aria-label="Course Level: Beginner">Beginner</span>
                             </div>
                             <span class="author" itemprop="author" aria-label="Instructor: John Smith">By John Smith</span>
                         </div>
@@ -341,7 +341,7 @@
    
                         <div class="data" itemscope itemtype="https://schema.org/Course">
                             <div class="sub-row">
-                                <span class="week" itemprop="duration" aria-label="Course Duration: 6 Weeks">6 Weeks</span>
+                                <span class="week" itemprop="hasCourseInstance"  aria-label="Course Duration: 6 Weeks">6 Weeks</span>
                                 <span class="level" itemprop="educationalLevel" aria-label="Course Level: Intermediate">Intermediate</span>
                             </div>
                             <span class="author" itemprop="author" aria-label="Instructor: Emily Johnson">By Emily Johnson</span>
@@ -398,7 +398,7 @@
 
                         <div class="data" itemscope itemtype="https://schema.org/Course">
                             <div class="sub-row">
-                                <span class="week" itemprop="duration" aria-label="Course Duration: 8 Weeks">8 Weeks</span>
+                                <span class="week" itemprop="hasCourseInstance"  aria-label="Course Duration: 8 Weeks">8 Weeks</span>
                                 <span class="level" itemprop="educationalLevel" aria-label="Course Level: Intermediate">Intermediate</span>
                             </div>
                             <span class="author" itemprop="author" aria-label="Instructor: David Brown">By David Brown</span>
@@ -456,7 +456,7 @@
                         
                         <div class="data" itemscope itemtype="https://schema.org/Course">
                             <div class="sub-row">
-                                <span class="week" itemprop="duration" aria-label="Course Duration: 10 Weeks">10 Weeks</span>
+                                <span class="week" itemprop="hasCourseInstance"  aria-label="Course Duration: 10 Weeks">10 Weeks</span>
                                 <span class="level" itemprop="educationalLevel" aria-label="Course Level: Beginner">Beginner</span>
                             </div>
                             <span class="author" itemprop="author" aria-label="Instructor: Sarah Thompson">By Sarah Thompson</span>
@@ -514,7 +514,7 @@
                     
                         <div class="data" itemscope itemtype="https://schema.org/Course">
                             <div class="sub-row">
-                                <span class="week" itemprop="duration" aria-label="Course Duration: 10 Weeks">10 weeks</span>
+                                <span class="week" itemprop="hasCourseInstance"  aria-label="Course Duration: 10 Weeks">10 weeks</span>
                                 <span class="level" itemprop="educationalLevel" aria-label="Course Level: Intermediate">Intermediate</span>
                             </div>
                             <span class="author" itemprop="author" aria-label="Instructor: Michael Adams">By Michael Adams</span>
@@ -571,8 +571,8 @@
             
                         <div class="data" itemscope itemtype="https://schema.org/Course">
                             <div class="sub-row">
-                                <span class="week" itemprop="duration" aria-label="Course Duration: 6 Weeks">6 Weeks</span>
-                                <span class="level" itemprop="educationalLevel" aria-label="Course Level: Advanced">Advance</span>
+                                <span class="week" itemprop="hasCourseInstance"  aria-label="Course Duration: 6 Weeks">6 Weeks</span>
+                                <span class="level" itemprop="educationalLevel"  aria-label="Course Level: Advanced">Advance</span>
                             </div>
                             <span class="author" itemprop="author" aria-label="Instructor: Jennifer Wilson">By Jennifer Wilson</span>
                         </div>
@@ -851,7 +851,7 @@
         <section id="foot-wrapper">
             <div class="footer-one">
                 <div class="logo">
-                    <img src="./images/logo.svg" alt="Skillbridge logo" role="img" itemprop="logo">
+                    <img src="./images/logo.svg" alt="Skillbridge logo" role="img">
                 </div>
 
                 <div class="footer-contact" role="list">
@@ -860,22 +860,21 @@
                             <path d="M1.5 9.1691V17.75C1.5 19.4069 2.84315 20.75 4.5 20.75H19.5C21.1569 20.75 22.5 19.4069 22.5 17.75V9.1691L13.5723 14.6631C12.6081 15.2564 11.3919 15.2564 10.4277 14.6631L1.5 9.1691Z" fill="#262626"/>
                             <path d="M22.5 7.40783V7.25C22.5 5.59315 21.1569 4.25 19.5 4.25H4.5C2.84315 4.25 1.5 5.59315 1.5 7.25V7.40783L11.2139 13.3856C11.696 13.6823 12.304 13.6823 12.7861 13.3856L22.5 7.40783Z" fill="#262626"/>
                         </svg>
-                        <span class="contact-info"><a href="mailto:hello@skillbridge.com" itemprop="email">hello@skillbridge.com</a></span>
-                        <!-- <span class="contact-info">&nbsp;hello@skillbridge.com</span> -->
+                        <span class="contact-info" aria-label="Company Email">&nbsp;hello@skillbridge.com</span>
                     </div>
         
                     <div class="footer-icon" role="listitem">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none" aria-hidden="true">
                             <path fill-rule="evenodd" clip-rule="evenodd" d="M1.5 5C1.5 3.34315 2.84315 2 4.5 2H5.87163C6.732 2 7.48197 2.58556 7.69064 3.42025L8.79644 7.84343C8.97941 8.5753 8.70594 9.34555 8.10242 9.79818L6.8088 10.7684C6.67447 10.8691 6.64527 11.0167 6.683 11.1197C7.81851 14.2195 10.2805 16.6815 13.3803 17.817C13.4833 17.8547 13.6309 17.8255 13.7316 17.6912L14.7018 16.3976C15.1545 15.7941 15.9247 15.5206 16.6566 15.7036L21.0798 16.8094C21.9144 17.018 22.5 17.768 22.5 18.6284V20C22.5 21.6569 21.1569 23 19.5 23H17.25C8.55151 23 1.5 15.9485 1.5 7.25V5Z" fill="#262626"/>
                         </svg>
-                        <span class="contact-info" itemprop="telephone">&nbsp;+91 91813 23 2309</span>
+                        <span class="contact-info" aria-label="Company Phone Number">&nbsp;+91 91813 23 2309</span>
                     </div>
         
                     <div class="footer-icon" role="listitem">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none" aria-hidden="true">
                             <path fill-rule="evenodd" clip-rule="evenodd" d="M11.5397 22.851C11.57 22.8685 11.5937 22.8821 11.6105 22.8915L11.6384 22.9071C11.8613 23.0294 12.1378 23.0285 12.3608 22.9075L12.3895 22.8915C12.4063 22.8821 12.43 22.8685 12.4603 22.851C12.5207 22.816 12.607 22.765 12.7155 22.6982C12.9325 22.5646 13.2388 22.3676 13.6046 22.1091C14.3351 21.5931 15.3097 20.8274 16.2865 19.8273C18.2307 17.8368 20.25 14.8462 20.25 11C20.25 6.44365 16.5563 2.75 12 2.75C7.44365 2.75 3.75 6.44365 3.75 11C3.75 14.8462 5.76932 17.8368 7.71346 19.8273C8.69025 20.8274 9.66491 21.5931 10.3954 22.1091C10.7612 22.3676 11.0675 22.5646 11.2845 22.6982C11.393 22.765 11.4793 22.816 11.5397 22.851ZM12 14C13.6569 14 15 12.6569 15 11C15 9.34315 13.6569 8 12 8C10.3431 8 9 9.34315 9 11C9 12.6569 10.3431 14 12 14Z" fill="#262626"/>
                         </svg>
-                        <span class="contact-info" itemprop="address">&nbsp;Somewhere in the World</span>
+                        <span class="contact-info" aria-label="Company Location">&nbsp;Somewhere in the World</span>
                     </div>
                 </div>
                 
@@ -887,10 +886,10 @@
                         <h4 role="heading" aria-level="4">Home</h4>
                     </div>
                     <div class="foot-links" role="list">
-                        <a href="#benefits" role="listitem">Benefits</a>
-                        <a href="#ourcourses" role="listitem">Our Courses</a>
-                        <a href="#ourtestimonials" role="listitem">Our Testimonials</a>
-                        <a href="#ourfaq" role="listitem">Our FAQ</a>
+                        <a href="#benefits" itemprop="url">Benefits</a>
+                        <a href="#courses" itemprop="url">Our Courses</a>
+                        <a href="#testimonials" itemprop="url">Our Testimonials</a>
+                        <a href="#faq" itemprop="url">Our FAQ</a>
                     </div>
                 </div>
         
@@ -899,9 +898,9 @@
                         <h4 role="heading" aria-level="4">About Us</h4>
                     </div>
                     <div class="foot-links" role="list">
-                        <a href="#company" role="listitem">Company</a>
-                        <a href="#achievments" role="listitem">Achievments</a>
-                        <a href="ourgoals" role="listitem">Our Goals</a>
+                        <a href="#" itemprop="url">Company</a>
+                        <a href="#" itemprop="url">Achievments</a>
+                        <a href="#" itemprop="url">Our Goals</a>
                     </div>
                 </div>
             </div>

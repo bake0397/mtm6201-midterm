@@ -61,7 +61,6 @@ header {
 
 main {
     margin: 0 4rem;
-    #F7F7F8
 }
 
 
@@ -102,8 +101,22 @@ p {
     text-align: center;
     width: 100%;
     line-height: 30px;
+    animation: pulseIn 2s ease 0s infinite normal forwards;
 }
 
+@keyframes pulseIn {
+	0% {
+		opacity: 1;
+	}
+
+	50% {
+		opacity: 0.2;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}
 
 #logo {
     margin-left: 1rem;
@@ -223,7 +236,6 @@ header .row .user .login:hover {
 }
 
 .start .bannersub {
-    justify-content: inline-block;
     gap: 10px;
     flex-wrap: nowrap;
 }
@@ -236,6 +248,7 @@ header .row .user .login:hover {
     font-size: clamp(0.5rem, 4vw, 2rem);
     font-weight: 600;
     display: flex;
+    animation: tracking-in-contract 0.8s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
 }
 
 .bannersub {
@@ -291,6 +304,8 @@ header .row .user .login:hover {
     border: 1px solid #262626;
     color: #262626;
 }
+
+/* Brand Logo Section */
 
 .brand-items {
     padding: 1rem;
@@ -645,7 +660,6 @@ main #pricing .container .intro {
 }
 
 #courses img {
-    overflow-clip-margin: content-box;
     width: 100%;
     margin-bottom: 1rem;
 }
@@ -1507,6 +1521,17 @@ footer .logo img {
     color: #59595A;
     width: 60%;
     line-height: 150%;
+    animation: fadeIn 2s ease 0s 1 normal forwards;
+}
+
+@keyframes fadeIn {
+	0% {
+		transform: scale(0);
+	}
+
+	100% {
+		transform: scale(1);
+	}
 }
 
 .courses-row h1 {
@@ -1516,6 +1541,19 @@ footer .logo img {
     line-height: 150%;
     flex-wrap: wrap;
     display: flex;
+    animation: myAnim 2s ease 0s 1 normal forwards;
+}
+
+@keyframes myAnim {
+	0% {
+		opacity: 0;
+		transform: scale(0.6);
+	}
+
+	100% {
+		opacity: 1;
+		transform: scale(1);
+	}
 }
 
 .courses-title {
@@ -1706,6 +1744,7 @@ button:hover {
 }
 
 @media screen and (max-width: 640px) {
+    
     .curriculum {
         display: grid;
         grid-template-columns: 1fr;
@@ -1781,6 +1820,7 @@ button:hover {
         line-height: 150%;
         flex-wrap: wrap;
         display: flex;
+        text-align: left;
     }
 
     .text-btn {
@@ -1821,13 +1861,40 @@ button:hover {
     color: #59595A;
     margin-left: 5rem;
     line-height: 150%;
+    animation: fadeIn 2s ease 0s 1 normal forwards;
+}
+
+@keyframes fadeIn {
+	0% {
+		transform: scale(0);
+	}
+
+	100% {
+		transform: scale(1);
+	}
 }
 
 .contact-row h1 {
     font-size: 2rem;
     font-weight: 600;
     display: flex;
+    -webkit-animation: slide-right 1s ease-in-out both;
+	animation: slide-right 1s ease-in-out both;
+    animation: myAnim 2s ease 0s 1 normal forwards;
 }
+
+@keyframes myAnim {
+	0% {
+		opacity: 0;
+		transform: scale(0.6);
+	}
+
+	100% {
+		opacity: 1;
+		transform: scale(1);
+	}
+}
+
 
 .contact-title {
     display: flex;

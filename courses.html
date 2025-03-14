@@ -14,13 +14,16 @@
     <title>MTM6201 Midterm</title>
 </head>
 
+<!-- Body Opening Tag -->
 <body>
-    <header role="banner" itemscope itemtype="https://schema.org/WPHeader">
+    <!-- Header Closing Tag -->
+    <header role="banner" itemscope itemtype="https://schema.org/WPHeader" id="top">
         <div class="alert" role="alert">
+            <a href="#main-content" class="skip-link">Skip to main content</a>
             <span class="advertise">Free Courses🌟Sale Ends Soon, Get It Now<i class="fa-solid fa-arrow-right"></i></span>
         </div>
        <div class="row">
-            <img id='logo' src="./images/logo.svg" alt="Company Logo" itemprop="logo">
+            <img id='logo' src="./images/logo.svg" alt="Company Logo" role="img">
             <nav id="nav" role="navigation" aria-label="Main Navigation" itemscope itemtype="https://schema.org/SiteNavigationElement">
                 <a href="index.html" itemprop="url">Home</a>
                 <a href="courses.html" itemprop="url">Courses</a>
@@ -31,7 +34,7 @@
 
             <div class="user" role="group" aria-label="User Authentication">
                 <a class="signup" href="#" role="button" aria-label="Sign Up">Sign Up</a>
-                <a class="login" href="#" role="button" aria-label="Login">Loin</a>
+                <a class="login" href="#" role="button" aria-label="Login">Login</a>
             </div>
             <div class="burger">
                 <svg xmlns="http://www.w3.org/2000/svg" width="34" height="35" viewBox="0 0 34 35" fill="none">
@@ -43,7 +46,7 @@
     <!-- Header Closing Tag -->
     
     <!-- Main -->
-    <main role="main">
+    <main role="main" itemscope itemtype="https://schema.org/Course">
         <section id="courses-banner">
             <div class="courses-row">
                 <div class="courses-title">
@@ -53,12 +56,12 @@
             </div>
         </section>
         <!-- Web Fundamentals Section -->
-        <section id="fundamentals" role="article">
-            <div class="container7">
+        <section id="fundamentals">
+            <div class="container7" id="#main-content">
                 <div class="curr-row">
                     <h2 role="heading" aria-level="2">Web Design Fundamentals</h2>
                     <div class="text-btn">
-                        <p itemprop="description">Learn the fundamentals of web design, including HTML, CSS, and responsive design principles. Develop the skills to create visually appealing and user-friendly websites.</p>
+                        <p itemprop="teaches">Learn the fundamentals of web design, including HTML, CSS, and responsive design principles. Develop the skills to create visually appealing and user-friendly websites.</p>
                         <div class="curr-btn">
                             <button type="button" role="button" aria-label="View Course">View Course</button>
                         </div>
@@ -104,9 +107,9 @@
                             media="(max-width: 480px)">
                         
                             <!-- Default Fallback Image -->
-                            <img class="original" src="./images2/course1/web-01.jpg" alt="">
+                            <img class="original" src="./images2/course1/web-01.jpg" alt="Web Design Fundamentals Course Preview" role="img">
                         </picture>
-                        <!-- <img class="web1" src="./images2/card1-01.png" alt=""> -->
+                        
                     </div>
                     <div class="web-image">
                         <picture id="web2">
@@ -146,9 +149,9 @@
                             media="(max-width: 480px)">
                         
                             <!-- Default Fallback Image -->
-                            <img class="original" src="./images2/course1/web-02.jpg" alt="">
+                            <img class="original" src="./images2/course1/web-02.jpg" alt="Web Design Fundamentals Course Preview" role="img">
                         </picture>
-                        <!-- <img class="web2" src="./images2/card1-02.png" alt=""> -->
+                        
                     </div>
                     <div class="web-image">
                         <picture id="web3">
@@ -188,17 +191,17 @@
                             media="(max-width: 480px)">
                         
                             <!-- Default Fallback Image -->
-                            <img class="original" src="./images2/course1/web-03.jpg" alt="">
+                            <img class="original" src="./images2/course1/web-03.jpg" alt="Web Design Fundamentals Course Preview" role="img">
                         </picture>
                     </div>
                 </div>
 
                 <div class="data">
                     <div class="sub-row">
-                        <span class="week">4 Weeks</span>
-                        <span class="level">Beginner</span>
+                        <span class="week" itemprop="hasCourseInstance">4 Weeks</span>
+                        <span class="level" itemprop="educationalLevel" aria-label="Course Level: Beginner">Beginner</span>
                     </div>
-                    <span class="author">By John Smith</span>
+                    <span class="author" itemprop="author" aria-label="Instructor: John Smith">By John Smith</span>
                 </div>
 
                 <div class="curriculum">
@@ -207,23 +210,23 @@
                     </div>
                     <div class="curr-data1">
                         <span class="numbers">01</span>
-                        <span class="step">Introduction to HTML</span>
+                        <span class="step" itemprop="syllabusSections">Introduction to HTML</span>
                     </div>
                     <div class="curr-data2">
                         <span class="numbers">02</span>
-                        <span class="step">Styling with CSS</span>
+                        <span class="step" itemprop="syllabusSections">Styling with CSS</span>
                     </div>
                     <div class="curr-data3">
                         <span class="numbers">03</span>
-                        <span class="step">Introduction to Responsive Design</span>
+                        <span class="step" itemprop="syllabusSections">Introduction to Responsive Design</span>
                     </div>
                     <div class="curr-data4">
                         <span class="numbers">04</span>
-                        <span class="step">Design Principles for Web</span>
+                        <span class="step" itemprop="syllabusSections">Design Principles for Web</span>
                     </div>
                     <div class="curr-data5">
                         <span class="numbers">05</span>
-                        <span class="step">Building a Basic Website</span>
+                        <span class="step" itemprop="syllabusSections">Building a Basic Website</span>
                     </div>
                 </div>
             </div>
@@ -232,12 +235,12 @@
 
         
         <!-- UI/UX Design Section -->
-        <section id="uiuxdesign" role="article">
+        <section id="uiuxdesign">
             <div class="container8">
                 <div class="curr-row">
                     <h2 role="heading" aria-level="2">UI/UX Design</h2>
                     <div class="text-btn">
-                        <p itemprop="description">Master the art of creating intuitive user interfaces (UI) and enhancing user experiences (UX). Learn design principles, wireframing, prototyping, and usability testing techniques.</p>
+                        <p itemprop="teaches">Master the art of creating intuitive user interfaces (UI) and enhancing user experiences (UX). Learn design principles, wireframing, prototyping, and usability testing techniques.</p>
                         <div class="curr-btn">
                             <button type="button" role="button" aria-label="View Course">View Course</button>
                         </div>
@@ -283,7 +286,7 @@
                             media="(max-width: 480px)">
                         
                             <!-- Default Fallback Image -->
-                            <img class="original" src="./images2/course2/ux-01.jpg" alt="">
+                            <img class="original" src="./images2/course2/ux-01.jpg" alt="UI/UX Design Course Preview" role="img">
                         </picture>
                     </div>
                     <div class="uiux-image">
@@ -324,7 +327,7 @@
                             media="(max-width: 480px)">
                         
                             <!-- Default Fallback Image -->
-                            <img class="original" src="./images2/course2/ux-02.jpg" alt="">
+                            <img class="original" src="./images2/course2/ux-02.jpg" alt="UI/UX Design Course Preview" role="img">
                         </picture>
                     </div>
                     <div class="uiux-image">
@@ -365,17 +368,17 @@
                             media="(max-width: 480px)">
                         
                             <!-- Default Fallback Image -->
-                            <img class="original" src="./images2/course2/ux-03.jpg" alt="">
+                            <img class="original" src="./images2/course2/ux-03.jpg" alt="UI/UX Design Course Preview" role="img">
                         </picture>
                     </div>
                 </div>
 
                 <div class="data">
                     <div class="sub-row">
-                        <span class="week">6 Weeks</span>
-                        <span class="level">Intermediate</span>
+                        <span class="week" itemprop="hasCourseInstance">6 Weeks</span>
+                        <span class="level" itemprop="educationalLevel" aria-label="Course Level: Intermediate">Intermediate</span>
                     </div>
-                    <span class="author">By Emily Johnson</span>
+                    <span class="author" itemprop="author" aria-label="Instructor: Emily Johnson">By Emily Johnson</span>
                 </div>
                 
                 <div class="curriculum">
@@ -384,23 +387,23 @@
                     </div>
                     <div class="curr-data1">
                         <span class="numbers">01</span>
-                        <span class="step">Introduction to UI/UX Design</span>
+                        <span class="step" itemprop="syllabusSections">Introduction to UI/UX Design</span>
                     </div>
                     <div class="curr-data2">
                         <span class="numbers">02</span>
-                        <span class="step">User Research and Personas</span>
+                        <span class="step" itemprop="syllabusSections">User Research and Personas</span>
                     </div>
                     <div class="curr-data3">
                         <span class="numbers">03</span>
-                        <span class="step">Wireframing and Prototyping</span>
+                        <span class="step" itemprop="syllabusSections">Wireframing and Prototyping</span>
                     </div>
                     <div class="curr-data4">
                         <span class="numbers">04</span>
-                        <span class="step">Visual Design and Branding</span>
+                        <span class="step" itemprop="syllabusSections">Visual Design and Branding</span>
                     </div>
                     <div class="curr-data5">
                         <span class="numbers">05</span>
-                        <span class="step">Usability Testing and Iteration</span>
+                        <span class="step" itemprop="syllabusSections">Usability Testing and Iteration</span>
                     </div>
                 </div>
             </div>
@@ -408,12 +411,12 @@
         <!-- UI/UX Design Section Closing Tag-->
 
         <!-- Mobile App Development -->
-        <section id="mobileapp" role="article">
+        <section id="mobileapp">
             <div class="container9">
                 <div class="curr-row">
                     <h2 role="heading" aria-level="2">Mobile App Development</h2>
                     <div class="text-btn">
-                        <p itemprop="description">Dive into the world of mobile app development. Learn to build native iOS and Android applications using industry-leading frameworks like Swift and Kotlin.</p>
+                        <p itemprop="teaches">Dive into the world of mobile app development. Learn to build native iOS and Android applications using industry-leading frameworks like Swift and Kotlin.</p>
                         <div class="curr-btn">
                             <button type="button" role="button" aria-label="View Course">View Course</button>
                         </div>
@@ -459,7 +462,7 @@
                             media="(max-width: 480px)">
                         
                             <!-- Default Fallback Image -->
-                            <img class="original" src="./images2/course3/mobile-01.jpg" alt="">
+                            <img class="original" src="./images2/course3/mobile-01.jpg" alt="Mobile App Development Course Preview" role="img">
                         </picture>
                     </div>
                     <div class="mobile-image">
@@ -542,17 +545,17 @@
                             media="(max-width: 480px)">
                         
                             <!-- Default Fallback Image -->
-                            <img class="original" src="./images2/course3/mobile-03.jpg" alt="">
+                            <img class="original" src="./images2/course3/mobile-03.jpg" alt="Mobile App Development Course Preview" role="img">
                         </picture>
                     </div>
                 </div>
 
                 <div class="data">
                     <div class="sub-row">
-                        <span class="week">8 Weeks</span>
-                        <span class="level">Intermediate</span>
+                        <span class="week" itemprop="hasCourseInstance" >8 Weeks</span>
+                        <span class="level" itemprop="educationalLevel" aria-label="Course Level: Intermediate">Intermediate</span>
                     </div>
-                    <span class="author">By David Brown</span>
+                    <span class="author" itemprop="author" aria-label="Instructor: David Brown">By David Brown</span>
                 </div>
 
                 <div class="curriculum">
@@ -561,23 +564,23 @@
                     </div>
                     <div class="curr-data1">
                         <span class="numbers">01</span>
-                        <span class="step">Introduction to Mobile App Development</span>
+                        <span class="step" itemprop="syllabusSections">Introduction to Mobile App Development</span>
                     </div>
                     <div class="curr-data2">
                         <span class="numbers">02</span>
-                        <span class="step">Fundamentals of Swift Programming (iOS)</span>
+                        <span class="step" itemprop="syllabusSections">Fundamentals of Swift Programming (iOS)</span>
                     </div>
                     <div class="curr-data3">
                         <span class="numbers">03</span>
-                        <span class="step">Fundamentals of Kotlin Programming (Android)</span>
+                        <span class="step" itemprop="syllabusSections">Fundamentals of Kotlin Programming (Android)</span>
                     </div>
                     <div class="curr-data4">
                         <span class="numbers">04</span>
-                        <span class="step">Building User Interfaces</span>
+                        <span class="step" itemprop="syllabusSections">Building User Interfaces</span>
                     </div>
                     <div class="curr-data5">
                         <span class="numbers">05</span>
-                        <span class="step">App Deployment and Testing</span>
+                        <span class="step" itemprop="syllabusSections">App Deployment and Testing</span>
                     </div>
                 </div>
                 
@@ -587,12 +590,12 @@
 
 
         <!-- Graphic Design for Beginners -->
-        <section id="graphicdesign" role="article">
+        <section id="graphicdesign">
             <div class="container10">
                 <div class="curr-row">
                     <h2 role="heading" aria-level="2">Graphic Design for Beginners</h2>
                     <div class="text-btn">
-                        <p itemprop="description">Discover the fundamentals of graphic design, including typography, color theory, layout design, and image manipulation techniques. Create visually stunning designs for print and digital media.</p>
+                        <p itemprop="teaches">Discover the fundamentals of graphic design, including typography, color theory, layout design, and image manipulation techniques. Create visually stunning designs for print and digital media.</p>
                         <div class="curr-btn">
                             <button type="button" role="button" aria-label="View Course">View Course</button>
                         </div>
@@ -638,9 +641,9 @@
                             media="(max-width: 480px)">
                         
                             <!-- Default Fallback Image -->
-                            <img class="original" src="./images2/course4/graphic-01.jpg" alt="">
+                            <img class="original" src="./images2/course4/graphic-01.jpg" alt="Graphic Design Course Preview" role="img">
                         </picture>
-                        <!-- <img class="graphic1" src="./images2/card4-01.png" alt=""> -->
+                       
                     </div>
                     <div class="graphic-image">
                         <picture id="graphic2">
@@ -680,9 +683,9 @@
                             media="(max-width: 480px)">
                         
                             <!-- Default Fallback Image -->
-                            <img class="original" src="./images2/course4/graphic-02.jpg" alt="">
+                            <img class="original" src="./images2/course4/graphic-02.jpg" alt="Graphic Design Course Preview" role="img">
                         </picture>
-                        <!-- <img class="graphic2" src="./images2/card4-02.png" alt=""> -->
+
                     </div>
                     <div class="graphic-image">
                         <picture id="graphic3">
@@ -722,18 +725,18 @@
                             media="(max-width: 480px)">
                         
                             <!-- Default Fallback Image -->
-                            <img class="original" src="./images2/course4/graphic-03.jpg" alt="">
+                            <img class="original" src="./images2/course4/graphic-03.jpg" alt="Graphic Design Course Preview" role="img">
                         </picture>
-                        <!-- <img class="graphic3" src="./images2/card4-03.png" alt=""> -->
+                       
                     </div>
                 </div>
 
                 <div class="data">
                     <div class="sub-row">
-                        <span class="week">10 Weeks</span>
-                        <span class="level">Beginner</span>
+                        <span class="week" itemprop="hasCourseInstance" >10 Weeks</span>
+                        <span class="level" itemprop="educationalLevel" aria-label="Course Level: Beginner">Beginner</span>
                     </div>
-                    <span class="author">By Sarah Thompson</span>
+                    <span class="author" itemprop="author" aria-label="Instructor: Sarah Thompson">By Sarah Thompson</span>
                 </div>
                 
                 <div class="curriculum">
@@ -742,23 +745,23 @@
                     </div>
                     <div class="curr-data1">
                         <span class="numbers">01</span>
-                        <span class="step">Introduction to Graphic Design</span>
+                        <span class="step" itemprop="syllabusSections">Introduction to Graphic Design</span>
                     </div>
                     <div class="curr-data2">
                         <span class="numbers">02</span>
-                        <span class="step">Typography and Color Theory</span>
+                        <span class="step" itemprop="syllabusSections">Typography and Color Theory</span>
                     </div>
                     <div class="curr-data3">
                         <span class="numbers">03</span>
-                        <span class="step">Layout Design and Composition</span>
+                        <span class="step" itemprop="syllabusSections">Layout Design and Composition</span>
                     </div>
                     <div class="curr-data4">
                         <span class="numbers">04</span>
-                        <span class="step">Image Editing and Manipulation</span>
+                        <span class="step" itemprop="syllabusSections">Image Editing and Manipulation</span>
                     </div>
                     <div class="curr-data5">
                         <span class="numbers">05</span>
-                        <span class="step">Designing for Print and Digital Media</span>
+                        <span class="step" itemprop="syllabusSections">Designing for Print and Digital Media</span>
                     </div>
                 </div>
             </div>
@@ -766,12 +769,12 @@
         <!-- Graphic Design for Beginners Closing Tag -->
         
         <!-- Front-End Web Development -->
-        <section id="frontdevelopment" role="article">
+        <section id="frontdevelopment">
             <div class="container10">
                 <div class="curr-row">
                     <h2 role="heading" aria-level="2">Front-End Web Development</h2>
                     <div class="text-btn">
-                        <p itemprop="description">Become proficient in front-end web development. Learn HTML, CSS, JavaScript, and popular frameworks like Bootstrap and React. Build interactive and responsive websites.</p>
+                        <p itemprop="teaches">Become proficient in front-end web development. Learn HTML, CSS, JavaScript, and popular frameworks like Bootstrap and React. Build interactive and responsive websites.</p>
                         <div class="curr-btn">
                             <button type="button">View Course</button>
                         </div>
@@ -817,9 +820,9 @@
                             media="(max-width: 480px)">
                         
                             <!-- Default Fallback Image -->
-                            <img class="original" src="./images2/course5/front-01.jpg" alt="">
+                            <img class="original" src="./images2/course5/front-01.jpg" alt="Front-End Web Development Course Preview" role="img">
                         </picture>
-                            <!-- <img class="front1" src="./images2/card5-01.png" alt=""> -->
+                            
                     </div>
                     <div class="front-image">
                         <picture id="front2">
@@ -859,9 +862,9 @@
                             media="(max-width: 480px)">
                         
                             <!-- Default Fallback Image -->
-                            <img class="original" src="./images2/course5/front-02.jpg" alt="">
+                            <img class="original" src="./images2/course5/front-02.jpg" alt="Front-End Web Development Course Preview" role="img">
                         </picture>
-                        <!-- <img class="front2" src="./images2/card5-02.png" alt=""> -->
+                      
                     </div>
                     <div class="front-image">
                         <picture id="front3">
@@ -901,18 +904,17 @@
                             media="(max-width: 480px)">
                         
                             <!-- Default Fallback Image -->
-                            <img class="original" src="./images2/course5/front-03.jpg" alt="">
+                            <img class="original" src="./images2/course5/front-03.jpg" alt="Front-End Web Development Course Preview" role="img">
                         </picture>
-                        <!-- <img class="front3" src="./images2/card5-03.png" alt=""> -->
                     </div>
                 </div>
 
                 <div class="data">
                     <div class="sub-row">
-                        <span class="week">10 Weeks</span>
-                        <span class="level">Intermediate</span>
+                        <span class="week" itemprop="hasCourseInstance" >10 Weeks</span>
+                        <span class="level" itemprop="educationalLevel" aria-label="Course Level: Intermediate">Intermediate</span>
                     </div>
-                    <span class="author">By Michael Adams</span>
+                    <span class="author" itemprop="author" aria-label="Instructor: Michael Adams">By Michael Adams</span>
                 </div>
 
                 <div class="curriculum">
@@ -921,30 +923,30 @@
                     </div>
                         <div class="curr-data1">
                             <span class="numbers">01</span>
-                            <span class="step">HTML Fundamentals</span>
+                            <span class="step" itemprop="syllabusSections">HTML Fundamentals</span>
                         </div>
                         <div class="curr-data2">
                             <span class="numbers">02</span>
-                            <span class="step">CSS Styling and Layouts</span>
+                            <span class="step" itemprop="syllabusSections">CSS Styling and Layouts</span>
                         </div>
                         <div class="curr-data3">
                             <span class="numbers">03</span>
-                            <span class="step">JavaScript Baasics</span>
+                            <span class="step" itemprop="syllabusSections">JavaScript Baasics</span>
                         </div>
                         <div class="curr-data4">
                             <span class="numbers">04</span>
-                            <span class="step">Building Responsive Websites</span>
+                            <span class="step" itemprop="syllabusSections">Building Responsive Websites</span>
                         </div>
                         <div class="curr-data5">
                             <span class="numbers">05</span>
-                            <span class="step">Introduction to Bootstrap and React</span>
+                            <span class="step" itemprop="syllabusSections">Introduction to Bootstrap and React</span>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
         <!-- Front-End Web Development Closing Tag -->
-
+        <a href="#top" class="skip-link-2">Back to Top</a>
     </main>
     <!-- Main Closing Tag -->
 
@@ -953,7 +955,7 @@
         <section id="foot-wrapper">
             <div class="footer-one">
                 <div class="logo">
-                    <img src="./images/logo.svg" alt="Skillbridge logo" role="img" itemprop="logo">
+                    <img src="./images/logo.svg" alt="Skillbridge logo" role="img">
                 </div>
 
                 <div class="footer-contact" role="list">
@@ -962,22 +964,21 @@
                             <path d="M1.5 9.1691V17.75C1.5 19.4069 2.84315 20.75 4.5 20.75H19.5C21.1569 20.75 22.5 19.4069 22.5 17.75V9.1691L13.5723 14.6631C12.6081 15.2564 11.3919 15.2564 10.4277 14.6631L1.5 9.1691Z" fill="#262626"/>
                             <path d="M22.5 7.40783V7.25C22.5 5.59315 21.1569 4.25 19.5 4.25H4.5C2.84315 4.25 1.5 5.59315 1.5 7.25V7.40783L11.2139 13.3856C11.696 13.6823 12.304 13.6823 12.7861 13.3856L22.5 7.40783Z" fill="#262626"/>
                         </svg>
-                        <span class="contact-info"><a href="mailto:hello@skillbridge.com" itemprop="email">hello@skillbridge.com</a></span>
-                        <!-- <span class="contact-info">&nbsp;hello@skillbridge.com</span> -->
+                        <span class="contact-info" aria-label="Company Email">&nbsp;hello@skillbridge.com</span>
                     </div>
         
                     <div class="footer-icon" role="listitem">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none" aria-hidden="true">
                             <path fill-rule="evenodd" clip-rule="evenodd" d="M1.5 5C1.5 3.34315 2.84315 2 4.5 2H5.87163C6.732 2 7.48197 2.58556 7.69064 3.42025L8.79644 7.84343C8.97941 8.5753 8.70594 9.34555 8.10242 9.79818L6.8088 10.7684C6.67447 10.8691 6.64527 11.0167 6.683 11.1197C7.81851 14.2195 10.2805 16.6815 13.3803 17.817C13.4833 17.8547 13.6309 17.8255 13.7316 17.6912L14.7018 16.3976C15.1545 15.7941 15.9247 15.5206 16.6566 15.7036L21.0798 16.8094C21.9144 17.018 22.5 17.768 22.5 18.6284V20C22.5 21.6569 21.1569 23 19.5 23H17.25C8.55151 23 1.5 15.9485 1.5 7.25V5Z" fill="#262626"/>
                         </svg>
-                        <span class="contact-info" itemprop="telephone">&nbsp;+91 91813 23 2309</span>
+                        <span class="contact-info" itemprop="telephone" aria-label="Company Phone Number">&nbsp;+91 91813 23 2309</span>
                     </div>
         
                     <div class="footer-icon" role="listitem">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none" aria-hidden="true">
                             <path fill-rule="evenodd" clip-rule="evenodd" d="M11.5397 22.851C11.57 22.8685 11.5937 22.8821 11.6105 22.8915L11.6384 22.9071C11.8613 23.0294 12.1378 23.0285 12.3608 22.9075L12.3895 22.8915C12.4063 22.8821 12.43 22.8685 12.4603 22.851C12.5207 22.816 12.607 22.765 12.7155 22.6982C12.9325 22.5646 13.2388 22.3676 13.6046 22.1091C14.3351 21.5931 15.3097 20.8274 16.2865 19.8273C18.2307 17.8368 20.25 14.8462 20.25 11C20.25 6.44365 16.5563 2.75 12 2.75C7.44365 2.75 3.75 6.44365 3.75 11C3.75 14.8462 5.76932 17.8368 7.71346 19.8273C8.69025 20.8274 9.66491 21.5931 10.3954 22.1091C10.7612 22.3676 11.0675 22.5646 11.2845 22.6982C11.393 22.765 11.4793 22.816 11.5397 22.851ZM12 14C13.6569 14 15 12.6569 15 11C15 9.34315 13.6569 8 12 8C10.3431 8 9 9.34315 9 11C9 12.6569 10.3431 14 12 14Z" fill="#262626"/>
                         </svg>
-                        <span class="contact-info" itemprop="address">&nbsp;Somewhere in the World</span>
+                        <span class="contact-info" aria-label="Company Location">&nbsp;Somewhere in the World</span>
                     </div>
                 </div>
                 
@@ -989,10 +990,10 @@
                         <h4 role="heading" aria-level="4">Home</h4>
                     </div>
                     <div class="foot-links" role="list">
-                        <a href="#benefits" role="listitem">Benefits</a>
-                        <a href="#ourcourses" role="listitem">Our Courses</a>
-                        <a href="#ourtestimonials" role="listitem">Our Testimonials</a>
-                        <a href="#ourfaq" role="listitem">Our FAQ</a>
+                        <a href="#benefits" itemprop="url">Benefits</a>
+                        <a href="#courses" itemprop="url">Our Courses</a>
+                        <a href="#testimonials" itemprop="url">Our Testimonials</a>
+                        <a href="#faq" itemprop="url">Our FAQ</a>
                     </div>
                 </div>
         
@@ -1001,9 +1002,9 @@
                         <h4 role="heading" aria-level="4">About Us</h4>
                     </div>
                     <div class="foot-links" role="list">
-                        <a href="#company" role="listitem">Company</a>
-                        <a href="#achievments" role="listitem">Achievments</a>
-                        <a href="ourgoals" role="listitem">Our Goals</a>
+                        <a href="#" itemprop="url">Company</a>
+                        <a href="#" itemprop="url">Achievments</a>
+                        <a href="#" itemprop="url">Our Goals</a>
                     </div>
                 </div>
             </div>
@@ -1025,80 +1026,7 @@
             </div>
         </section>    
     </footer>
-    <!-- <footer role="contentinfo">
-        <section id="foot-wrapper">
-            <div class="footer-one">
-                <div class="logo">
-                    <img src="./images/logo.svg" alt="logo">
-                </div>
-
-                <div class="footer-contact">
-                    <div class="footer-icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
-                            <path d="M1.5 9.1691V17.75C1.5 19.4069 2.84315 20.75 4.5 20.75H19.5C21.1569 20.75 22.5 19.4069 22.5 17.75V9.1691L13.5723 14.6631C12.6081 15.2564 11.3919 15.2564 10.4277 14.6631L1.5 9.1691Z" fill="#262626"/>
-                            <path d="M22.5 7.40783V7.25C22.5 5.59315 21.1569 4.25 19.5 4.25H4.5C2.84315 4.25 1.5 5.59315 1.5 7.25V7.40783L11.2139 13.3856C11.696 13.6823 12.304 13.6823 12.7861 13.3856L22.5 7.40783Z" fill="#262626"/>
-                        </svg>
-                        <span class="contact-info">&nbsp;hello@skillbridge.com</span>
-                    </div>
-        
-                    <div class="footer-icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M1.5 5C1.5 3.34315 2.84315 2 4.5 2H5.87163C6.732 2 7.48197 2.58556 7.69064 3.42025L8.79644 7.84343C8.97941 8.5753 8.70594 9.34555 8.10242 9.79818L6.8088 10.7684C6.67447 10.8691 6.64527 11.0167 6.683 11.1197C7.81851 14.2195 10.2805 16.6815 13.3803 17.817C13.4833 17.8547 13.6309 17.8255 13.7316 17.6912L14.7018 16.3976C15.1545 15.7941 15.9247 15.5206 16.6566 15.7036L21.0798 16.8094C21.9144 17.018 22.5 17.768 22.5 18.6284V20C22.5 21.6569 21.1569 23 19.5 23H17.25C8.55151 23 1.5 15.9485 1.5 7.25V5Z" fill="#262626"/>
-                        </svg>
-                        <span class="contact-info">&nbsp;+91 91813 23 2309</span>
-                    </div>
-        
-                    <div class="footer-icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M11.5397 22.851C11.57 22.8685 11.5937 22.8821 11.6105 22.8915L11.6384 22.9071C11.8613 23.0294 12.1378 23.0285 12.3608 22.9075L12.3895 22.8915C12.4063 22.8821 12.43 22.8685 12.4603 22.851C12.5207 22.816 12.607 22.765 12.7155 22.6982C12.9325 22.5646 13.2388 22.3676 13.6046 22.1091C14.3351 21.5931 15.3097 20.8274 16.2865 19.8273C18.2307 17.8368 20.25 14.8462 20.25 11C20.25 6.44365 16.5563 2.75 12 2.75C7.44365 2.75 3.75 6.44365 3.75 11C3.75 14.8462 5.76932 17.8368 7.71346 19.8273C8.69025 20.8274 9.66491 21.5931 10.3954 22.1091C10.7612 22.3676 11.0675 22.5646 11.2845 22.6982C11.393 22.765 11.4793 22.816 11.5397 22.851ZM12 14C13.6569 14 15 12.6569 15 11C15 9.34315 13.6569 8 12 8C10.3431 8 9 9.34315 9 11C9 12.6569 10.3431 14 12 14Z" fill="#262626"/>
-                        </svg>
-                        <span class="contact-info">&nbsp;Somewhere in the World</span>
-                    </div>
-                </div>
-                
-            </div>
-            
-            <div class="footer-home">
-                <div class="foot-title">
-                    <h4 role="heading" aria-level="4">Home</h4>
-                </div>
-                <div class="foot-links" role="group">
-                    <a href="#benefits" itemprop="url">Benefits</a>
-                    <a href="#ourcourses" itemprop="url">Our Courses</a>
-                    <a href="#ourtestimonials" itemprop="url">Our Testimonials</a>
-                    <a href="ourfaq" itemprop="url">Our FAQ</a>
-                </div>
-            </div>
-    
-            <div class="footer-about">
-                <div class="foot-title">
-                    <h4 role="heading" aria-level="4">About Us</h4>
-                </div>
-                <div class="foot-links">
-                    <a href="#company" itemprop="url">Company</a>
-                    <a href="#achievments" itemprop="url">Achievments</a>
-                    <a href="ourgoals" itemprop="url">Our Goals</a>
-                </div>
-                
-            </div>
-            
-            <div class="footer-social">
-                <div class="foot-title">
-                    <h4 role="heading" aria-level="4">Social Profiles</h4>
-                </div>
-                <div class="media">
-                    <img src="./images2/linkedin.svg" alt="">
-                    <img src="./images2/twitter.svg" alt="">
-                    <img src="./images2/facebook.svg" alt="">
-                </div>
-            </div>
-
-            <div class="copyright">
-                <p>&copy;2023 Skillbridge. All rights reserved.</p>
-            </div>
-        </section>    
-    </footer> -->
-     <!-- Footer Closing Tag -->
-
+    <!-- Footer Closing Tag -->
 </body>
+<!-- Body Closing Tag -->
 </html>
